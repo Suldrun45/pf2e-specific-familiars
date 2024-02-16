@@ -1,0 +1,101 @@
+{
+  "id": "pf2e-specific-familiars",
+  "title": "PF2e Specific Familiars",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "authors": [
+    {
+      "name": "Sasane"
+    }
+  ],
+  "manifest": "https://www.galadriel.org/foundry/pf2e-specific-familiars/module.json",
+  "download": "https://www.galadriel.org/foundry/pf2e-specific-familiars/1.0.0.zip",
+  "packFolders": [
+    {
+      "name": "PF2e Specific Familiars",
+      "sorting": "m",
+      "packs": [
+        "specific-familiars",
+        "specific-familiars-abilities",
+        "specific-familiars-actions",
+        "specific-familiars-effects",
+        "specific-familiars-equipments"
+      ],
+      "folders": []
+    }
+  ],
+  "packs": [
+    {
+      "name": "specific-familiars-abilities",
+      "label": "Specific Familiars Abilities",
+      "path": "packs/specific-familiars-abilities",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "specific-familiars-actions",
+      "label": "Specific Familiars Actions",
+      "path": "packs/specific-familiars-actions",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "specific-familiars",
+      "label": "Specific Familiars",
+      "path": "packs/specific-familiars",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "specific-familiars-effects",
+      "label": "Specific Familiars Effects",
+      "path": "packs/specific-familiars-effects",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "specific-familiars-equipments",
+      "label": "Specific Familiars Equipments",
+      "path": "packs/specific-familiars-equipments",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "5.13.6",
+          "verified": "5.13.6"
+        }
+      }
+    ]
+  },
+  "description": "Abilities for the Specific familiars of PF2e"
+}
