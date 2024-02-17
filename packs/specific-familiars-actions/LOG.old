@@ -1,3 +1,25 @@
-2024/02/16-16:20:36.509 648c Recovering log #57
-2024/02/16-16:20:36.514 648c Delete type=0 #57
-2024/02/16-16:20:36.514 648c Delete type=3 #56
+2024/02/16-21:31:57.413 33c Recovering log #61
+2024/02/16-21:31:57.413 33c Level-0 table #63: started
+2024/02/16-21:31:57.416 33c Level-0 table #63: 13796 bytes OK
+2024/02/16-21:31:57.423 33c Delete type=0 #59
+2024/02/16-21:31:57.423 33c Delete type=0 #61
+2024/02/16-21:31:57.423 33c Delete type=3 #58
+2024/02/16-21:31:57.423 33c Delete type=3 #60
+2024/02/17-11:48:50.127 13b0 Level-0 table #66: started
+2024/02/17-11:48:50.127 13b0 Level-0 table #66: 0 bytes OK
+2024/02/17-11:48:50.130 13b0 Delete type=0 #64
+2024/02/17-11:48:50.133 13b0 Manual compaction at level-0 from '!items!0qcOerWoQ7WPuUTx' @ 72057594037927935 : 1 .. '!items!yEqGcBd0e0XoZ1S1' @ 0 : 0; will stop at '!items!yEqGcBd0e0XoZ1S1' @ 254 : 1
+2024/02/17-11:48:50.133 13b0 Compacting 1@0 + 0@1 files
+2024/02/17-11:48:50.138 13b0 Generated table #67@0: 16 keys, 11742 bytes
+2024/02/17-11:48:50.138 13b0 Compacted 1@0 + 0@1 files => 11742 bytes
+2024/02/17-11:48:50.140 13b0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/17-11:48:50.141 13b0 Delete type=2 #63
+2024/02/17-11:48:50.154 13b0 Manual compaction at level-0 from '!items!yEqGcBd0e0XoZ1S1' @ 254 : 1 .. '!items!yEqGcBd0e0XoZ1S1' @ 0 : 0; will stop at (end)
+2024/02/17-11:48:50.154 13b0 Manual compaction at level-1 from '!items!0qcOerWoQ7WPuUTx' @ 72057594037927935 : 1 .. '!items!yEqGcBd0e0XoZ1S1' @ 0 : 0; will stop at '!items!yEqGcBd0e0XoZ1S1' @ 256 : 1
+2024/02/17-11:48:50.154 13b0 Compacting 1@1 + 1@2 files
+2024/02/17-11:48:50.159 13b0 Generated table #68@1: 18 keys, 13716 bytes
+2024/02/17-11:48:50.159 13b0 Compacted 1@1 + 1@2 files => 13716 bytes
+2024/02/17-11:48:50.162 13b0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/17-11:48:50.162 13b0 Delete type=2 #41
+2024/02/17-11:48:50.162 13b0 Delete type=2 #67
+2024/02/17-11:48:50.177 13b0 Manual compaction at level-1 from '!items!yEqGcBd0e0XoZ1S1' @ 256 : 1 .. '!items!yEqGcBd0e0XoZ1S1' @ 0 : 0; will stop at (end)

@@ -1,7 +1,7 @@
 {
   "id": "pf2e-specific-familiars",
   "title": "PF2e Specific Familiars",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -20,15 +20,31 @@
   "packFolders": [
     {
       "name": "PF2e Specific Familiars",
-      "sorting": "m",
+      "sorting": "a",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "color": "#6f1c17",
       "packs": [
-        "specific-familiars",
-        "specific-familiars-abilities",
-        "specific-familiars-actions",
-        "specific-familiars-effects",
-        "specific-familiars-equipments"
+        "specific-familiars"
       ],
-      "folders": []
+      "folders": [
+        {
+          "name": "Effects and Abilities",
+          "sorting": "a",
+          "ownership": {
+            "PLAYER": "OBSERVER",
+            "ASSISTANT": "OWNER"
+          },
+          "packs": [
+            "specific-familiars-abilities",
+            "specific-familiars-actions",
+            "specific-familiars-effects",
+            "specific-familiars-equipments"			
+          ]
+        }
+      ]
     }
   ],
   "packs": [

@@ -1,4 +1,8 @@
 # Changelog
+
+## Version 1.0.2
+Folders and icons
+
 ## Version 1.0.1
 Correction of broken links between abilities and effects
 
