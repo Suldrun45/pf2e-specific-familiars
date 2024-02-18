@@ -1,25 +1,3 @@
-2024/02/16-21:31:57.397 63d0 Recovering log #62
-2024/02/16-21:31:57.397 63d0 Level-0 table #64: started
-2024/02/16-21:31:57.400 63d0 Level-0 table #64: 7398 bytes OK
-2024/02/16-21:31:57.408 63d0 Delete type=0 #60
-2024/02/16-21:31:57.408 63d0 Delete type=0 #62
-2024/02/16-21:31:57.408 63d0 Delete type=3 #59
-2024/02/16-21:31:57.408 63d0 Delete type=3 #61
-2024/02/17-11:48:50.130 13b0 Level-0 table #67: started
-2024/02/17-11:48:50.130 13b0 Level-0 table #67: 0 bytes OK
-2024/02/17-11:48:50.133 13b0 Delete type=0 #65
-2024/02/17-11:48:50.141 13b0 Manual compaction at level-0 from '!items!51cKcs7BCoTQhhVM' @ 72057594037927935 : 1 .. '!items!zRSxbDevVCHUICMR' @ 0 : 0; will stop at '!items!g9DW4uKh4HbjF2BE' @ 243 : 1
-2024/02/17-11:48:50.141 13b0 Compacting 1@0 + 0@1 files
-2024/02/17-11:48:50.151 13b0 Generated table #68@0: 6 keys, 3665 bytes
-2024/02/17-11:48:50.151 13b0 Compacted 1@0 + 0@1 files => 3665 bytes
-2024/02/17-11:48:50.153 13b0 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/02/17-11:48:50.153 13b0 Delete type=2 #64
-2024/02/17-11:48:50.154 13b0 Manual compaction at level-0 from '!items!g9DW4uKh4HbjF2BE' @ 243 : 1 .. '!items!zRSxbDevVCHUICMR' @ 0 : 0; will stop at (end)
-2024/02/17-11:48:50.162 13b0 Manual compaction at level-1 from '!items!51cKcs7BCoTQhhVM' @ 72057594037927935 : 1 .. '!items!zRSxbDevVCHUICMR' @ 0 : 0; will stop at '!items!g9DW4uKh4HbjF2BE' @ 244 : 1
-2024/02/17-11:48:50.162 13b0 Compacting 1@1 + 1@2 files
-2024/02/17-11:48:50.166 13b0 Generated table #69@1: 21 keys, 11620 bytes
-2024/02/17-11:48:50.166 13b0 Compacted 1@1 + 1@2 files => 11620 bytes
-2024/02/17-11:48:50.169 13b0 compacted to: files[ 0 0 1 0 0 0 0 ]
-2024/02/17-11:48:50.169 13b0 Delete type=2 #46
-2024/02/17-11:48:50.169 13b0 Delete type=2 #68
-2024/02/17-11:48:50.177 13b0 Manual compaction at level-1 from '!items!g9DW4uKh4HbjF2BE' @ 244 : 1 .. '!items!zRSxbDevVCHUICMR' @ 0 : 0; will stop at (end)
+2024/02/17-20:57:30.892 3f18 Recovering log #77
+2024/02/17-20:57:30.900 3f18 Delete type=0 #77
+2024/02/17-20:57:30.900 3f18 Delete type=3 #76
