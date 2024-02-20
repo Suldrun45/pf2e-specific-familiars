@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.0.4
+Add a LICENSE file
+
 ## Version 1.0.3
 Link abilities to the familiar
 Set Elemental and Skill ChoiceSet values
