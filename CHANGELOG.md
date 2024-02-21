@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.0.6
+Added the Psychopomp Familiar (for the Soul Warden archetype)
+Added abilities for the Elementalist's Elemental familiar (
+Added an Orc Ferocity familiar ability for the Orc's Ferocious Beasts feat
+The "Creature type" field will now be filled automaticaly
+
 ## Version 1.0.5
 Corrected a few typos
 Added an ability to allow granting the Talking Head a 40 feet Fast Movement: Land

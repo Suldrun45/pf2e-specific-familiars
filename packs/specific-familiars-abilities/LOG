@@ -1,3 +1,24 @@
-2024/02/21-08:27:48.618 4864 Recovering log #96
-2024/02/21-08:27:48.624 4864 Delete type=0 #96
-2024/02/21-08:27:48.624 4864 Delete type=3 #94
+2024/02/21-09:31:58.532 3640 Recovering log #99
+2024/02/21-09:31:58.532 3640 Level-0 table #101: started
+2024/02/21-09:31:58.544 3640 Level-0 table #101: 2960 bytes OK
+2024/02/21-09:31:58.549 3640 Delete type=0 #99
+2024/02/21-09:31:58.549 3640 Delete type=3 #98
+2024/02/21-14:22:03.940 2d5c Level-0 table #104: started
+2024/02/21-14:22:03.944 2d5c Level-0 table #104: 29018 bytes OK
+2024/02/21-14:22:03.946 2d5c Delete type=0 #102
+2024/02/21-14:22:03.992 2d5c Manual compaction at level-0 from '!items!1NzmMkpCNDyqsJQa' @ 72057594037927935 : 1 .. '!items!zRSxbDevVCHUICMR' @ 0 : 0; will stop at '!items!krTi41lsBTxsgKjQ' @ 252 : 1
+2024/02/21-14:22:03.992 2d5c Compacting 2@0 + 0@1 files
+2024/02/21-14:22:04.001 2d5c Generated table #105@0: 8 keys, 3389 bytes
+2024/02/21-14:22:04.002 2d5c Compacted 2@0 + 0@1 files => 3389 bytes
+2024/02/21-14:22:04.004 2d5c compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/21-14:22:04.004 2d5c Delete type=2 #101
+2024/02/21-14:22:04.005 2d5c Delete type=2 #104
+2024/02/21-14:22:04.036 2d5c Manual compaction at level-0 from '!items!krTi41lsBTxsgKjQ' @ 252 : 1 .. '!items!zRSxbDevVCHUICMR' @ 0 : 0; will stop at (end)
+2024/02/21-14:22:04.061 2d5c Manual compaction at level-1 from '!items!1NzmMkpCNDyqsJQa' @ 72057594037927935 : 1 .. '!items!zRSxbDevVCHUICMR' @ 0 : 0; will stop at '!items!krTi41lsBTxsgKjQ' @ 263 : 1
+2024/02/21-14:22:04.061 2d5c Compacting 1@1 + 1@2 files
+2024/02/21-14:22:04.065 2d5c Generated table #106@1: 28 keys, 14680 bytes
+2024/02/21-14:22:04.065 2d5c Compacted 1@1 + 1@2 files => 14680 bytes
+2024/02/21-14:22:04.068 2d5c compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/02/21-14:22:04.068 2d5c Delete type=2 #69
+2024/02/21-14:22:04.068 2d5c Delete type=2 #105
+2024/02/21-14:22:04.072 2d5c Manual compaction at level-1 from '!items!krTi41lsBTxsgKjQ' @ 263 : 1 .. '!items!zRSxbDevVCHUICMR' @ 0 : 0; will stop at (end)
