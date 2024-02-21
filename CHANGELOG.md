@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 1.0.5
+Corrected a few typos
+Added an ability to allow granting the Talking Head a 40 feet Fast Movement: Land
+
 ## Version 1.0.4
 Add a LICENSE file
 
