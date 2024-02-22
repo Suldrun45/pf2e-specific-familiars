@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.0.7
+Fixed some resistances and immunities
+
 ## Version 1.0.6
 Added the Psychopomp Familiar (for the Soul Warden archetype)
 Added abilities for the Elementalist's Elemental familiar (
