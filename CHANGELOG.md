@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.0.9
+Allow Elemental Wisp's Resonance to affect Impulses
+
 ## Version 1.0.8
 Fixed Elemental Wisp (Grand Bazaar version) Resonance effects
 
