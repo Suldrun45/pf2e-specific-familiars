@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.0.8
+Fixed Elemental Wisp (Grand Bazaar version) Resonance effects
+
 ## Version 1.0.7
 Fixed some resistances and immunities
 
