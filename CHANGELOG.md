@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.0.10
+Fix the abilities of Elemental Wisps
+
 ## Version 1.0.9
 Allow Elemental Wisp's Resonance to affect Impulses
 
