@@ -1,3 +1,5 @@
-2024/03/05-08:26:15.111 1db3c Recovering log #137
-2024/03/05-08:26:15.115 1db3c Delete type=0 #137
-2024/03/05-08:26:15.115 1db3c Delete type=3 #136
+2024/03/05-09:22:12.934 1cdb8 Recovering log #139
+2024/03/05-09:22:12.934 1cdb8 Level-0 table #141: started
+2024/03/05-09:22:12.942 1cdb8 Level-0 table #141: 72897 bytes OK
+2024/03/05-09:22:12.946 1cdb8 Delete type=0 #139
+2024/03/05-09:22:12.946 1cdb8 Delete type=3 #138

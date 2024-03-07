@@ -1,5 +1,5 @@
-2024/03/05-09:22:12.934 1cdb8 Recovering log #139
-2024/03/05-09:22:12.934 1cdb8 Level-0 table #141: started
-2024/03/05-09:22:12.942 1cdb8 Level-0 table #141: 72897 bytes OK
-2024/03/05-09:22:12.946 1cdb8 Delete type=0 #139
-2024/03/05-09:22:12.946 1cdb8 Delete type=3 #138
+2024/03/07-17:41:46.428 1a984 Recovering log #142
+2024/03/07-17:41:46.428 1a984 Level-0 table #144: started
+2024/03/07-17:41:46.445 1a984 Level-0 table #144: 77036 bytes OK
+2024/03/07-17:41:46.448 1a984 Delete type=0 #142
+2024/03/07-17:41:46.449 1a984 Delete type=3 #140
