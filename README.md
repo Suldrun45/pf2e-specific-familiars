@@ -6,7 +6,6 @@
 
 ### Please note
 - As the Aeon Wyrd, the Construct Familiar and the Poppet have the Construct trait, and that, in the Remaster, this trait adds an immunity to Spirit, Vitality and Void damage, those 3 familiars will get that immunity too despite not having it in their description.
-- The Talking Head familiar has a base land speed of 15 feet. Due to this, the base familiar ability Fast Movement: Land will only give it a land speed of 30 feet instead of 40 feet. There is a Fast Movement: Land (Talking Head) in this module that will grant this familiar the 40 feet land speed. It should not be used on any other familiar.
 
 Install it with the manifest URL: 
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 1.0.11
+Updated the module to maintain compatibility with the latest system version
+Fixed a few typos in descriptions
+Updated some abilities (Aeon Wyrd, Poppet, Star Orb, Talking Head) to make use of new functionalities for familiar abilities introduced with 5.14.0
+Removed the Fast Movement: Land (Talking Head) ability as it is not necessary anymore
+
 ## Version 1.0.10
 Fix the abilities of Elemental Wisps
 
