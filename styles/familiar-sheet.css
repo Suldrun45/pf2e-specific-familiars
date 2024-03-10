@@ -1,0 +1,12 @@
+.sheet.familiar ul.comma-separated
+{
+    display: inline;
+    list-style: none;
+    margin: 0 0 var(--space-3);
+    padding: 0;
+}
+
+.sheet.familiar ul.comma-separated li {
+    display: inline;
+    margin: 0;
+}

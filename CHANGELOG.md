@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.0.12
+- Added CSS for traits on familiar sheet
+
 ## Version 1.0.11
 - Updated the module to maintain compatibility with the latest system version
 - Fixed a few typos in descriptions
