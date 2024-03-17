@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.0.13
+- Added a few AELikes to expose the familiar's Required number of abilities and the ID of the root Familiar ability
+
 ## Version 1.0.12
 - Added CSS for traits on familiar sheet
 
