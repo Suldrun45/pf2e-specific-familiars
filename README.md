@@ -12,6 +12,7 @@
 The Familiar Abilities from this module are not recognized by PF2e Dailies. When you click the Daily Preparations button, they will be removed from the familiar sheet and you won't get the option to select them back from the dropdowns.  
 As a workaround if you want to use both modules together, you can go to the PF2e Dailies settings and type `dailies.familiar` in the `Filter Out Dailies` field.  
 Please note that this will disable the Familiars part of PF2e Dailies.
+Starting with the version 3.0.0 of PF2e Dailies, this filter is now a "per character" option and can be accessed by clicking the `filters` button in the header of the daily preparation interface of the module.
 
 Install it with the manifest URL: 
 
