@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.1.0
+- Added a macro which deducts automatically the Required number of abilities from the Familiar's Total number of abilities.
+
 ## Version 1.0.13
 - Added a few AELikes to expose the familiar's Required number of abilities and the ID of the root Familiar ability
 
@@ -28,7 +31,7 @@
 - Added the Psychopomp Familiar (for the Soul Warden archetype)
 - Added abilities for the Elementalist's Elemental familiar (
 - Added an Orc Ferocity familiar ability for the Orc's Ferocious Beasts feat
-- The "Creature type" field will now be filled automaticaly
+- The "Creature type" field will now be filled automatically
 
 ## Version 1.0.5
 - Corrected a few typos

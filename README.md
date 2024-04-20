@@ -7,11 +7,12 @@
 ### Please note
 - As the Aeon Wyrd, the Construct Familiar and the Poppet have the Construct trait, and that, in the Remaster, this trait adds an immunity to Spirit, Vitality and Void damage, those 3 familiars will get that immunity too despite not having it in their description.
 
-### Incompatibilities
-- This module has compatibility issues with PF2e Dailies management of Familiar abilities.  
-The Familiar Abilities from this module are not recognized by PF2e Dailies. When you click the Daily Preparations button, they will be removed from the familiar sheet and you won't get the option to select them back from the dropdowns.  
-As a workaround if you want to use both modules together, you can go to the PF2e Dailies settings and type `dailies.familiar` in the `Filter Out Dailies` field.  
-Please note that this will disable the Familiars part of PF2e Dailies.
+### How to
+The module provides a macro that you can use while selecting the token of the Master of the familiar.  
+When you use this macro, the Number of abilities required to get that specific familiar will be deducted from the Total # of familiar abilities on the character sheet.  
+You will have to reexecute the macro every time the type of specific familiar changes or if you remove it to force a refresh.  
+
+If you use PF2e Dailies, using this macro will allow that module to show the right number dropdowns to select the remaining familiar abilities.
 
 Install it with the manifest URL: 
 
