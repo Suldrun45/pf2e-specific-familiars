@@ -42,3 +42,16 @@ Hooks.on("preDeleteItem", async (item) => {
 		}			
 	}	
 });
+
+Hooks.once("ready", async () => {
+	await game.actors.map(p=>p).filter(p=>p.type=="character").forEach(async (act) => {
+		const ITEM_UUID= "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.YIf6rhtu23DY3zZ5";
+		const existing = act.itemTypes.feat.find((e) => e.flags.core?.sourceId === ITEM_UUID);
+		if (existing){
+			await existing.delete();
+			const itemsource = (await  fromUuid(ITEM_UUID)).toObject();
+			itemsource.flags = mergeObject(itemsource.flags ?? {}, { core: { sourceId: ITEM_UUID } });
+			await act.createEmbeddedDocuments("Item", [itemsource]);
+		}	
+	});
+});
