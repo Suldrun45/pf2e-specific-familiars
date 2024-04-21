@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.1.1
+- Corrected a bug.
+
 ## Version 1.1.0
 - When you add or remove a Specific Familiar ability to a familiar, a bonus feat is added to the master. This feat is used to deduct automatically the Required number of abilities from the Familiar's Total number of abilities.
 - If the familiar has automatic abilities (like Scent for the Corgi Mount for example), these will also be deducted from the Familiar's Total number of abilities.

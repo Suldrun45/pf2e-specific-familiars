@@ -49,9 +49,7 @@ Hooks.once("ready", async () => {
 		const existing = act.itemTypes.feat.find((e) => e.flags.core?.sourceId === ITEM_UUID);
 		if (existing && existing.isOwner && existing.parent.isOwner){
 			await existing.delete();
-			const itemsource = (await  fromUuid(ITEM_UUID)).toObject();
-			itemsource.flags = mergeObject(itemsource.flags ?? {}, { core: { sourceId: ITEM_UUID } });
-			await act.createEmbeddedDocuments("Item", [itemsource]);			
+			await act.createEmbeddedDocuments("Item", [existing]);			
 		}	
 	});
 });
