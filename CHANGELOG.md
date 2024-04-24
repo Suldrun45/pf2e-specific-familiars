@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.1.2
+- Optimizations and refactoring of the Required number of abilities
+
 ## Version 1.1.1
 - Corrected a bug.
 

@@ -1,55 +1,55 @@
+Hooks.once("init", ()=>{
+	game.pf2especificfamiliars = mergeObject(game.pf2especificfamiliars ?? {}, {
+        setFamiliarAbilities: setFamiliarAbilities
+    });
+});
+
+
+Hooks.once("ready", async () => {
+	//migration
+	await game.actors.map(p=>p).filter(p=>p.type=="character").forEach(async (act) => { 
+		const OLD_ITEM_UUID = "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.YIf6rhtu23DY3zZ5";
+		const oldfeat = act.itemTypes.feat.find((e) => e.flags.core?.sourceId === OLD_ITEM_UUID);
+		if (oldfeat){
+			await oldfeat.delete();	
+			await setFamiliarAbilities(act);
+		}
+	});
+});
+
 Hooks.on("createItem", async (item) => {
 	if (item.type=="action" && item.system.category=="familiar" && item.flags.core.sourceId.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.') && item.parent.type=="familiar"){
 		const familiar = item.parent;
-		const abilities = familiar.flags.pf2e.specificFamiliars?.requiredNumberOfAbilities;
-		const grantedabilities = familiar.flags.pf2e.specificFamiliars?.grantedNumberOfAbilities;
-		if ((abilities && abilities > 0) || (grantedabilities && grantedabilities>0)){
-			const master = familiar.master;
-			if (master){
-				const ITEM_UUID= "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.YIf6rhtu23DY3zZ5";
-				const itemsource = (await  fromUuid(ITEM_UUID)).toObject();
-				itemsource.flags = mergeObject(itemsource.flags ?? {}, { core: { sourceId: ITEM_UUID } });
-				const existing = master.itemTypes.feat.find((e) => e.flags.core?.sourceId === ITEM_UUID);
-				if (existing){
-					await existing.delete();
-				}
-				await master.createEmbeddedDocuments("Item", [itemsource]);							
-			}
-		}			
+		const master = familiar.master;
+		await setFamiliarAbilities(master);		
 	}	
 });
 
-Hooks.on("preDeleteItem", async (item) => {
+Hooks.on("deleteItem", async (item) => {
 	if (item.type=="action" && item.system.category=="familiar" && item.flags.core.sourceId.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.') && item.parent.type=="familiar"){
 		const familiar = item.parent;
-		const abilities = familiar.flags.pf2e.specificFamiliars?.requiredNumberOfAbilities;
-		const grantedabilities = familiar.flags.pf2e.specificFamiliars?.grantedNumberOfAbilities;
-		if ((abilities && abilities > 0) || (grantedabilities && grantedabilities>0)){
-			const master = familiar.master;
-			if (master){
-				const ITEM_UUID= "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.YIf6rhtu23DY3zZ5";
-				const existing = master.itemTypes.feat.find((e) => e.flags.core?.sourceId === ITEM_UUID);
-				if (existing){
-					await existing.delete();
-				}	
-				const otherAbilities = familiar.items.map(p => p).find(f => f !== item && f.type=="action" && f.system.category=="familiar" && f.flags.core.sourceId.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.'));
-				if (otherAbilities){
-					const itemsource = (await  fromUuid(ITEM_UUID)).toObject();
-					itemsource.flags = mergeObject(itemsource.flags ?? {}, { core: { sourceId: ITEM_UUID } });
-					await master.createEmbeddedDocuments("Item", [itemsource]);		
-				}
-			}
-		}			
+		const master = familiar.master;
+		await setFamiliarAbilities(master);
 	}	
 });
 
-Hooks.once("ready", async () => {
-	await game.actors.map(p=>p).filter(p=>p.type=="character").forEach(async (act) => {
-		const ITEM_UUID= "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.YIf6rhtu23DY3zZ5";
-		const existing = act.itemTypes.feat.find((e) => e.flags.core?.sourceId === ITEM_UUID);
-		if (existing && existing.isOwner && existing.parent.isOwner){
-			await existing.delete();
-			await act.createEmbeddedDocuments("Item", [existing]);			
-		}	
-	});
-});
+async function setFamiliarAbilities(act){
+	const ITEM_UUID = "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE";
+	const existing = act.itemTypes.feat.find((e) => e.flags.core?.sourceId === ITEM_UUID);
+	if (existing && existing.isOwner && existing.parent.isOwner){
+		await existing.delete();
+	}
+	const familiar = act.familiar;
+	if (familiar){
+		const abilities = familiar.flags.pf2e.specificFamiliars?.requiredNumberOfAbilities;
+		const grantedabilities = familiar.flags.pf2e.specificFamiliars?.grantedNumberOfAbilities;			
+		if ((abilities && abilities > 0) || (grantedabilities && grantedabilities>0)){
+			const itemsource = (await  fromUuid(ITEM_UUID)).toObject();
+			itemsource.flags = mergeObject(itemsource.flags ?? {}, { core: { sourceId: ITEM_UUID } });
+			const rules=itemsource.system.rules;
+			rules.push({"key":"ActiveEffectLike","mode": "add", "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities", "value": abilities, "priority":10});
+			rules.push({"key":"ActiveEffectLike","mode": "add", "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities", "value": grantedabilities, "priority":10});
+			await act.createEmbeddedDocuments("Item", [itemsource]);		
+		}
+	}	
+}
