@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.1.3
+- Correction to Elemental Diplomat
+
 ## Version 1.1.2
 - Optimizations and refactoring of the Required number of abilities
 
