@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 1.1.4
+- Added icons on the effects
+
 ## Version 1.1.3
 - Correction to Elemental Diplomat
 
