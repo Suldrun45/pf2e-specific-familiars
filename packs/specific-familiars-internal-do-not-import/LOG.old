@@ -1,7 +1,3 @@
-2024/05/09-19:52:49.560 17b24 Recovering log #50
-2024/05/09-19:52:49.565 17b24 Delete type=0 #50
-2024/05/09-19:52:49.565 17b24 Delete type=3 #49
-2024/05/09-19:53:49.927 15570 Level-0 table #54: started
-2024/05/09-19:53:49.927 15570 Level-0 table #54: 0 bytes OK
-2024/05/09-19:53:49.932 15570 Delete type=0 #52
-2024/05/09-19:53:49.932 15570 Manual compaction at level-0 from '!macros!E0QWSijDlDbnB802' @ 72057594037927935 : 1 .. '!macros!E0QWSijDlDbnB802' @ 0 : 0; will stop at (end)
+2024/05/17-19:29:38.534 74cc Recovering log #57
+2024/05/17-19:29:38.538 74cc Delete type=0 #57
+2024/05/17-19:29:38.538 74cc Delete type=3 #55

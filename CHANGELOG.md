@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 1.1.5
+- Renamed the Crysmal Shardlings to Cullitox Shardlings as per the errata
+- Edited the description of the Elemental Scamp as per the errata
+
 ## Version 1.1.4
 - Added icons on the effects
 
