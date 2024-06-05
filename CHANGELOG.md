@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 2.0.0
+- Update for Foundry V12
+
 ## Version 1.1.5
 - Renamed the Crysmal Shardlings to Cullitox Shardlings as per the errata
 - Edited the description of the Elemental Scamp as per the errata
