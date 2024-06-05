@@ -3,8 +3,8 @@
   "title": "PF2e Specific Familiars",
   "version": "2.0.0",
   "compatibility": {
-    "minimum": "12.324",
-    "verified": "12.324"
+    "minimum": "12",
+    "verified": "12"
   },
   "authors": [
     {
