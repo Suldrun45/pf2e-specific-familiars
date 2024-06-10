@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 2.0.1
+- Updated compatibility to 6.0.1
+
 ## Version 2.0.0
 - Update for Foundry V12
 
