@@ -4,9 +4,6 @@
 - Dragging one of these Abilities to a familiar actor will also add every other Familiar Ability granted to the familiar
 - Candies for the Sweet Beasts familiars
 
-### Please note
-- As the Aeon Wyrd, the Construct Familiar and the Poppet have the Construct trait, and that, in the Remaster, this trait adds an immunity to Spirit, Vitality and Void damage, those 3 familiars will get that immunity too despite not having it in their description.
-
 ### How to
 When you add a Specific Familiar ability, the number of abilities required to get that specific familiar will be deducted from the Total # of familiar abilities on the familiar's sheet via a feat added to the master's sheet.  
 If the familiar has automatic abilities (like Scent for the Corgi Mount for example), these will also be deducted from the Total # of familiar abilities.  

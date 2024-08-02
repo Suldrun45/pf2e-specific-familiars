@@ -1,5 +1,18 @@
 # Changelog
 
+## Version 2.1.0
+- Updated for Player Core 2.
+- Updated the descriptions and names of abilities when required.
+- Added the Alchemical Familiar.
+- Added the Homunculus.
+- Renamed the Faerie Dragon to Fey Dragonet and its Breath Weapon to Euphoric Breath.
+- Removed the Amphibious ability from the Fey Dragonet.
+- Added the Construct ability to the Aeon Wyrd and to the Poppet.
+- The Resistance ability of the Imp now applies only to poison.
+- The Imp is not a Devil anymore.
+- The Pipefox is now Skilled in only 1 extra skill.
+- Updated the Required number of abilities of the Fey Dragonet to 5 and of the Imp to 7.
+
 ## Version 2.0.1
 - Updated compatibility to 6.0.1
 
