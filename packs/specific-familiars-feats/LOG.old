@@ -1,7 +1,1 @@
-2024/08/02-10:11:44.346 cadc Recovering log #176
-2024/08/02-10:11:44.350 cadc Delete type=0 #176
-2024/08/02-10:11:44.351 cadc Delete type=3 #175
-2024/08/02-10:12:06.809 f89c Level-0 table #180: started
-2024/08/02-10:12:06.809 f89c Level-0 table #180: 0 bytes OK
-2024/08/02-10:12:06.810 f89c Delete type=0 #178
-2024/08/02-10:12:06.814 f89c Manual compaction at level-0 from '!items!PN7kY8Ukw2O1WKKE' @ 72057594037927935 : 1 .. '!items!PN7kY8Ukw2O1WKKE' @ 0 : 0; will stop at (end)
+2024/08/23-16:03:25.691 4c14 Delete type=3 #1

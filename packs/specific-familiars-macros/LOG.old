@@ -1,7 +1,1 @@
-2024/08/02-10:11:44.332 6f24 Recovering log #177
-2024/08/02-10:11:44.336 6f24 Delete type=0 #177
-2024/08/02-10:11:44.336 6f24 Delete type=3 #176
-2024/08/02-10:12:06.804 f89c Level-0 table #181: started
-2024/08/02-10:12:06.804 f89c Level-0 table #181: 0 bytes OK
-2024/08/02-10:12:06.806 f89c Delete type=0 #179
-2024/08/02-10:12:06.809 f89c Manual compaction at level-0 from '!macros!3GV00hz5De2omavk' @ 72057594037927935 : 1 .. '!macros!3GV00hz5De2omavk' @ 0 : 0; will stop at (end)
+2024/08/23-16:03:25.666 8804 Delete type=3 #1

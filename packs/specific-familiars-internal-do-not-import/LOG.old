@@ -1,7 +1,1 @@
-2024/08/02-10:11:44.361 102c8 Recovering log #162
-2024/08/02-10:11:44.365 102c8 Delete type=0 #162
-2024/08/02-10:11:44.365 102c8 Delete type=3 #161
-2024/08/02-10:12:06.811 f89c Level-0 table #166: started
-2024/08/02-10:12:06.811 f89c Level-0 table #166: 0 bytes OK
-2024/08/02-10:12:06.812 f89c Delete type=0 #164
-2024/08/02-10:12:06.816 f89c Manual compaction at level-0 from '!macros!E0QWSijDlDbnB802' @ 72057594037927935 : 1 .. '!macros!E0QWSijDlDbnB802' @ 0 : 0; will stop at (end)
+2024/08/23-16:03:25.711 8bf8 Delete type=3 #1
