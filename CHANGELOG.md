@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 2.2.0
+- Updated for Lost Omens Tian Xia Character Guide
+- Added the Kinnars, the Lantern Wisp, the Makhluk Wayang, the Shikigami and the Tapir Sage familiars
+- Added the Infusions for the Tapir Sage
+
 ## Version 2.1.0
 - Updated for Player Core 2.
 - Updated the descriptions and names of abilities when required.
