@@ -1,0 +1,146 @@
+{
+  "name": "Shadow Familiar",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Access</strong> you're a @UUID[Compendium.pf2e.feats-srd.ncrNQcwm4gOQRAA3]{Shadowcaster}</p><p><strong>Required Number of Abilities 7</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.0Xrkk46IM43iI1Fv]{Darkvision}, @UUID[Compendium.pf2e.familiar-abilities.cT5octWchU4gjrhP]{Manual Dexterity}, @UUID[Compendium.pf2e.familiar-abilities.JRP2bdkdCdj2JDrq]{Master's Form}, @UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.EYSNQeRqXvkbsy6R]{Resistance} (cold and negative), @UUID[Compendium.pf2e.familiar-abilities.j1qZiH50Bl2SJ8vT]{Shadow Step}</p><hr /><p>Some spellcasters and ritualists don't just summon and bind a familiar, but instead transform their own shadow into a familiar. These casters can be identified by their lack of a shadow regardless of the level of light in the area and by the strange muted appearance of any article of clothing or jewelry they wear. Occasionally mistaken for vampires or other undead by the cautious or superstitious, these spellcasters nonetheless find the trade worth it in exchange for the unique abilities their shadow familiar can possess.</p><p>Shadow familiars are a type of specific familiar. While all shadowcasters have access to these familiars, there are other paths to learn the proper magic to obtain a shadow familiar.</p><hr /><p><span class=\"action-glyph\">1</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.cIi5FoRH2iMTPiuK]{Become Shadow}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.cIi5FoRH2iMTPiuK inline]</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.PA1XPbn9Q5gpQu3d]{Slink in Shadows}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.PA1XPbn9Q5gpQu3d inline]</p><hr /><p><span class=\"action-glyph\">1</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.a2TwDSrFclda143a]{Steal Shadow}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.a2TwDSrFclda143a inline]</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "shadow"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.JRP2bdkdCdj2JDrq",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.EYSNQeRqXvkbsy6R",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.j1qZiH50Bl2SJ8vT",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.cIi5FoRH2iMTPiuK",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.PA1XPbn9Q5gpQu3d",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.a2TwDSrFclda143a",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Shadow Familiar",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 7
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic 229",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "o66WvSQIYTZ6tlfs",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 2600000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!o66WvSQIYTZ6tlfs"
+}

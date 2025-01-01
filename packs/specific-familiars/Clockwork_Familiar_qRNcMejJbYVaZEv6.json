@@ -1,0 +1,137 @@
+{
+  "name": "Clockwork Familiar",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities 3</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.0Xrkk46IM43iI1Fv]{Darkvision}</p><hr /><p>A clockwork creature is typically composed entirely of turning gears and small bronze steam pipes. It can take the form of any Tiny animal, such as a small mammal, reptile, or bird. Its eyes are cut from glittering glass, with many facets within to help it process what it sees. Any teeth, beak, and tongue are rendered out of iron. When it moves, its joints emit little croaks and whistles, and it occasionally emits electrical sparks if perturbed. <br />Clockwork creatures who live near the sea, or are otherwise exposed to water often, might squeeze lemons and use the juice to wash themselves. They can also blow steam out of the pipes on their bodies to intimidate an enemy or put up a smokescreen.<br />Your clockwork familiar is a specific familiar. Specific familiars are familiars with unique abilities. In order for you to choose a specific familiar, your familiar must be capable of having the template’s required number of familiar abilities. A specific familiar gains the listed traits and several abilities, including abilities it can gain only as a specific familiar. Much like a familiar that naturally has a familiar ability, you can never swap out any of these granted or unique abilities. Once you’ve selected a specific familiar, you can’t change it without losing your familiar—this uses the same rules as if your familiar had died. If your familiar gains more abilities than necessary to become a specific familiar, you can spend the remaining abilities normally. If your clockwork familiar is destroyed, it can be brought back to life through any conventional means that would bring back a living familiar, such as through resurrection magic.</p><hr /><p><strong>Clockwork</strong></p><p>You need to keep your clockwork familiar wound, but the process isn't particularly onerous or time consuming. If you spend 1 minute winding up your clockwork familiar with a unique key only you can use, it can remain active for 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again.</p><p>Enemies can attempt to disable the clockwork familiar, with a standard DC for your level to Disable a Device, to reduce the remaining operational time by 1 hour (or 2 hours on a critical success). Certain other abilities that adversely affect technology might also reduce the clockwork familiar's remaining operational time.</p><p>Some abilities, like Steam Screen, require your clockwork familiar to spend some of its remaining operational time. It can't spend more than it has and shuts down immediately once it has no time remaining.</p><p>You can wind your clockwork familiar for 1 minute at any time to return it to the maximum 24 hours of operational time.</p><hr /><p><strong>Constructed</strong></p><p>Your clockwork familiar is made of metal rather than flesh and bone, although it is still delicate enough in certain places to be vulnerable to violence in the same manner as a living creature. It is immune to bleed, death effects, disease, doomed, drained, fatigued, healing, necromancy, nonlethal attacks, paralyzed, poison, sickened, and unconscious. It can recover Hit Points only via the Repair action and other methods that fix items, not from any form of Hit Point healing. It's destroyed at 0 Hit Points.</p><hr /><p><strong>Electricity Vulnerability</strong></p><p>The metal components of a clockwork familiar conduct electricity and are easily disrupted by an electric current. It gains weakness to electricity damage equal to your level.</p><hr /><p><span class=\"action-glyph\">1</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.2xmFosTcvpPxSA7M]{Steam Screen}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.2xmFosTcvpPxSA7M inline]</p><hr /><p><span class=\"action-glyph\">2</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.vVALSSyBQg0bJw8K]{Toggle Standby Mode}<br /></p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.vVALSSyBQg0bJw8K inline]</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "clockwork",
+          "construct"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "bleed",
+          "death-effects",
+          "disease",
+          "doomed",
+          "drained",
+          "fatigued",
+          "healing",
+          "nonlethal-attacks",
+          "paralyzed",
+          "poison",
+          "sickened",
+          "spirit",
+          "unconscious",
+          "vitality",
+          "void"
+        ]
+      },
+      {
+        "key": "Weakness",
+        "type": "electricity",
+        "value": "@actor.master.level"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.2xmFosTcvpPxSA7M",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.vVALSSyBQg0bJw8K",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Clockwork Familiar",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Grand Bazaar 23",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "qRNcMejJbYVaZEv6",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 2800000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qRNcMejJbYVaZEv6"
+}

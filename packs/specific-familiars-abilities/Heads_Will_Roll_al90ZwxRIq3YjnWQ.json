@@ -1,0 +1,63 @@
+{
+  "name": "Heads Will Roll",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Unless its master gives the talking head the flier ability, a talking head is able to move only by rolling along the ground, reducing its speed to 15 feet. Alternatively, a creature can, as a single action, kick or throw the head 30 feet. This can't be used as an attack; the head bounces harmlessly off anything it hits.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "land-speed",
+        "value": -10,
+        "predicate": [
+          {
+            "not": "self:ability:fast-movement-land"
+          }
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Book of the Dead 40",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "al90ZwxRIq3YjnWQ",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!al90ZwxRIq3YjnWQ"
+}

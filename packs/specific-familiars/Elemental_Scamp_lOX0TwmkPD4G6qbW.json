@@ -1,0 +1,210 @@
+{
+  "name": "Elemental Scamp",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities 5</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.ch6nFcRJO1fm8B4D]{Elemental}, @UUID[Compendium.pf2e.familiar-abilities.ZHSzNt3NxkXbj1mI]{Flier}, @UUID[Compendium.pf2e.familiar-abilities.zyMRLQnFCQVpltiR]{Speech}</p><hr /><p>The elementals called scamps look similar to bats, but their bodies are made primarily of elemental matter. They have large, staring eyes and small, curved fangs. An elemental scamp familiar is a bit smaller than other scamps but makes up for it by being more mischievous. Driven by ego, scamps often take on long names with many titles and insist on being addressed in full.</p><hr /><p><span class=\"action-glyph\">2</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.M8Uz2EldibONPIht]{Elemental Breath}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.M8Uz2EldibONPIht inline]</p><hr /><p><strong>Scamp Elements</strong></p><p>An elemental scamp's element or elements are set. You choose a type of scamp and can't change the element each day. This determines the scamp's elemental traits and the damage type of their Elemental Breath. Air (air) slashing damage; earth (earth) bludgeoning damage; fire (fire) fire damage; metal (metal) slashing damage; water (water) acid damage; wood (plant, wood) poison damage.</p><hr /><p><strong>Elemental Mobility</strong></p><p>Your scamp gains a familiar ability depending on its element. Air scamps gain @UUID[Compendium.pf2e.familiar-abilities.ZHSzNt3NxkXbj1mI]{Flier}, earth scamps gain @UUID[Compendium.pf2e.familiar-abilities.uy15sDBuYNK48N3v]{Burrower}, fire scamps gain @UUID[Compendium.pf2e.familiar-abilities.fhyQ6uTSvfErTzyE]{Jet}, metal scamps gain @UUID[Compendium.pf2e.familiar-abilities.q9IXWngAOCpsXxsO]{Levitator}, water scamps gain @UUID[Compendium.pf2e.familiar-abilities.A0C86V3MUECpX5jd]{Amphibious}, and wood scamps gain @UUID[Compendium.pf2e.familiar-abilities.dWTfO5WbLkD5mw2H]{Climber}.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAir",
+            "value": "air"
+          },
+          {
+            "label": "PF2E.TraitEarth",
+            "value": "earth"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitMetal",
+            "value": "metal"
+          },
+          {
+            "label": "PF2E.TraitWater",
+            "value": "water"
+          },
+          {
+            "label": "PF2E.TraitWood",
+            "value": "wood"
+          }
+        ],
+        "flag": "element",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Element",
+        "rollOption": "elemental-scamp"
+      },
+      {
+        "key": "ActorTraits",
+        "add": [
+          "elemental"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ch6nFcRJO1fm8B4D",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "preselectChoices": {
+          "element": "{item|flags.pf2e.rulesSelections.element}"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.M8Uz2EldibONPIht",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "elemental-scamp:air"
+        ],
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "elemental-scamp:earth"
+        ],
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.uy15sDBuYNK48N3v",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "elemental-scamp:fire"
+        ],
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.fhyQ6uTSvfErTzyE",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "elemental-scamp:metal"
+        ],
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.q9IXWngAOCpsXxsO",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "elemental-scamp:water"
+        ],
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.A0C86V3MUECpX5jd",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "elemental-scamp:wood"
+        ],
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.dWTfO5WbLkD5mw2H",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Elemental Scamp ({item|flags.pf2e.rulesSelections.element})",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 5
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Rage of Elements 43",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "lOX0TwmkPD4G6qbW",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 2500000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!lOX0TwmkPD4G6qbW"
+}

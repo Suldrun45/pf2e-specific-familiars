@@ -1,0 +1,79 @@
+{
+  "name": "Effect: Second Infusion",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><span style=\"font-family:Roboto, sans-serif\">You gain a +2 circumstance bonus to the next saving throw against disease of poison attempted within 24 hours.</span></p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "saving-throw",
+        "value": 2,
+        "type": "circumstance",
+        "predicate": [
+          {
+            "or": [
+              "poison",
+              "disease"
+            ]
+          }
+        ],
+        "removeAfterRoll": true
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Lost Omens Tian Xia Character Guide 123",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "_id": "a3bOhBcAh8HARlFT",
+  "img": "modules/pf2e-specific-familiars/icons/Dunedhel-Kappu-Cup-2-tea-hot.512.png",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "CmIherh6xtcBaXKO": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.0"
+  },
+  "_key": "!items!a3bOhBcAh8HARlFT"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Effect: Resonance (Metal)",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Creatures in the area gain a +1 status bonus to damage rolls for alchemical and magical effects with the same elemental trait as your wisp</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Resonance",
+        "selector": "damage",
+        "value": 1,
+        "type": "status",
+        "predicate": [
+          {
+            "or": [
+              "magical",
+              "alchemical",
+              "impulse"
+            ]
+          },
+          "item:trait:metal"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "_id": "Q5qYMPkGDReJdDtr",
+  "img": "icons/commodities/metal/mail-chain-steel.webp",
+  "folder": null,
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Q5qYMPkGDReJdDtr"
+}

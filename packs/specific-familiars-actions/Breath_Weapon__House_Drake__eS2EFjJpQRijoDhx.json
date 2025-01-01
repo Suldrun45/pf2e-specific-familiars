@@ -1,0 +1,55 @@
+{
+  "name": "Breath Weapon (House Drake)",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The house drake breathes a @Template[type:cone|distance:10] of silver mist. Each creature in the area must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round. The house drake can't use Breath Weapon or Silver Infusion for [[/r 1d4]] rounds.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "arcane",
+        "mental"
+      ]
+    },
+    "publication": {
+      "title": "Shadows at Sundown 53",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false
+  },
+  "_id": "eS2EFjJpQRijoDhx",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!eS2EFjJpQRijoDhx"
+}

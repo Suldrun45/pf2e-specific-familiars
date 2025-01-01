@@ -1,0 +1,52 @@
+{
+  "name": "Detect Magic",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your dweomercat cub can cast 1st-level <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl\" data-id=\"gpzpAAAJ1Lza2JVl\" data-type=\"Item\" data-pack=\"pf2e.spells-srd\" data-tooltip=\"Spell Item\" data-scope>Detect Magic</a> as an arcane innate spell.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Society Guide 122",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "ODEDNHdrKVObNjyq",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ODEDNHdrKVObNjyq"
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Silver Infusion",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your house drake breathes on one of your weapons. Until the start of your next turn, that weapon counts as silver instead of its normal material for any physical damage it deals. The house drake can't use Breath Weapon or Silver Infusion for [[/r 1d4]] rounds.</p>\n<p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.xDi0KLSjVdiGEkiH]{Effect: Silver Infusion}</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "arcane"
+      ]
+    },
+    "publication": {
+      "title": "Shadows at Sundown 53",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 2
+    },
+    "deathNote": false
+  },
+  "_id": "yEqGcBd0e0XoZ1S1",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!yEqGcBd0e0XoZ1S1"
+}

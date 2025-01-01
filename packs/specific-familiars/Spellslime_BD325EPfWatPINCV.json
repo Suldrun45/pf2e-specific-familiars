@@ -1,0 +1,132 @@
+{
+  "name": "Spellslime",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities</strong> <strong>4, and you must be able to cast spells using spell slots</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.dWTfO5WbLkD5mw2H]{Climber}, @UUID[Compendium.pf2e.familiar-abilities.0Xrkk46IM43iI1Fv]{Darkvision}, @UUID[Compendium.pf2e.familiar-abilities.Le8UWr5BU8rV3iBf]{Tough}</p><hr /><p>These friendly, colorful oozes congeal from the essences left over from casting spells. They are extremely loyal.</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.ZD4rTKXnn5zsa93L]{Magic Scent}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.ZD4rTKXnn5zsa93L inline]</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.SgkRr0lXTBvs0hvP]{Ooze Defense}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.SgkRr0lXTBvs0hvP inline]</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.PAmcjj5D9gHBxBAe]{Slime Rejuvenation}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.PAmcjj5D9gHBxBAe inline]</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "ooze"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.dWTfO5WbLkD5mw2H",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.Le8UWr5BU8rV3iBf",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.ZD4rTKXnn5zsa93L",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.PAmcjj5D9gHBxBAe",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Spellslime",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 4
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.SgkRr0lXTBvs0hvP",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Player Core 171",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "BD325EPfWatPINCV",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 1500000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!BD325EPfWatPINCV"
+}

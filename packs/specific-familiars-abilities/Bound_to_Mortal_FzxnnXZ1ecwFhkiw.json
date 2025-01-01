@@ -1,0 +1,109 @@
+{
+  "name": "Bound to Mortal",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your familiar gains unique benefits from its bond to you. <br />Your familiar gains an additional 10 Hit Points and can make an either a jaws or claws unarmed attack using your normal melee attack bonus. You choose whether it has a jaws or claws unarmed attack when you first gain the spirit guide as your familiar. <br />If it has a jaws unarmed attack, the attack deals @Damage[1d6[piercing]] damage and is in the brawling group. <br />If you choose the claws unarmed attack, it deals @Damage[1d4[slashing]] damage, has the agile trait, and is in the brawling group</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "hp",
+        "value": 10
+      },
+      {
+        "key": "ChoiceSet",
+        "rollOption": "bound-to-mortal",
+        "choices": [
+          {
+            "label": "Jaws",
+            "value": "jaws"
+          },
+          {
+            "label": "Claws",
+            "value": "claws"
+          }
+        ],
+        "flag": "bound-to-mortal",
+        "label": "Bound to mortal Strike"
+      },
+      {
+        "key": "Strike",
+        "category": "unarmed",
+        "label": "Jaws",
+        "damage": {
+          "base": {
+            "damageType": "piercing",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "predicate": [
+          "bound-to-mortal:jaws"
+        ]
+      },
+      {
+        "key": "Strike",
+        "category": "unarmed",
+        "label": "Claws",
+        "damage": {
+          "base": {
+            "damageType": "slashing",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "brawling",
+        "traits": [
+          "agile"
+        ],
+        "predicate": [
+          "bound-to-mortal:claws"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "They Watched the Stars 83",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "FzxnnXZ1ecwFhkiw",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FzxnnXZ1ecwFhkiw"
+}

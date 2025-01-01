@@ -1,0 +1,110 @@
+{
+  "name": "Ceru",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities 4</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.rs4Awf4k1e0Mj797]{Cantrip Connection} (@UUID[Compendium.pf2e.spells-srd.izcxFQFwf3woCnFs]{Guidance}, @UUID[Compendium.pf2e.spells-srd.pwzdSlJgYqN7bs2w]{Telekinetic Hand}), @UUID[Compendium.pf2e.familiar-abilities.0Xrkk46IM43iI1Fv]{Darkvision}, @UUID[Compendium.pf2e.familiar-abilities.XCqYnlVbLGqEGPeX]{Touch Telepathy}</p><hr /><p>Cerus are mortal-made creatures in the shape of tiny, blue elephants with spikes on their feet, tail, and ears. They're highly sought-after amongst circles of the affluent.</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.gFkIZNIvFPmqWN2N]{Created Magic}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.gFkIZNIvFPmqWN2N inline]</p><hr /><p><span class=\"action-glyph\">2</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.eRIIwcyU4lbFETzX]{Turn of Fate}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.eRIIwcyU4lbFETzX inline]</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.rs4Awf4k1e0Mj797"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.XCqYnlVbLGqEGPeX"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.gFkIZNIvFPmqWN2N"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.eRIIwcyU4lbFETzX"
+      },
+      {
+        "key": "ActorTraits",
+        "add": [
+          "beast"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Ceru",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 4
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Impossible Lands 220",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "NKAB2q2F7vjfuG6z",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 1800000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NKAB2q2F7vjfuG6z"
+}

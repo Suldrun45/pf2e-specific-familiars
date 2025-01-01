@@ -1,0 +1,112 @@
+{
+  "name": "Sweet Beast (Hard Candy Beetle)",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities 3</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.uy15sDBuYNK48N3v]{Burrower}, @UUID[Compendium.pf2e.familiar-abilities.LrDnat1DsGJoAiKv]{Tremorsense}</p><hr /><p>The ways of wizards are strange and mysterious, and nowhere is this more obvious than in the arcane predilection for animating random pieces of candy and using them as familiars. The Winter Witches of Irrisen are known for weaving sparrows or nightingales from gingerbread, while in Arcadia, sorcerers mold mice from spiced chocolate. Most famous, however, are the hard candy beetles of Nex, though a few radical scholars claim that they are in fact a demi-natural species, a product of the Mana Wastes' wild magic. Most mages dismiss such wild claims, however.</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Vxr31IhRdrrys2Jn]{Sorcerous Sweets}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Vxr31IhRdrrys2Jn inline]</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "beast"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.uy15sDBuYNK48N3v",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.LrDnat1DsGJoAiKv",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.Vxr31IhRdrrys2Jn",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Sweet Beast (Hard Candy Beetle)",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Wake the Dead 25",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "hyGB9ChxuZA8JqS1",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 3800000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!hyGB9ChxuZA8JqS1"
+}

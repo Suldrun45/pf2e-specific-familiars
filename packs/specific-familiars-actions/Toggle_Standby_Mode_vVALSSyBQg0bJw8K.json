@@ -1,0 +1,52 @@
+{
+  "name": "Toggle Standby Mode",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your clockwork familiar enters standby mode. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a –2 penalty to Perception). It can't act, with one exception: when you Command it to exit standby mode, it does so, by using this action again.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Grand Bazaar 23",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 2
+    },
+    "deathNote": false
+  },
+  "_id": "vVALSSyBQg0bJw8K",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!vVALSSyBQg0bJw8K"
+}

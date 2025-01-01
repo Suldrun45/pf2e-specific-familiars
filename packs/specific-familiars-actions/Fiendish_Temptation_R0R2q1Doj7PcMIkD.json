@@ -1,0 +1,74 @@
+{
+  "name": "Fiendish Temptation",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per day.</p><hr /><p><strong>Effect</strong> The imp offers a non-fiend within 15 feet a bargain, granting a boon of good luck @UUID[Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.0zZUwMQW9bgJ2sZd]{Fiendish Temptation} if the creature accepts. The boon lasts for 1 hour once accepted.</p><p>Once during the hour, the creature can roll an attack roll or saving throw twice and use the higher result.</p><p>If the creature dies while the boon is in place, the imp decides where the creature's soul travels. This typically makes the soul bound for eternity in the imp's home plane, and the creature is unable to be raised or resurrected except by the @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} ritual or similar magic.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.13.6"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "divine",
+        "fortune",
+        "unholy"
+      ]
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "requirements": {
+      "value": ""
+    },
+    "trigger": {
+      "value": ""
+    },
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "R0R2q1Doj7PcMIkD",
+  "sort": 0,
+  "_key": "!items!R0R2q1Doj7PcMIkD"
+}

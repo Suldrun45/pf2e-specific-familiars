@@ -1,0 +1,87 @@
+{
+  "name": "Resonance",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Aura, Range</strong> 30 feet.</p><hr /><p>Your wisp vibrates at a frequency attuned to their element, resonating with and empowering all effects sharing that trait. Creatures in the area gain a +1 status bonus to damage rolls for effects with the same elemental trait as your wisp (air, earth, fire, or water).</p>"
+    },
+    "rules": [
+      {
+        "key": "Aura",
+        "radius": 30,
+        "label": "Resonance",
+        "effects": [
+          {
+            "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.8vufNIOmCNDL5MVx",
+            "predicate": [
+              "elemental-wisp:air"
+            ]
+          },
+          {
+            "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.mDNDTvx3XTZtyJ0B",
+            "predicate": [
+              "elemental-wisp:earth"
+            ]
+          },
+          {
+            "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.VKr7OttGm7nPnzeT",
+            "predicate": [
+              "elemental-wisp:fire"
+            ]
+          },
+          {
+            "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.Rbw8UpjZImY17RWH",
+            "predicate": [
+              "elemental-wisp:water"
+            ]
+          }
+        ],
+        "level": "Resonance"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "aura"
+      ]
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "g9DW4uKh4HbjF2BE",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!g9DW4uKh4HbjF2BE"
+}

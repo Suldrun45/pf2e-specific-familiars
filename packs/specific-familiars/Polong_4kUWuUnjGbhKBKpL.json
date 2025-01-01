@@ -1,0 +1,158 @@
+{
+  "name": "Polong",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities 8</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.ZHSzNt3NxkXbj1mI]{Flier}, @UUID[Compendium.pf2e.familiar-abilities.deC1yIM2S5szGdzT]{Lifelink}, @UUID[Compendium.pf2e.familiar-abilities.jevzf9JbJJibpqaI]{Skilled} (society) , @UUID[Compendium.pf2e.familiar-abilities.zyMRLQnFCQVpltiR]{Speech}, @UUID[Compendium.pf2e.familiar-abilities.asOhEdyF8CWFbR96]{Spellcasting}</p><hr /><p>Polongs are wicked, invisible spirits created from the blood of murder victims, bound to glass bottles, and fed with the blood of their master. They're often used to possess and sicken their master's enemies. Polongs can't be found or acquired, only created, a process that can take up to two weeks. If a polong's bottle is ever destroyed, or if its master fails to provide its daily feeding of blood, the polong withers and dies.</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.q03CmYAD0FYepDJg]{Anchored Incorporeality}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.q03CmYAD0FYepDJg inline]</p><hr /><p><span class=\"action-glyph\">2</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.8b3Ef7LRFdWhg1Z3]{Polong Possession}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.8b3Ef7LRFdWhg1Z3 inline]</p><hr /><p><strong>Undead</strong></p><p>Your familiar is undead. It has negative healing and is immune to death effects, disease, poison, and unconscious. It's destroyed at 0 HP.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "incorporeal",
+          "undead"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.deC1yIM2S5szGdzT",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.jevzf9JbJJibpqaI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "preselectChoices": {
+          "skill": "society"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.asOhEdyF8CWFbR96",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.q03CmYAD0FYepDJg",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.8b3Ef7LRFdWhg1Z3",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.attributes.hp.negativeHealing",
+        "value": true
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "death-effects",
+          "disease",
+          "poison",
+          "unconscious"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Polong",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 8
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead 40",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "4kUWuUnjGbhKBKpL",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 1300000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!4kUWuUnjGbhKBKpL"
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Turn of Fate",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency </strong>once per day;</p><p><strong>Range </strong>30 feet</p><hr /><p><strong>Effect</strong></p><p>Your ceru shifts the scales of fortune for one target's next attempt at an attack roll, saving throw, or skill check.</p><p>If targeted with bad fortune, the target attempts a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher, with effects depending on the result of their save; this is a misfortune effect.</p><p>If targeted with good fortune, the target rolls twice and uses the better result; this is a fortune effect.</p><p>Regardless of outcome, targets are immune to Turn of Fate for one day.</p><p><strong>Success</strong> The target is unaffected. </p><p><strong>Failure</strong> The target rolls twice and uses the worse result.</p><p><strong>Critical Failure</strong> As failure, except the target is affected for the next three attempts.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Impossible Lands 220",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 2
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "_id": "eRIIwcyU4lbFETzX",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!eRIIwcyU4lbFETzX"
+}

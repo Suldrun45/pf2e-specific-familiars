@@ -1,0 +1,59 @@
+{
+  "name": "Spiritual Recall",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per day</p><p><strong>Trigger</strong> An attack would reduce your familiar to 0 Hit Points</p><hr /><p><strong>Effect</strong> You use your bond to rescue your familiar. The familiar survives the attack with 1 Hit Point remaining and becomes incorporeal until the end of your next turn.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "They Watched the Stars 83",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "reaction"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "_id": "VumhWYZuqgNCsg4w",
+  "img": "systems/pf2e/icons/actions/Reaction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!VumhWYZuqgNCsg4w"
+}

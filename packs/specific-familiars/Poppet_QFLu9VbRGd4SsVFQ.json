@@ -1,0 +1,140 @@
+{
+  "name": "Poppet",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities</strong> 1 </p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ]{Construct}</p><hr /><p>Endlessly modifiable, poppet familiars made of wicker and wood are among the most basic construct familiars available to Pathfinder agents across the globe.</p><hr /><p><strong>Flammable</strong></p><p>Your poppet's components make it particularly vulnerable to fire. It gains weakness to fire equal to your level. You can use one familiar ability to reinforce the poppet's construction, removing this weakness for the day.</p><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.ukOuCuUzIBScdEkD]{Not Flammable Poppet}</p>"
+    },
+    "rules": [
+      {
+        "key": "Weakness",
+        "type": "fire",
+        "value": "@actor.master.level",
+        "predicate": [
+          {
+            "not": "self:ability:not-flammable-poppet"
+          }
+        ]
+      },
+      {
+        "key": "ActorTraits",
+        "add": [
+          "construct"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Poppet",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "bleed",
+          "death-effects",
+          "disease",
+          "doomed",
+          "drained",
+          "fatigued",
+          "healing",
+          "nonlethal-attacks",
+          "paralyzed",
+          "poison",
+          "sickened",
+          "spirit",
+          "unconscious",
+          "vitality",
+          "void"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.916,
+        "foundry": "11.315",
+        "system": "5.13.1"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Player Core 171",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "requirements": {
+      "value": ""
+    },
+    "trigger": {
+      "value": ""
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "QFLu9VbRGd4SsVFQ",
+  "sort": 1900000,
+  "_key": "!items!QFLu9VbRGd4SsVFQ"
+}

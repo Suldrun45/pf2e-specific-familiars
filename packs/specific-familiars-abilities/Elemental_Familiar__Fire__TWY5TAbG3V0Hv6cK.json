@@ -1,0 +1,73 @@
+{
+  "name": "Elemental Familiar (Fire)",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Archetype</strong> Elementalist</p>\n<hr />\n<p>Your familiar sheds bright light in a 20-foot radius (and dim light for the next 20 feet) and emits warmth. Creatures who remain within a 15-foot emanation don't take damage from severe environmental cold.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "fire",
+          "elemental"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "TokenLight",
+        "value": {
+          "dim": 40,
+          "bright": 20,
+          "animation": {
+            "type": "flame"
+          }
+        }
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Rage of Elements pg. 59",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "TWY5TAbG3V0Hv6cK",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.13.6",
+    "coreVersion": "12.324",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TWY5TAbG3V0Hv6cK"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Elemental Diplomat",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A gennayn's modifier for Diplomacy is equal to your level plus your key spellcasting attribute modifier, rather than just your level. The gennayn gets a +1 circumstance bonus to Diplomacy checks against elementals and grants you the same bonus if you're in the same space.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Elemental Diplomat",
+        "selector": "diplomacy-check",
+        "value": 1,
+        "type": "circumstance",
+        "predicate": [
+          "target:trait:elemental"
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "diplomacy",
+        "value": "@actor.masterAttributeModifier"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Rage of Elements 43",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "yG02eZBkhG7u2ADN",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!yG02eZBkhG7u2ADN"
+}

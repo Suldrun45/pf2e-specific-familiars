@@ -1,0 +1,63 @@
+{
+  "name": "Elemental Familiar (Wood)",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>If your familiar remains in bright light for 1 round, it gains fast healing equal to half your level. Once it is out of bright light, this effect ends. (not automated)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "wood",
+          "elemental"
+        ],
+        "remove": [
+          "animal"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Rage of Elements pg. 59",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "9xHOp5O5t4Co4RcD",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.13.6",
+    "coreVersion": "12.324",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!9xHOp5O5t4Co4RcD"
+}

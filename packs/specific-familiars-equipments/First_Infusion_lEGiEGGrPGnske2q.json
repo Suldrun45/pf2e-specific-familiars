@@ -1,0 +1,98 @@
+{
+  "name": "First Infusion",
+  "type": "consumable",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">2 </span>Interact (Ingested)</p><p>The infusion restores a number of Hit Points equal to 1d8 times half your level (minimum 1d8) and grants a +4 circumstance bonus to the next saving throw against disease of poison attempted within 24 hours.</p><p>@Damage[(ceil((@actor.level/2),1))d8[healing]]{Leveled healing}</p><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.6pI6nDLfhlGBUEiO]{Effect: First Infusion}</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "consumable",
+        "infused"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Lost Omens Tian Xia Character Guide 123",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn"
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Object",
+        "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "other",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "autoDestroy": true
+    },
+    "damage": null,
+    "usage": {
+      "value": "other"
+    },
+    "stackGroup": null,
+    "spell": null
+  },
+  "_id": "lEGiEGGrPGnske2q",
+  "img": "modules/pf2e-specific-familiars/icons/Dunedhel-Kappu-Cup-2-tea-hot.512.png",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "CmIherh6xtcBaXKO": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.3"
+  },
+  "_key": "!items!lEGiEGGrPGnske2q"
+}

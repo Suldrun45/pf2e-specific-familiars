@@ -1,0 +1,209 @@
+{
+  "name": "Elemental Familiar",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.935,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:initial;scrollbar-color:initial;--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246/.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: \">Prerequisites</strong> Elementalist Dedication, Familiar</span></p><hr /><p>Your familiar becomes an elemental spirit capable of taking on aspects of the elements. Other than taking the form of an elemental instead of an animal, this familiar continues to use all the same rules as other familiars.</p><p>Your familiar gains one additional familiar ability each day, which must be one of the following elemental familiar abilities. While your familiar has an elemental familiar ability, your familiar is composed of the associated elemental matter and gains the matching elemental trait. You can't select more than one elemental familiar ability at a time.</p><ul><li>Air If your familiar stays completely still for 1 round, it becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} until it next takes an action. Any motion, even being moved or carried by another creature, ends this effect.</li><li>Earth Your familiar gains resistance to physical damage (except adamantine) equal to half your level.</li><li>Fire Your familiar sheds bright light in a 20-foot radius (and dim light for the next 20 feet) and emits warmth. Creatures that remain within a @Template[type:emanation|distance:15] don't take damage from severe environmental cold.</li><li>Metal Your familiar gains resistance to physical damage from metal weapons equal to half your level.</li><li>Water Your familiar can move through a gap at least 2 inches wide without @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeezing} and can Squeeze through a gap at least 1 inch wide.</li><li>Wood If your familiar remains in bright light for 1 round, it gains fast healing equal to half your level. Once it is out of bright light, this effect ends.</li></ul>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements 59",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAir",
+            "value": "air"
+          },
+          {
+            "label": "PF2E.TraitEarth",
+            "value": "earth"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitMetal",
+            "value": "metal"
+          },
+          {
+            "label": "PF2E.TraitWater",
+            "value": "water"
+          },
+          {
+            "label": "PF2E.TraitWood",
+            "value": "wood"
+          }
+        ],
+        "flag": "element",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Element",
+        "rollOption": "elemental-familiar"
+      },
+      {
+        "key": "Resistance",
+        "type": "physical",
+        "value": "floor(@actor.level/2)",
+        "exceptions": [
+          "adamantine"
+        ],
+        "predicate": [
+          "elemental-familiar:earth"
+        ]
+      },
+      {
+        "key": "TokenLight",
+        "value": {
+          "dim": 20,
+          "bright": 20
+        },
+        "predicate": [
+          "elemental-familiar:fire"
+        ]
+      },
+      {
+        "key": "Resistance",
+        "type": "physical",
+        "value": "floor(@actor.level/2)",
+        "exceptions": [
+          "adamantine"
+        ],
+        "predicate": [
+          "elemental-familiar:metal",
+          "hit-by-metal-weapon"
+        ]
+      },
+      {
+        "key": "RollOption",
+        "toggleable": true,
+        "label": "In Bright Light",
+        "option": "wood-familiar-bright-light",
+        "predicate": [
+          "elemental-familiar:wood"
+        ],
+        "value": false
+      },
+      {
+        "key": "FastHealing",
+        "value": "floor(@actor.level/2)",
+        "predicate": [
+          "wood-familiar-bright-light",
+          "elemental-familiar:wood"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ch6nFcRJO1fm8B4D",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "preselectChoices": {
+          "element": "{item|flags.pf2e.rulesSelections.element}"
+        }
+      },
+      {
+        "key": "RollOption",
+        "toggleable": true,
+        "label": "Invisible",
+        "option": "air-familiar-invisible",
+        "predicate": [
+          "elemental-familiar:air"
+        ],
+        "value": false
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML",
+        "predicate": [
+          "air-familiar-invisible"
+        ],
+        "reevaluateOnUpdate": true,
+        "inMemoryOnly": true
+      },
+      {
+        "key": "RollOption",
+        "toggleable": true,
+        "label": "Hit by metal weapon",
+        "option": "hit-by-metal-weapon",
+        "predicate": [
+          "elemental-familiar:metal"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Elemental Familiar",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {
+    "exportSource": {
+      "world": "pathfinder-test",
+      "system": "pf2e",
+      "coreVersion": "12.331",
+      "systemVersion": "6.8.0"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.8.1"
+  },
+  "_id": "ZyKWJfQcOa5HrEUJ",
+  "sort": 0,
+  "_key": "!items!ZyKWJfQcOa5HrEUJ"
+}

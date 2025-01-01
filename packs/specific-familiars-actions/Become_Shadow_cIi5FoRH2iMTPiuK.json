@@ -1,0 +1,58 @@
+{
+  "name": "Become Shadow",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The shadow familiar transforms its body into barely tangible shadow. It gains resistance to all damage (except force) equal to half your level but can't use any actions requiring a physical form. The familiar can also slip through gaps at least 2 inches wide, or 1 inch wide if it @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeezes}. It can use this action again to return to its normal form.</p>\n<p>This action has the trait matching your tradition of magic, or occult if you aren't a spellcaster.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "shadow"
+      ]
+    },
+    "publication": {
+      "title": "Secrets of Magic 229",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "selfEffect": {
+      "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.Gk8bm8kmVrxDcY4m",
+      "name": "Effect: Become Shadow"
+    }
+  },
+  "_id": "cIi5FoRH2iMTPiuK",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!cIi5FoRH2iMTPiuK"
+}

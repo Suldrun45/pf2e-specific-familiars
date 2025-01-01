@@ -1,0 +1,204 @@
+{
+  "name": "Gennayn",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities 5</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.ch6nFcRJO1fm8B4D]{Elemental}, @UUID[Compendium.pf2e.familiar-abilities.zyMRLQnFCQVpltiR]{Speech}</p><hr /><p>Minor genies, gennayn are elementally adaptable and personable. They look like miniature humanoids with elemental energy surrounding them, and frequently carry messages or announce the arrival of their allies.</p><hr /><p><strong>Elemental Mobility</strong></p><p>Your gennayn gains a familiar ability depending on its element. Air gennayns gain @UUID[Compendium.pf2e.familiar-abilities.ZHSzNt3NxkXbj1mI]{Flier}, earth gennayns gain @UUID[Compendium.pf2e.familiar-abilities.uy15sDBuYNK48N3v]{Burrower}, fire gennayns gain @UUID[Compendium.pf2e.familiar-abilities.fhyQ6uTSvfErTzyE]{Jet}, metal gennayns gain @UUID[Compendium.pf2e.familiar-abilities.q9IXWngAOCpsXxsO]{Levitator}, water gennayns gain @UUID[Compendium.pf2e.familiar-abilities.A0C86V3MUECpX5jd]{Amphibious}, and wood gennayns gain @UUID[Compendium.pf2e.familiar-abilities.dWTfO5WbLkD5mw2H]{Climber}.</p><hr /><p><span class=\"action-glyph\">r</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.l05WBllolnPMxMzb]{Little Wish}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.l05WBllolnPMxMzb inline]</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.yG02eZBkhG7u2ADN]{Elemental Diplomat}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.yG02eZBkhG7u2ADN inline]</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAir",
+            "value": "air"
+          },
+          {
+            "label": "PF2E.TraitEarth",
+            "value": "earth"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitMetal",
+            "value": "metal"
+          },
+          {
+            "label": "PF2E.TraitWater",
+            "value": "water"
+          },
+          {
+            "label": "PF2E.TraitWood",
+            "value": "wood"
+          }
+        ],
+        "flag": "element",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Element",
+        "rollOption": "gennayn"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ch6nFcRJO1fm8B4D",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "preselectChoices": {
+          "element": "{item|flags.pf2e.rulesSelections.element}"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "predicate": [
+          "gennayn:air"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.uy15sDBuYNK48N3v",
+        "predicate": [
+          "gennayn:earth"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.fhyQ6uTSvfErTzyE",
+        "predicate": [
+          "gennayn:fire"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.q9IXWngAOCpsXxsO",
+        "predicate": [
+          "gennayn:metal"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.A0C86V3MUECpX5jd",
+        "predicate": [
+          "gennayn:water"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.dWTfO5WbLkD5mw2H",
+        "predicate": [
+          "gennayn:wood"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.l05WBllolnPMxMzb",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.yG02eZBkhG7u2ADN",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Gennayn ({item|flags.pf2e.rulesSelections.element})",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 5
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements 43",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "vpNRItMpE0RcOzrR",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 3300000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!vpNRItMpE0RcOzrR"
+}

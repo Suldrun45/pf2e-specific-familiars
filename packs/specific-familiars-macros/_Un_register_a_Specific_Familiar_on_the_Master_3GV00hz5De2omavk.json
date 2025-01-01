@@ -1,0 +1,24 @@
+{
+  "name": "(Un)register a Specific Familiar on the Master",
+  "type": "script",
+  "_id": "3GV00hz5De2omavk",
+  "author": "CmIherh6xtcBaXKO",
+  "img": "systems/pf2e/icons/features/classes/familiar.webp",
+  "scope": "global",
+  "command": "/** This compendium link macro will always call the most recent version from the compendium included with this module meaning you do not need to reimport newer versions. The source of the macros that get called is https://gitlab.com/symonsch/my-foundryvtt-macros/-/tree/main/PF2e */\n/* Start of documentation from the original macro: */\n/* Based on a macro by Author: ArthurTrumpet and Symon S.\ncreated by darkim\n\n(Un)register a Specific Familiar on the Master Macro\n This Macro allows the Specific Familiar Required Abilities to be deducted from its Total # of Abilities.\n Apply the Macro on the token of the familiar's master, and reapply it if the specific familiar changes/is removed (or refresh the game to force a recomputation)\n*/\n/* End of original macro documentation. */\n\n    async function _executeMacroByName(\n        macroName,\n        compendiumName = \"pf2e-specific-familiars.specific-familiars-internal-do-not-import\"\n    ) {\n        const pack = game.packs.get(compendiumName);\n        if (pack) {\n            const macro_data = (await pack.getDocuments()).find((i) => i.name === macroName)?.toObject();\n            if (macro_data) {\n                const temp_macro = new Macro(macro_data);\n                temp_macro.permission.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;\n                temp_macro.execute();\n            } else {\n                ui.notifications.error(\"Macro \" + macroName + \" not found\");\n            }\n        } else {\n            ui.notifications.error(\"Compendium \" + compendiumName + \" not found\");\n        }\n    }\n    _executeMacroByName('DO NOT IMPORT (Un)register a Specific Familiar on the Master');\n\n    /* This compendium link macro is based on one originally posted by DrentalBot: https://discord.com/channels/880968862240239708/880975811279204402/910490804554973274; and modified by Mark Pearce https://discord.com/channels/880968862240239708/880969174661353484/972962446098702376 */",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "CmIherh6xtcBaXKO": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.15.1",
+    "coreVersion": "12.324",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!macros!3GV00hz5De2omavk"
+}

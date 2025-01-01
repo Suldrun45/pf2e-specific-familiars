@@ -1,0 +1,98 @@
+{
+  "name": "Psychopomp Familiar",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your familiar becomes a masked psychopomp—an extraplanar guardian of the cycle of souls. This familiar continues to use all the same rules as other familiars, but one of its abilities must always be @UUID[Compendium.pf2e.familiar-abilities.zyMRLQnFCQVpltiR]{Speech} and it has the monitor and psychopomp traits. As normal when a familiar must always have a certain ability, the speech ability counts against your familiar's abilities each day.</p>\n<p>You can select three familiar or master abilities each day, instead of two, but one must be one of the following psychopomp familiar abilities.<br />@UUID[Compendium.pf2e.familiar-abilities.o0fxDDUu2ZSWYDTr]{Soul Sight} Your familiar gains lifesense with a range of 30 feet.<br />@UUID[Compendium.pf2e.familiar-abilities.nrPl3Dz7fbnmas7T]{Spirit Touch} Your familiar can touch incorporeal creatures. If you have the @UUID[Compendium.pf2e.familiar-abilities.wOgvBymJOVQDSm1Q]{Spell Delivery} master ability from your familiar, any spell the familiar delivers with it gains the benefits of the ghost touch property rune.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "monitor",
+          "psychopomp"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Psychopomp Familiar",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 1
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead 27",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "aR3BjWDDzlhKLyPZ",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!aR3BjWDDzlhKLyPZ"
+}

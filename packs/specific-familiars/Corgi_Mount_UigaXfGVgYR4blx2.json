@@ -1,0 +1,112 @@
+{
+  "name": "Corgi Mount",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The smallest of fey have ridden corgis as mounts since time immemorial, leading to a pattern on corgis' backs called a “faerie saddle.” You have formed a magical connection with a corgi that can serve as your mount. <br />Your corgi familiar is Small rather than Tiny, and it's appropriate for use as your mount, unlike most familiars. <br />It has the @UUID[Compendium.pf2e.familiar-abilities.FlRUb8U13Crj3NaA]{Scent} ability, which counts against your limit for familiar and master abilities as normal. <br />Furthermore, it can never gain a familiar ability that grants it any Speeds other than a land Speed.<br />If you're a pixie, you can't ride a corgi due to your Size, but you can take this feat to gain a corgi familiar.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.FlRUb8U13Crj3NaA",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "CreatureSize",
+        "value": "small"
+      },
+      {
+        "key": "ActorTraits",
+        "add": [
+          "sprite"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Corgi Mount",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 1
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.916,
+        "foundry": "11.315",
+        "system": "5.13.1"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide 129",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "requirements": {
+      "value": ""
+    },
+    "trigger": {
+      "value": ""
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "UigaXfGVgYR4blx2",
+  "sort": 2000000,
+  "_key": "!items!UigaXfGVgYR4blx2"
+}

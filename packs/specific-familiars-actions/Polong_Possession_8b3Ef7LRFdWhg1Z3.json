@@ -1,0 +1,57 @@
+{
+  "name": "Polong Possession",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The polong attempts to possess an adjacent corporeal creature. <br />The creature must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. <br />On a failure, the polong merges into the creature's body for 1 minute (24 hours on a critical failure). The polong can observe through the creature's senses but is unable to control the creature. The possessed creature is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} while the possession lasts. <br />While possessing a creature, a polong can ignore the distance and line of effect limitation from its anchored incorporeality ability; when the possession ends, it immediately returns to the bottle if it's beyond range.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "incapacitation",
+        "mental",
+        "occult",
+        "possession"
+      ]
+    },
+    "publication": {
+      "title": "Book of the Dead 40",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 2
+    },
+    "deathNote": false
+  },
+  "_id": "8b3Ef7LRFdWhg1Z3",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!8b3Ef7LRFdWhg1Z3"
+}

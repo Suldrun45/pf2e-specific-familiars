@@ -1,0 +1,90 @@
+{
+  "name": "Effect: Silver Infusion",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Until the start of your next turn, that weapon counts as silver instead of its normal material for any physical damage it deals.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "includeHandwraps": false,
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "weapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "definition": [
+          {
+            "or": [
+              "item:id:{item|flags.pf2e.rulesSelections.weapon}",
+              "item:category:{item|flags.pf2e.rulesSelections.weapon}"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "materials",
+        "value": "silver"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Shadows at Sundown 53",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "_id": "xDi0KLSjVdiGEkiH",
+  "img": "icons/consumables/drinks/alcohol-spirits-bottle-blue.webp",
+  "folder": null,
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!xDi0KLSjVdiGEkiH"
+}

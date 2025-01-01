@@ -1,0 +1,74 @@
+{
+  "name": "Porter",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can choose for your homunculus to have either @UUID[Compendium.pf2e.familiar-abilities.Item.Ms8EVO2mNbr4Zp1i]{Item Delivery} or @UUID[Compendium.pf2e.familiar-abilities.Item.9PsptrEoCC4QdM23]{Valet}</p>"
+    },
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "choices": [
+          {
+            "label": "Item Delivery",
+            "value": "Compendium.pf2e.familiar-abilities.Item.Ms8EVO2mNbr4Zp1i"
+          },
+          {
+            "label": "Valet",
+            "value": "Compendium.pf2e.familiar-abilities.Item.9PsptrEoCC4QdM23"
+          }
+        ],
+        "flag": "porter"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.porter}",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Player Core 2 171",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "LdlOoUQ5fdlxINBh",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "CmIherh6xtcBaXKO": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.330",
+    "systemId": "pf2e",
+    "systemVersion": "6.1.1"
+  },
+  "_key": "!items!LdlOoUQ5fdlxINBh"
+}
