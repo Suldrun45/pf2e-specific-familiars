@@ -1,0 +1,86 @@
+{
+  "name": "Effect: Fiendish Temptation Luck",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Once during the hour, you can roll an attack roll or saving throw twice and use the higher result.</p>"
+    },
+    "rules": [
+      {
+        "key": "RollOption",
+        "toggleable": true,
+        "option": "infernal-temptation-luck",
+        "label": "Infernal Temptation"
+      },
+      {
+        "key": "RollTwice",
+        "keep": "higher",
+        "selector": "attack-roll",
+        "predicate": [
+          "infernal-temptation-luck"
+        ]
+      },
+      {
+        "key": "RollTwice",
+        "keep": "higher",
+        "selector": "saving-throw",
+        "predicate": [
+          "infernal-temptation-luck"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Player Core 2 171",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "_id": "iuNIG5nW8mjcvVJb",
+  "img": "modules/pf2e-specific-familiars/icons/infernal-temptation-luck.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!iuNIG5nW8mjcvVJb"
+}

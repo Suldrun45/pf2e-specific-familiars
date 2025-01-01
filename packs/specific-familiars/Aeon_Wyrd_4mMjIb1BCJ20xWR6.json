@@ -1,0 +1,177 @@
+{
+  "name": "Aeon Wyrd",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities 3 </strong></p><p><strong>Granted Abilities </strong>@UUID[Compendium.pf2e.familiar-abilities.ZHSzNt3NxkXbj1mI]{Flier}, @UUID[Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ]{Construct}</p><hr /><p>An aeon wyrd is a floating swarm of gemstones surrounding a larger stone. It grants the power of its internal aeon stone to its master.</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.werYyT5BSeZbc9cH]{Aeon Stone Reservoir}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.werYyT5BSeZbc9cH inline]</p><hr /><p><strong>Can't Walk</strong></p><p>Your aeon wyrd has no land Speed.</p><hr /><p><strong>Crystalline</strong></p><p>Your aeon wyrd's crystalline structure makes it vulnerable to sonic attacks. It gains weakness to sonic damage equal to your level.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "land-speed",
+        "value": "@actor.flags.pf2e.specificFamiliars.aeonWyrd.landSpeed"
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "bleed",
+          "death-effects",
+          "disease",
+          "doomed",
+          "drained",
+          "fatigued",
+          "healing",
+          "nonlethal-attacks",
+          "paralyzed",
+          "poison",
+          "sickened",
+          "spirit",
+          "unconscious",
+          "vitality",
+          "void"
+        ]
+      },
+      {
+        "key": "ActorTraits",
+        "add": [
+          "construct"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "Weakness",
+        "type": "sonic",
+        "value": "@actor.master.level",
+        "label": "Crystalline"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.werYyT5BSeZbc9cH",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Aeon Wyrd",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.aeonWyrd.landSpeed",
+        "value": -25
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.aeonWyrd.landSpeed",
+        "value": -15,
+        "predicate": [
+          "self:ability:fast-movement-land"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "bleed",
+          "death-effects",
+          "disease",
+          "doomed",
+          "drained",
+          "fatigued",
+          "healing",
+          "nonlethal-attacks",
+          "paralyzed",
+          "poison",
+          "sickened",
+          "spirit",
+          "unconscious",
+          "vitality",
+          "void"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Player Core 2 170",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "4mMjIb1BCJ20xWR6",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 1400000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!4mMjIb1BCJ20xWR6"
+}

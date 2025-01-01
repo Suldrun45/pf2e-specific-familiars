@@ -1,0 +1,76 @@
+{
+  "name": "Effect: Resonance (Earth)",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Creatures in the area gain a +1 status bonus to damage rolls for effects with the same elemental trait as your wisp</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Resonance",
+        "selector": "damage",
+        "value": 1,
+        "type": "status",
+        "predicate": [
+          "item:trait:earth"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "earth"
+      ]
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "_id": "mDNDTvx3XTZtyJ0B",
+  "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "CmIherh6xtcBaXKO": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.15.3",
+    "coreVersion": "12.324",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!mDNDTvx3XTZtyJ0B"
+}

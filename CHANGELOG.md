@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 2.3.0
+- Added the Druid's Leshy Familiar and the Elementalist's Elemental Familiar
+
 ## Version 2.2.0
 - Updated for Lost Omens Tian Xia Character Guide
 - Added the Kinnars, the Lantern Wisp, the Makhluk Wayang, the Shikigami and the Tapir Sage familiars

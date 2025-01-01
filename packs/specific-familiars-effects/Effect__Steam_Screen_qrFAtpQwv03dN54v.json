@@ -1,0 +1,74 @@
+{
+  "name": "Effect: Steam Screen",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your clockwork familiar blows a billowing plume of steam into its square around itself. It gains a +1 circumstance bonus to its Intimidation checks, and any creature in the familiar's square has @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{concealment}, though creatures in the square can't use this concealment to Hide or Sneak.</p>\n<p>The steam and its effects remain for 1 round.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "intimidation-check",
+        "value": "+1",
+        "type": "circumstance"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Grand Bazaar 23",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "_id": "qrFAtpQwv03dN54v",
+  "img": "icons/magic/air/fog-gas-smoke-dense-white.webp",
+  "folder": null,
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!qrFAtpQwv03dN54v"
+}

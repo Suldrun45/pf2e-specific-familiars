@@ -1,0 +1,58 @@
+{
+  "name": "Ink Spray",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per 10 minutes;</p><hr /><p><strong>Effect </strong>The wyrm splatters ink in a @Template[type:cone|distance:10]. Each creature in the area must succeed at a @Check[type:reflex|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save or become covered in ink.<br />Ink spray has the effects of @UUID[Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE]{Revealing Light} except the creature isn't @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled}, and it can remove its @UUID[Compendium.pf2e.spells-srd.VosLNn2M8S7JH67D]{Blindness} by spending a single action, which has the manipulate trait, to wipe off the ink from their face</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "arcane"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Society Guide 122",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "PT10M"
+    }
+  },
+  "_id": "uQogznOvnZpPJtmE",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!uQogznOvnZpPJtmE"
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Ferocious Will",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per day</p><p><strong>Trigger</strong> You succeed at a saving throw against a magical mental effect;</p><hr /><p><strong>Effect</strong> You send a blast of magical feedback at the effect's source, dealing @Damage[2d6[mental]] damage (@Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)|basic] save against your class DC or spell DC, whichever is higher) to that creature.</p><p>On a failed save, the creature is also @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "arcane",
+        "mental"
+      ]
+    },
+    "publication": {
+      "title": "Shadows at Sundown 53",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "reaction"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "_id": "9gvV9Un5XTHhhgTx",
+  "img": "systems/pf2e/icons/actions/Reaction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!9gvV9Un5XTHhhgTx"
+}

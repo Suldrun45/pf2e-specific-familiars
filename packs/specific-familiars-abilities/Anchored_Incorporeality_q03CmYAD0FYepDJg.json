@@ -1,0 +1,52 @@
+{
+  "name": "Anchored Incorporeality",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>While most ghosts are bound to the site where they died or were buried, some instead find themselves bound to specific items, such as a particular piece of jewelry, article of clothing, pet's collar, or a stone from a building in which it dwelled. These items, known as anchors, were important to the ghost in life, or critical to the events of their death and haunting.</p>\n<p>A creature with anchored incorporeality has the incorporeal trait, meaning it can move through physical creatures and such creatures can move through it. It can't attempt Strength-based checks (such as Grapple) against corporeal creatures and corporeal creatures can't attempt such checks against it. Though incorporeal, a creature with anchored incorporeality can travel no more than 60 feet from its anchor and must maintain line of effect to the anchor. This typically prevents it from moving through walls. Unlike many other incorporeal creatures, a creature with anchored incorporeality doesn't have resistance to all damage or immunity to precision damage.</p>\n<p>A character with an animal companion or familiar that has anchored incorporeality can transfer the anchor to a new item with a special ritual. This requires spending 1 week in concert with the companion to create a new anchor. A character who knows this technique might be able to adapt it to transfer a ghost's Site Bound ability (or similar restriction) to tie it to an anchor instead of a place.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Book of the Dead 40",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "q03CmYAD0FYepDJg",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!q03CmYAD0FYepDJg"
+}

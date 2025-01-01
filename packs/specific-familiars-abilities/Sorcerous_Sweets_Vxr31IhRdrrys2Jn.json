@@ -1,0 +1,52 @@
+{
+  "name": "Sorcerous Sweets",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>During your daily preparations, your sweetened familiar conducts an unusual little ritual. <br />Your familiar find a small non-magical object (a flower or piece of fallen fruit by preference, but a pebble or even a coin will do in a pinch) and then does a curious ritual dance around—gingerbread sparrows hop and chirp, while hard candy beetles turndle in increasingly complex geometric patterns and chocolate mice make arcane sigils with their paws. <br />At the rite's conclusion, the object turns into a piece of candy, usually of the same sort as the familiar. The candy is an item with the arcane, consumable and transmutation traits.</p><p>Anyone who eats the candy as an Interact action gains a +1 item bonus to Deception, Diplomacy, and Performance checks for 1 hour (this increases to +2 at level 9, and +3 at level 17). The candy maintains its enchantment until your next daily preparations.</p><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-equipments.Item.lEe3qsmk2nRwZybH]{Sorcerous Sweets Candy}</p><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-equipments.Item.lgbWrT72bCMERszr]{Sorcerous Sweets Candy (Level 9)}</p><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-equipments.Item.p08ulJpjgrqinPKa]{Sorcerous Sweets Candy (Level 17)}</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Wake the Dead 25",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "Vxr31IhRdrrys2Jn",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Vxr31IhRdrrys2Jn"
+}

@@ -1,0 +1,98 @@
+{
+  "name": "Specific Familiar Required Abilities",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Add this Bonus Feat on your character to automatically deduct the Required Number of Abilities for a specific familiar from the Total # of familiar abilities on the familiar's sheet.</p>\n<p><span style=\"text-decoration:underline\"><strong>This feat is for the master, not for the familiar.</strong></span></p>\n<p>Add this feat on the master's sheet after adding the Specific Familiar to the familiar's sheet.<br />Replace the feat when you change the type of Specific Familiar.<br />Remove the feat when you remove the Specific Familiar.</p>\n<p>You can use the following macro @UUID[Compendium.pf2e-specific-familiars.specific-familiars-macros.Macro.3GV00hz5De2omavk]{(Un)register a Specific Familiar on the Master} on the master's token to automatically add/replace/remove the Feat as required.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "remove",
+        "path": "system.attributes.familiarAbilities.value",
+        "value": "@actor.flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "predicate": [
+          {
+            "not": "feat:improved-familiar-familiar-master"
+          },
+          {
+            "not": "feat:improved-familiar-witch"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "remove",
+        "path": "system.attributes.familiarAbilities.value",
+        "value": "max(@actor.flags.pf2e.specificFamiliars.requiredNumberOfAbilities - 2, 0)",
+        "predicate": [
+          {
+            "or": [
+              "feat:improved-familiar-familiar-master",
+              "feat:improved-familiar-witch"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "remove",
+        "path": "system.attributes.familiarAbilities.value",
+        "value": "@actor.flags.pf2e.specificFamiliars.grantedNumberOfAbilities"
+      }
+    ],
+    "slug": "specific-familiar-required-abilities",
+    "_migration": {
+      "version": 0.926,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "bonus",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "CmIherh6xtcBaXKO": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.15.1",
+    "coreVersion": "12.324",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "PN7kY8Ukw2O1WKKE",
+  "sort": 0,
+  "_key": "!items!PN7kY8Ukw2O1WKKE"
+}

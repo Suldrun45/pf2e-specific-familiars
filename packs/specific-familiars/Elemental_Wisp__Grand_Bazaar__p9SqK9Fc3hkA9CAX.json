@@ -1,0 +1,194 @@
+{
+  "name": "Elemental Wisp (Grand Bazaar)",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Required Number of Abilities 3</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.92lgSEPFIDLvKOCF]{Accompanist}, @UUID[Compendium.pf2e.familiar-abilities.zyMRLQnFCQVpltiR]{Speech}</p><hr /><p>Wisps are tiny elemental beings that often act as familiars to spellcasters attuned to the elements. They each usually have different personalities: air wisps are playful and capricious, earth wisps are timid but loyal, fire wisps are carefree and boisterous, and water wisps are gentle and nurturing.</p><hr /><p><strong>Elemental</strong></p><p>Choose air, earth, fire, or water. Your wisp is a wisp of that element and gains that trait. Your wisp gains a familiar ability depending on its element. Air wisps gain @UUID[Compendium.pf2e.familiar-abilities.ZHSzNt3NxkXbj1mI]{Flight}, earth wisps gain @UUID[Compendium.pf2e.familiar-abilities.uy15sDBuYNK48N3v]{Burrower}, fire wisps gain @UUID[Compendium.pf2e.familiar-abilities.zKTL9y9et0oTHEYS]{Greater Resistance} (fire), and water wisps gain @UUID[Compendium.pf2e.familiar-abilities.A0C86V3MUECpX5jd]{Amphibious}.</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.g9DW4uKh4HbjF2BE]{Resonance}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.g9DW4uKh4HbjF2BE inline]</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAir",
+            "value": "air"
+          },
+          {
+            "label": "PF2E.TraitEarth",
+            "value": "earth"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitWater",
+            "value": "water"
+          }
+        ],
+        "flag": "element",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Element",
+        "rollOption": "elemental-wisp"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.92lgSEPFIDLvKOCF",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "predicate": [
+          "elemental-wisp:air"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.uy15sDBuYNK48N3v",
+        "predicate": [
+          "elemental-wisp:earth"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.resistance.resistanceOne",
+        "value": "fire",
+        "predicate": [
+          "elemental-wisp:fire"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.resistance.resistanceTwo",
+        "value": "fire",
+        "predicate": [
+          "elemental-wisp:fire"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zKTL9y9et0oTHEYS",
+        "predicate": [
+          "elemental-wisp:fire"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.A0C86V3MUECpX5jd",
+        "predicate": [
+          "elemental-wisp:water"
+        ],
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.g9DW4uKh4HbjF2BE",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Elemental Wisp ({item|flags.pf2e.rulesSelections.element})",
+        "mode": "override"
+      },
+      {
+        "add": [
+          "elemental",
+          "{item|flags.pf2e.rulesSelections.element}"
+        ],
+        "key": "ActorTraits",
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": "elemental-wisp-grand-bazaar",
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Grand Bazaar 35",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "p9SqK9Fc3hkA9CAX",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 2700000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!p9SqK9Fc3hkA9CAX"
+}

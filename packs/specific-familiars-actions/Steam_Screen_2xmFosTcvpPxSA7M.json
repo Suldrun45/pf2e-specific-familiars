@@ -1,0 +1,60 @@
+{
+  "name": "Steam Screen",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per minute;</p><hr /><p><strong>Effect</strong> Your clockwork familiar blows a billowing plume of steam into its square around itself. It gains a +1 circumstance bonus to its Intimidation checks, and any creature in the familiar's square has concealment, though creatures in the square can't use this concealment to Hide or Sneak.</p><p>The steam and its effects remain for 1 round.</p><p>To use this ability, your clockwork familiar must spend 1 hour of operational time.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Grand Bazaar 23",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "PT1M"
+    },
+    "selfEffect": {
+      "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.qrFAtpQwv03dN54v",
+      "name": "Effect: Steam Screen"
+    }
+  },
+  "_id": "2xmFosTcvpPxSA7M",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!2xmFosTcvpPxSA7M"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Lend a Hand",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The crawling hand assists an ally in the same space to attack a foe, crawling over the enemy and grabbing to distract them. Despite being a minion, it gains 1 reaction at the start of its turns, which it can use only to @UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{Aid} an attack roll by an ally that shares the hand's space (it still has to prepare to help as normal for the Aid reaction). This attempt automatically succeeds. If the crawling hand has a similar ability, like partner in crime, it still gains only 1 reaction and can choose how to spend it.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Book of the Dead 40",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "YVylhAbBeo4r1Nr8",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!YVylhAbBeo4r1Nr8"
+}

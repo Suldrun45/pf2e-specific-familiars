@@ -1,0 +1,114 @@
+{
+  "name": "Elemental Breath",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p>The scamp breathes elemental matter in a @Template[type:cone|distance:10]. Each creature in the area takes @Damage[(floor((@actor.level+1)/2))d6|traits:area-damage] damage for every 2 levels you have, with a basic @Check[type:reflex|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. The damage type depends on the type of scamp.</p>"
+    },
+    "rules": [
+      {
+        "key": "DamageDice",
+        "selector": "elemental-breath-inline-damage",
+        "override": {
+          "damageType": "fire"
+        },
+        "predicate": [
+          "self:trait:fire"
+        ]
+      },
+      {
+        "key": "DamageDice",
+        "selector": "elemental-breath-inline-damage",
+        "override": {
+          "damageType": "slashing"
+        },
+        "predicate": [
+          {
+            "or": [
+              "self:trait:air",
+              "self:trait:metal"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "DamageDice",
+        "selector": "elemental-breath-inline-damage",
+        "override": {
+          "damageType": "bludgeoning"
+        },
+        "predicate": [
+          "self:trait:earth"
+        ]
+      },
+      {
+        "key": "DamageDice",
+        "selector": "elemental-breath-inline-damage",
+        "override": {
+          "damageType": "acid"
+        },
+        "predicate": [
+          "self:trait:water"
+        ]
+      },
+      {
+        "key": "DamageDice",
+        "selector": "elemental-breath-inline-damage",
+        "override": {
+          "damageType": "poison"
+        },
+        "predicate": [
+          "self:trait:wood"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "arcane"
+      ]
+    },
+    "publication": {
+      "title": "Rage of Elements 43",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 2
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "PT1H"
+    }
+  },
+  "_id": "M8Uz2EldibONPIht",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!M8Uz2EldibONPIht"
+}

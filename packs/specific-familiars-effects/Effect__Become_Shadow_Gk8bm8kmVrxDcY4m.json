@@ -1,0 +1,72 @@
+{
+  "name": "Effect: Become Shadow",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The shadow familiar transforms its body into barely tangible shadow. It gains resistance to all damage (except force) equal to half your level but can't use any actions requiring a physical form. The familiar can also slip through gaps at least 2 inches wide, or 1 inch wide if it @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeezes}.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "all-damage",
+        "exceptions": [
+          "force"
+        ],
+        "value": "ceil(@actor.master.level/2)"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "_id": "Gk8bm8kmVrxDcY4m",
+  "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+  "folder": null,
+  "sort": 1000000,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.15.3",
+    "coreVersion": "12.324",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Gk8bm8kmVrxDcY4m"
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Elemental Familiar (Earth)",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Archetype</strong> Elementalist</p>\n<hr />\n<p>Your familiar gains resistance to physical damage (except adamantine) equal to half your level.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "elemental",
+          "earth"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "Resistance",
+        "type": "all-damage",
+        "value": "ceil(@actor.master.level/2)",
+        "exceptions": [
+          "adamantine"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Rage of Elements pg. 59",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "QcitrOzx8IYwqJhZ",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.13.6",
+    "coreVersion": "12.324",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!QcitrOzx8IYwqJhZ"
+}

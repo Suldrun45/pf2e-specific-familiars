@@ -1,0 +1,62 @@
+{
+  "name": "Haunting Melody",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The nosoi croons an entrancing song. <br />Each living or undead creature within a 60-foot emanation must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher, or be @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round. <br />A nosoi can use a 2-action activity, which has the auditory, concentrate, divine, enchantment, and mental traits, to force affected creatures to attempt another @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save; on a failure, they are @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} for an additional round. <br />A creature that succeeds at any save or has its fascination broken is temporarily immune for 24 hours. <br />Despite being a mental effect, this ability affects mindless undead. <br />Psychopomps are immune to this ability.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "auditory",
+        "concentrate",
+        "divine",
+        "incapacitation",
+        "mental"
+      ]
+    },
+    "publication": {
+      "title": "Grand Bazaar 35",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": 2
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "PT1H"
+    }
+  },
+  "_id": "SPol3q1Owzpx9DXV",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SPol3q1Owzpx9DXV"
+}

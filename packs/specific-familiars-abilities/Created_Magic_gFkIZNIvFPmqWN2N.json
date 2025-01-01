@@ -1,0 +1,52 @@
+{
+  "name": "Created Magic",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your ceru familiar grants you the @UUID[Compendium.pf2e.spells-srd.pwzdSlJgYqN7bs2w]{Telekinetic Hand} and @UUID[Compendium.pf2e.spells-srd.izcxFQFwf3woCnFs]{Guidance} cantrips via the @UUID[Compendium.pf2e.familiar-abilities.rs4Awf4k1e0Mj797]{Cantrip Connection} granted ability. <br />If one or more of these cantrips isn't on your spell list, you can replace the cantrip or cantrips not on your spell list with a cantrip or cantrips from your spell list instead.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Impossible Lands 220",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "_id": "gFkIZNIvFPmqWN2N",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!gFkIZNIvFPmqWN2N"
+}

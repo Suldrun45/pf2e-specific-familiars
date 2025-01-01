@@ -1,0 +1,58 @@
+{
+  "name": "Little Wish",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Effect Trigger</strong> A creature the gennayn can see that is within 60 feet attempts a saving throw or skill check</p>\n<hr />\n<p><strong>Effect</strong> The gennayn reshapes reality in a small way to twist fate, allowing the creature to reroll the saving throw or skill check.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fortune"
+      ]
+    },
+    "publication": {
+      "title": "Rage of Elements 43",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "reaction"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "_id": "l05WBllolnPMxMzb",
+  "img": "systems/pf2e/icons/actions/Reaction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.1.0",
+    "coreVersion": "12.329",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!l05WBllolnPMxMzb"
+}
