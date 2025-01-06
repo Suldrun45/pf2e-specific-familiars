@@ -8,7 +8,7 @@
       "value": "<p><strong>Frequency</strong> Once per hour</p><hr /><p><strong>Effect</strong> The fey dragonet breathes euphoric gas in a @Template[type:cone|distance:10]. Each creature in the area must attempt a @Check[type:fortitude|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/r 1d4]] rounds; on a critical failure, the duration is 1 minute.</p>"
     },
     "rules": [],
-    "slug": "breath-weapon-faerie-dragon",
+    "slug": "euphoric-breath",
     "_migration": {
       "version": 0.917,
       "lastMigration": null,
@@ -61,7 +61,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.7.2",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
