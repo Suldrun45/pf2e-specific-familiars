@@ -1,0 +1,78 @@
+{
+  "name": "Effect: Spiritual Recall",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The familiar <span style=\"font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif\">becomes incorporeal until the end of your next turn</span></p>"
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "incorporeal"
+        ]
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "disease",
+          "poison",
+          "precision"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "_id": "kqJp6puB6BGVRLjC",
+  "img": "systems/pf2e/icons/spells/animal-vision.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.8.1"
+  },
+  "_key": "!items!kqJp6puB6BGVRLjC"
+}

@@ -7,7 +7,7 @@
     "extractPacks": "node extract-packs.mjs",
     "link": "node link.mjs"
   },
-  "author": "Ian Blackstone",
+  "author": "Sasane",
   "license": "Apache-2.0",
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.3",

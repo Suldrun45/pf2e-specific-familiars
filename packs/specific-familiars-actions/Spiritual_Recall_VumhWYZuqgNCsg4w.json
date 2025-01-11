@@ -37,6 +37,10 @@
     "frequency": {
       "max": 1,
       "per": "day"
+    },
+    "selfEffect": {
+      "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.kqJp6puB6BGVRLjC",
+      "name": "Effect: Spiritual Recall"
     }
   },
   "_id": "VumhWYZuqgNCsg4w",
@@ -50,7 +54,7 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.7.2",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
