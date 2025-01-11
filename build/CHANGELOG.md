@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 2.3.1
+- Added an effect for Spiritual Recall 
+
 ## Version 2.3.0
 - Added the Druid's Leshy Familiar and the Elementalist's Elemental Familiar
 
