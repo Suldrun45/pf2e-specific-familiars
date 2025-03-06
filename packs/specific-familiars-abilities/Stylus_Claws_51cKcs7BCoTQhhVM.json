@@ -18,10 +18,10 @@
       "value": []
     },
     "publication": {
-      "title": "Pathfinder Society Guide 122",
+      "title": "Pathfinder Lost Omens Rival Academies 45",
       "authors": "",
-      "license": "OGL",
-      "remaster": false
+      "license": "ORC",
+      "remaster": true
     },
     "actionType": {
       "value": "passive"
@@ -43,8 +43,8 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.1.0",
-    "coreVersion": "12.329",
+    "systemVersion": "6.9.0",
+    "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },

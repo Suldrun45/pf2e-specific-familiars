@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Frequency</strong> once per 10 minutes;</p><hr /><p><strong>Effect </strong>The wyrm splatters ink in a @Template[type:cone|distance:10]. Each creature in the area must succeed at a @Check[type:reflex|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save or become covered in ink.<br />Ink spray has the effects of @UUID[Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE]{Revealing Light} except the creature isn't @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled}, and it can remove its @UUID[Compendium.pf2e.spells-srd.VosLNn2M8S7JH67D]{Blindness} by spending a single action, which has the manipulate trait, to wipe off the ink from their face</p>"
+      "value": "<p><strong>Frequency</strong> once per 10 minutes;</p><hr /><p><strong>Effect </strong>The wyrm splatters ink in a @Template[type:cone|distance:10]. Each creature in the area must succeed at a @Check[type:reflex|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save with a DC equal to its master's spell DC or class DC, whichever is higher.</p><p><strong>Critical Success</strong> The creture is unaffected.</p><p><strong>Success</strong> If the creature was invisible, it is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{concealed} instead for 2 rounds.</p><p><strong>Failure</strong> As success, but for 1 minute.</p><p><strong>Critical Failure</strong> As success, but for 10 minutes. The creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{blinded} for 1 round or until it wipes the ink from its eyes using an Interact action</p>"
     },
     "rules": [],
     "slug": null,
@@ -20,10 +20,10 @@
       ]
     },
     "publication": {
-      "title": "Pathfinder Society Guide 122",
+      "title": "Pathfinder Lost Omens Rival Academies 44",
       "authors": "",
-      "license": "OGL",
-      "remaster": false
+      "license": "ORC",
+      "remaster": true
     },
     "actionType": {
       "value": "action"
@@ -49,7 +49,7 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.7.2",
+    "systemVersion": "6.9.0",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

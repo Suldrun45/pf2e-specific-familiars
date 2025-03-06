@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 2.4.0
+- Added the Mockingfey Familiar
+- Updated the Calligraphy Wyrm for Lost Omens: Rival Academies
+
 ## Version 2.3.1
 - Added an effect for Spiritual Recall 
 

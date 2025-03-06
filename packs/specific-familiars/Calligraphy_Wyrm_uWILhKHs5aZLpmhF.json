@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Required Number of Abilities 6</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.0Xrkk46IM43iI1Fv]{Darkvision}, @UUID[Compendium.pf2e.familiar-abilities.ZHSzNt3NxkXbj1mI]{Flier}, @UUID[Compendium.pf2e.familiar-abilities.cT5octWchU4gjrhP]{Manual Dexterity}, @UUID[Compendium.pf2e.familiar-abilities.FlRUb8U13Crj3NaA]{Scent}, @UUID[Compendium.pf2e.familiar-abilities.jevzf9JbJJibpqaI]{Skilled} (arcana, society), @UUID[Compendium.pf2e.familiar-abilities.zyMRLQnFCQVpltiR]{Speech}</p><hr /><p>Calligraphy wyrms are curious dragons constantly in search of new lore and writing. They make natural allies for Pathfinders. While knowledgeable, calligraphy wyrms can also be know-it-alls. Their chirpy, high-pitched voices make this attitude humorous to some and insufferable to others.</p><hr /><p><span class=\"action-glyph\">1</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.uQogznOvnZpPJtmE]{Ink Spray}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.uQogznOvnZpPJtmE inline]</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.51cKcs7BCoTQhhVM]{Stylus Claws}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.51cKcs7BCoTQhhVM inline]</p>"
+      "value": "<p><strong>Access</strong> affiliation with Cobyslarni or the Pathfinder Society</p><p><strong>Required Number of Abilities 6</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.0Xrkk46IM43iI1Fv]{Darkvision}, @UUID[Compendium.pf2e.familiar-abilities.ZHSzNt3NxkXbj1mI]{Flier}, @UUID[Compendium.pf2e.familiar-abilities.cT5octWchU4gjrhP]{Manual Dexterity}, @UUID[Compendium.pf2e.familiar-abilities.FlRUb8U13Crj3NaA]{Scent}, @UUID[Compendium.pf2e.familiar-abilities.jevzf9JbJJibpqaI]{Skilled} (arcana, society), @UUID[Compendium.pf2e.familiar-abilities.zyMRLQnFCQVpltiR]{Speech}</p><hr /><p>Calligraphy wyrms are curious dragons constantly in search of new lore and writing. They make natural allies for academics of all stripes, whether remaining in the towers of Cobyslarni or heading into fieldwork like the Pathfinder Society, but also found working with witches contracted to draconic powers or wizards who've somehow managed to impress the tiny creatures. <br />While knowledgeable, calligraphy wyrms can also be know-it-alls. Their chirpy, high-pitched voices make this attitude humorous to some and insufferable to others.</p><hr /><p><span class=\"action-glyph\">1</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.uQogznOvnZpPJtmE]{Ink Spray}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.uQogznOvnZpPJtmE inline]</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.51cKcs7BCoTQhhVM]{Stylus Claws}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.51cKcs7BCoTQhhVM inline]</p>"
     },
     "rules": [
       {
@@ -125,10 +125,10 @@
       "value": []
     },
     "publication": {
-      "title": "Pathfinder Society Guide 122",
+      "title": "Pathfinder Lost Omens Rival Academies 44",
       "authors": "",
-      "license": "OGL",
-      "remaster": false
+      "license": "ORC",
+      "remaster": true
     },
     "actionType": {
       "value": "passive"
@@ -150,7 +150,7 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.7.2",
+    "systemVersion": "6.9.0",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

@@ -1,0 +1,118 @@
+{
+  "name": "Mockingfey",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.935,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Access</strong> affiliation with Cobyslarni<br /><strong>Required Number of Abilities 4</strong><br /><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI]{Flier}, @UUID[Compendium.pf2e.familiar-abilities.Item.2fiQzoEKu6YUnrU9]{Independent}, @UUID[Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR]{Speech}</p><hr /><p>Mockingfey are tiny fey with the heads of humanoids and the bodies of colorful parrots. Though they’re mischievous and unruly, mockingfeys are very loyal to those they consider friends. They can speak and understand language, but typically communicate in pantomime instead, as they find verbal speech restrictive. </p><p>Some spellcasters ally with mockingfey as familiars, as they’re highly curious and keen—if distractable— students. Cobyslarni students and faculty, being used to the bizarre nature of the First World, are more tolerant than most of a mockingfey’s antics, and the little creatures are a common sight flitting around the school’s towers. Naturally, any pranks a mockingfey pulls on a student’s rivals are merely the unsanctioned work of an excitable familiar.</p><p>Cobyslarni representatives have found their familiars’ antics are less appreciated by the students of other schools. In part, this is because a small or feathered student doesn’t seem out of place among the Traveling Academy’s student body. Even without that confusion, many Cobyslarni students are finding they must teach their mockingfey familiars the most difficult lessons of all: when not to insult people and who to leave alone.</p><hr /><p><span class=\"action-glyph\">1</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.yhxOhLAyefQq8g1f]{Gibe}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.yhxOhLAyefQq8g1f inline]</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens Rival Academies 45",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.2fiQzoEKu6YUnrU9",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Item.0VKcfODcpBZVEYVz",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActorTraits",
+        "remove": [
+          "animal"
+        ],
+        "add": [
+          "fey"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Mockingfey",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 4
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.9.0"
+  },
+  "_id": "5eD6t2V5YXaP22WC",
+  "sort": 0,
+  "_key": "!items!5eD6t2V5YXaP22WC"
+}
