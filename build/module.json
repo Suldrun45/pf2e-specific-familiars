@@ -1,7 +1,7 @@
 {
   "id": "pf2e-specific-familiars",
   "title": "PF2e Specific Familiars",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -12,7 +12,7 @@
     }
   ],
   "manifest": "https://github.com/Suldrun45/pf2e-specific-familiars/releases/latest/download/module.json",
-  "download": "https://github.com/Suldrun45/pf2e-specific-familiars/releases/download/v2.4.0/pf2e-specific-familiars.zip",
+  "download": "https://github.com/Suldrun45/pf2e-specific-familiars/releases/download/v2.4.1/pf2e-specific-familiars.zip",
   "url": "https://github.com/Suldrun45/pf2e-specific-familiars",
   "readme": "https://github.com/Suldrun45/pf2e-specific-familiars/blob/master/README.md",
   "bugs": "https://github.com/Suldrun45/pf2e-specific-familiars/issues",
