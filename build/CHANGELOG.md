@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 2.5.1
+- Fix styling of Kick Up Dust
+
 ## Version 2.5.0
 - Added the Dust Bunny from the 2025-04-01 Paizo Blog "Foolish Housekeeping and Other Articles"
 
