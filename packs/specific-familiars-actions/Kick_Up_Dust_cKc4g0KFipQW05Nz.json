@@ -1,0 +1,58 @@
+{
+  "name": "Kick Up Dust",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.935,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><span style=\"font-family:Roboto, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:initial;scrollbar-color:initial;color:rgb(25, 24, 19);font-family:Roboto, sans-serif;font-size:14px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">Frequency</strong> once per hour</span></p><hr /><p><strong>Effect</strong> <span style=\"font-family:'Open Sans', Helvetica, Arial, sans-serif\">Your dust bunny shakes and kicks to stir up dust in a @Template[type:emanation|distance:5]. Each creature in the area must attempt a </span>@Check[type:fortitude|dc:resolve(@actor.master.attributes.classOrSpellDC.value)]<span style=\"font-family:'Open Sans', Helvetica, Arial, sans-serif\"> save against the higher of your class DC or spell DC. A creature that fails its save begins sneezing uncontrollably and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and cannot take reactions for 1 round; on a critical failure they are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}.</span></p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Paizo Blog: Foolish Housekeeping and Other Articles",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "manipulate"
+      ]
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "category": "familiar",
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "PT1H"
+    }
+  },
+  "_id": "cKc4g0KFipQW05Nz",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.11.1"
+  },
+  "_key": "!items!cKc4g0KFipQW05Nz"
+}

@@ -1,0 +1,128 @@
+{
+  "name": "Dust Bunny",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.935,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Required Number of Abilities 4</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ]{Construct}, @UUID[Compendium.pf2e.familiar-abilities.Item.2fiQzoEKu6YUnrU9]{Independent}, @UUID[Compendium.pf2e.familiar-abilities.Item.pX73zPGaazVJ0lKO]{Play Dead}, @UUID[Compendium.pf2e.familiar-abilities.Item.jevzf9JbJJibpqaI]{Skilled (Arcana)}</p><hr /><p>If you, despite the warning, desire a dust bunny companion, or perhaps you have one by accident and are willing to care for it, this section is for you. Dust bunnies greatly enjoy company and will often desire to lie on your lap or desk. Wherever they keep you company, ensure the area is regularly cleaned of any new or shed debris; otherwise, another dust bunny may form.</p><p>To feed your dust bunny, simply keep the collections from your daily housekeeping. However, if you notice they begin growing to an unreasonable size, be sure to limit their portions, as they have been known to grow to the size of large dogs.</p><p>It's important to remember that having formed of their own accord, dust bunnies are highly independent. While this makes them great companions and assistants, this also makes dust bunnies prone to making mischief, often spreading dirt out of spite or simply by wasting away. One should be vigilant for such things, for more dust and debris creates the perfect environment for new dust bunnies to form, and one can quickly be overrun with an infestation of dust bunnies!</p><hr /><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.cKc4g0KFipQW05Nz]{Kick Up Dust}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.cKc4g0KFipQW05Nz inline]</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Paizo Blog: Foolish Housekeeping and Other Articles",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "construct"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.2fiQzoEKu6YUnrU9",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.pX73zPGaazVJ0lKO",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.jevzf9JbJJibpqaI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "preselectChoices": {
+          "skill": "arcana"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.cKc4g0KFipQW05Nz"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Dust Bunny",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 4
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "FeZocKOtXkszySKM",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.11.1"
+  },
+  "_key": "!items!FeZocKOtXkszySKM"
+}

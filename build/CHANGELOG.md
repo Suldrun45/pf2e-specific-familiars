@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 2.5.0
+- Added the Dust Bunny from the 2025-04-01 Paizo Blog "Foolish Housekeeping and Other Articles"
+
 ## Version 2.4.0
 - Added the Mockingfey Familiar
 - Updated the Calligraphy Wyrm for Lost Omens: Rival Academies
