@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 3.0.0
+- Update for Foundry V13
+
 ## Version 2.5.2
 - Spring 2025 errata: Fey dragonet is now a Fey
 

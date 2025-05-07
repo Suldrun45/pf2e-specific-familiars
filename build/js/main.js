@@ -18,7 +18,7 @@ Hooks.once("ready", async () => {
 });
 
 Hooks.on("createItem", async (item) => {
-	if (item.type=="action" && item.system.category=="familiar" && (item._stats.compendiumSource?.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.') || item.flags.core?.sourceId.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.')) && item.parent.type=="familiar"){
+	if (item.type=="action" && item.system.category=="familiar" && (item._stats.compendiumSource?.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.') || (item.flags.core?.sourceId ?? "").startsWith('Compendium.pf2e-specific-familiars.specific-familiars.')) && item.parent.type=="familiar"){
 		const familiar = item.parent;
 		const master = familiar.master;
 		await setFamiliarAbilities(master);		
@@ -26,7 +26,7 @@ Hooks.on("createItem", async (item) => {
 });
 
 Hooks.on("deleteItem", async (item) => {
-	if (item.type=="action" && item.system.category=="familiar" && (item._stats.compendiumSource?.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.') || item.flags.core?.sourceId.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.')) && item.parent.type=="familiar"){
+	if (item.type=="action" && item.system.category=="familiar" && (item._stats.compendiumSource?.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.') || (item.flags.core?.sourceId ?? "").startsWith('Compendium.pf2e-specific-familiars.specific-familiars.')) && item.parent.type=="familiar"){
 		const familiar = item.parent;
 		const master = familiar.master;
 		await setFamiliarAbilities(master);
