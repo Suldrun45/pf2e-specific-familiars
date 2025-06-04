@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.1.0
+- Update for Lost Omens Shining Kingdoms
+- Added the Grindle-Drake familiar
+
 ## Version 3.0.0
 - Update for Foundry V13
 

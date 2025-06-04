@@ -1,0 +1,134 @@
+{
+  "name": "Grindle-Drake",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.939,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Access</strong> You're from the Five Kings Mountains.</p><p><strong>Required Number of Abilities 4</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv]{Darkvision}, @UUID[Compendium.pf2e.familiar-abilities.Item.jevzf9JbJJibpqaI]{Skilled (Perception, Survival)}, @UUID[Compendium.pf2e.familiar-abilities.Item.XCqYnlVbLGqEGPeX]{Touch Telepathy}</p><hr /><p>Grindlegrubs have been an essential, if unglamorous, part of the Five Kings Mountains’ food system for millennia, playing an especially important role in populous cities where enormous pits of them break down all organic waste. In these pits, the large white grubs eat voraciously, breed quickly, and provide a ready source of protein up and down the food chain. The grindlegrubs within the Five Kings Mountains were specially bred millennia ago to enhance their size and other favorable traits. This domesticated breed of grindlegrub evolved to grow to enormous sizes and eventually metamorphosize into nigh-useless large black flies too heavy to fly. Knowledge of the origins of grindlegrubs and their original forms was lost to time as the creatures’ usefulness in their modified state proved invaluable to all settlements in the region.</p><p>Centuries ago, Ylivsach Taarghan, a young scholar at the Tar-Kazmukh arcane library undertook a deep study of grindlegrubs, encouraging their metamorphosis under conditions both magical and mundane in an attempt to recreate the grindlegrubs of old. With the right combination of arcane energy and a sulfurous steam vent for incubation, Ylivsach succeeded in bringing back the scaly, foot-long creatures with bright orange and red hues as well as six legs, pointy tails, and sharp beaks. Naming these creatures grindle-drakes, Ylivsach provoked controversy with her discovery, from those who insist that these creatures aren’t related to drakes to those who insist that they aren’t metamorphosed grindlegrubs. To this day, grindle-drakes are bred in Tar-Kazmukh and sometimes gifted to friends of the Blue Warders.</p><hr /><p><span class=\"action-glyph\">2</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.TwFgdAU71NRu9vd6]{Forage}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.TwFgdAU71NRu9vd6 inline]</p><hr /><p><span class=\"action-glyph\">2</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.ZofYaPyIFDmsOGWv]{Sure and Steady}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.ZofYaPyIFDmsOGWv inline]</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Shining Kingdoms p. 100",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "Uncommon"
+        ],
+        "remove": []
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.64sbvMGxr44qVmIn",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.jevzf9JbJJibpqaI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "preselectChoices": {
+          "skill": "survival"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.XCqYnlVbLGqEGPeX",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.TwFgdAU71NRu9vd6",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.ZofYaPyIFDmsOGWv",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Grindle-Drake",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 4
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "Fce2nWVXXAP1aXle",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.344",
+    "systemId": "pf2e",
+    "systemVersion": "7.1.0"
+  },
+  "_key": "!items!Fce2nWVXXAP1aXle"
+}

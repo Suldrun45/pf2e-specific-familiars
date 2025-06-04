@@ -151,9 +151,10 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "6.9.0",
-    "coreVersion": "12.331",
+    "coreVersion": "13.344",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!uWILhKHs5aZLpmhF"
 }

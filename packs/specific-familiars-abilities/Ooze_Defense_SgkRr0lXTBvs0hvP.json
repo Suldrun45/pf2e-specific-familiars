@@ -58,9 +58,10 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "12.329",
+    "coreVersion": "13.344",
     "systemId": "pf2e",
-    "systemVersion": "6.1.0"
+    "systemVersion": "6.1.0",
+    "exportSource": null
   },
   "_key": "!items!SgkRr0lXTBvs0hvP"
 }

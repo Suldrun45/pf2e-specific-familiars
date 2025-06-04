@@ -43,10 +43,11 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.1.0",
-    "coreVersion": "12.329",
+    "systemVersion": "7.1.0",
+    "coreVersion": "13.344",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!gFkIZNIvFPmqWN2N"
 }

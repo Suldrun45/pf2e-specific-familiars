@@ -130,9 +130,10 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "6.7.2",
-    "coreVersion": "12.331",
+    "coreVersion": "13.344",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "QFLu9VbRGd4SsVFQ",
   "sort": 1900000,

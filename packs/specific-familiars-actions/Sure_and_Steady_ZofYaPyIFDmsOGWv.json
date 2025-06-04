@@ -1,0 +1,57 @@
+{
+  "name": "Sure and Steady",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.939,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>When placing all six legs on any ground or on stone flooring, a grindle-drake can extract knowledge about the surface under its feet in a <span style=\"font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace\">@Template[type:emanation|distance:10]</span> in all directions. This knowledge can include whether the ground is enchanted, hollow, treacherous, or otherwise different than it appears. The grindle-drake can then communicate this information through touch telepathy.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Shining Kingdoms p. 100",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "detection",
+        "primal"
+      ]
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "ZofYaPyIFDmsOGWv",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.344",
+    "systemId": "pf2e",
+    "systemVersion": "7.1.0"
+  },
+  "_key": "!items!ZofYaPyIFDmsOGWv"
+}
