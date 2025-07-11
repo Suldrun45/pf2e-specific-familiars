@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/Foundry-v13-informational)
 <!--- Downloads @ Latest Badge -->
 <!--- replace <user>/<repo> with your username/repository -->
-![All Downloads](https://img.shields.io/github/downloads/Suldrun45/pf2e-specific-familiars/latest/pf2e-specific-familiars.zip?color=5e0000&label=All%20Downloads)
+![All Downloads](https://img.shields.io/github/downloads/Suldrun45/pf2e-specific-familiars/pf2e-specific-familiars.zip?color=5e0000&label=All%20Downloads)
 ![Latest Release Download Count](https://img.shields.io/github/downloads/Suldrun45/pf2e-specific-familiars/latest/pf2e-specific-familiars.zip)
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fpf2e-specific-familiars&colorB=4aa94a)
 
