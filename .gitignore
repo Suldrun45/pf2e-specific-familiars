@@ -1,1 +1,8 @@
+*.log
 node_modules/
+build/pf2e-specific-familiars.lock
+build/
+CURRENT
+LOCK
+LOG*
+MANIFEST*

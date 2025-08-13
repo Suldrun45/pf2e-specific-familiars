@@ -8,7 +8,8 @@
   },
   "authors": [
     {
-      "name": "Sasane"
+      "name": "Sasane",
+      "flags": {}
     }
   ],
   "manifest": "https://github.com/Suldrun45/pf2e-specific-familiars/releases/latest/download/module.json",
@@ -23,8 +24,7 @@
       "sorting": "a",
       "color": "#6f1c17",
       "packs": [
-        "specific-familiars",
-        "specific-familiars-macros"
+        "specific-familiars"
       ],
       "folders": [
         {
@@ -37,15 +37,8 @@
             "specific-familiars-equipments",
             "specific-familiars-feats"
           ],
-          "folders": []
-        },
-        {
-          "name": "Internal, Do Not Import",
-          "sorting": "a",
-          "packs": [
-            "specific-familiars-internal-do-not-import"
-          ],
-          "folders": []
+          "folders": [],
+          "color": null
         }
       ]
     }
@@ -107,17 +100,6 @@
       }
     },
     {
-      "name": "specific-familiars-macros",
-      "label": "Specific Familiars Macros",
-      "path": "packs/specific-familiars-macros",
-      "type": "Macro",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
       "name": "specific-familiars-feats",
       "label": "Specific Familiars Feats",
       "path": "packs/specific-familiars-feats",
@@ -127,17 +109,6 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
-    },
-    {
-      "name": "specific-familiars-internal-do-not-import",
-      "label": "Specific Familiars Internal, Do not import",
-      "path": "packs/specific-familiars-internal-do-not-import",
-      "type": "Macro",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "system": "pf2e"
     }
   ],
   "relationships": {
@@ -156,5 +127,6 @@
   "esmodules": [
     "js/main.js"
   ],
-  "description": "Abilities for the Specific familiars of PF2e"
+  "description": "<p>Abilities for the Specific familiars of PF2e</p>",
+  "flags": {}
 }
