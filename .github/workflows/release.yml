@@ -49,6 +49,10 @@ jobs:
         id: create_version_release
         uses: ncipollo/release-action@v1
         with:
+          allowUpdates: true
+          artifactErrorsFailBuild: true
+          removeArtifacts: false
+          replacesArtifacts: false
           name: ${{ github.event.release.name }}
           draft: ${{ github.event.release.unpublished }}
           prerelease: ${{ github.event.release.prerelease }}
