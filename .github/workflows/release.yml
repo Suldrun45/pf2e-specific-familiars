@@ -8,8 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
 
       # get part of the tag after the `v`
       - name: Extract tag version number
@@ -54,7 +54,7 @@ jobs:
           removeArtifacts: false
           replacesArtifacts: false
           name: ${{ github.event.release.name }}
-          draft: ${{ github.event.release.unpublished }}
+          draft: ${{ github.event.release.draft }}
           prerelease: ${{ github.event.release.prerelease }}
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.event.release.tag_name }}
