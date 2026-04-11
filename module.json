@@ -1,10 +1,10 @@
 {
   "id": "pf2e-specific-familiars",
   "title": "PF2e Specific Familiars",
-  "version": "3.1.0",
+  "version": "14.0.0",
   "compatibility": {
     "minimum": "12",
-    "verified": "13"
+    "verified": "14"
   },
   "authors": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "manifest": "https://github.com/Suldrun45/pf2e-specific-familiars/releases/latest/download/module.json",
-  "download": "https://github.com/Suldrun45/pf2e-specific-familiars/releases/download/v3.1.0/pf2e-specific-familiars.zip",
+  "download": "https://github.com/Suldrun45/pf2e-specific-familiars/releases/download/v14.0.0/pf2e-specific-familiars.zip",
   "url": "https://github.com/Suldrun45/pf2e-specific-familiars",
   "readme": "https://github.com/Suldrun45/pf2e-specific-familiars/blob/master/README.md",
   "bugs": "https://github.com/Suldrun45/pf2e-specific-familiars/issues",
@@ -119,7 +119,7 @@
         "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
         "compatibility": {
           "minimum": "6.3.0",
-          "verified": "7.1.0"
+          "verified": "8.0.0"
         }
       }
     ]

@@ -66,10 +66,10 @@ async function setFamiliarAbilities(master){
 			await master.createEmbeddedDocuments("Item", [itemsource]);					
 		}	
 	}
-	else{
-		await master.unsetFlag(MODULE_ID, 'familiarAbilities'); //set abilities on the master		
+	else{	
 		if (existing && existing.isOwner && existing.parent.isOwner){ //Remove the feat if it isn't required anymore
 			await existing.delete();
+		await master.unsetFlag(MODULE_ID, 'familiarAbilities'); //set abilities on the master	
 		}	
 	}	
 }
