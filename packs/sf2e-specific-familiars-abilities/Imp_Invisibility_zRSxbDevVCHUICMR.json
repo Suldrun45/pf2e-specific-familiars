@@ -1,0 +1,70 @@
+{
+  "name": "Imp Invisibility",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Once per hour, your imp familiar can cast 2nd level @UUID[Compendium.sf2e.spells.XXqE1eY3w3z6xJCB]{Invisibility} on itself as a divine innate spell.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.13.6"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Player Core 2 171",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "requirements": {
+      "value": ""
+    },
+    "trigger": {
+      "value": ""
+    },
+    "frequency": {
+      "max": 1,
+      "per": "PT1H"
+    }
+  },
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "sf2e",
+    "systemVersion": "1.0.3",
+    "coreVersion": "14.360",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "zRSxbDevVCHUICMR",
+  "sort": 0,
+  "_key": "!items!zRSxbDevVCHUICMR"
+}

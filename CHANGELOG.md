@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 14.1.0
+- Add SF2e compendiums
+
 ## Version 14.0.0
 - Checked for Foundry v14
 

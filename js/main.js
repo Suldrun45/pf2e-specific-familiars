@@ -1,5 +1,7 @@
 const MODULE_ID = 'pf2e-specific-familiars';
-const SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID = "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE";
+const system = game.system.id;
+const SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID = system == "pf2e" ? "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE" : "Compendium.pf2e-specific-familiars.sf2e-specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE";
+const compendiumPrefix = system == "pf2e" ? "Compendium.pf2e-specific-familiars.specific-familiars." : "Compendium.pf2e-specific-familiars.sf2e-specific-familiars.";
 
 Hooks.once("init", ()=>{
 	game.pf2especificfamiliars = foundry.utils.mergeObject(game.pf2especificfamiliars ?? {}, {
@@ -34,7 +36,9 @@ Hooks.once("ready", async () => {
 });
 
 Hooks.on("createItem", async (item) => {
-	if (item.type=="action" && item.system.category=="familiar" && (item._stats.compendiumSource?.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.') || (item.flags.core?.sourceId ?? "").startsWith('Compendium.pf2e-specific-familiars.specific-familiars.')) && item.parent.type=="familiar"){
+	if (item.type=="action" && item.system.category=="familiar" && 
+	(item._stats.compendiumSource?.startsWith(compendiumPrefix) || (item.flags.core?.sourceId ?? "").startsWith(compendiumPrefix')) 
+	&& item.parent.type=="familiar"){
 		const familiar = item.parent;
 		const master = familiar.master;
 		await setFamiliarAbilities(master);		
@@ -42,7 +46,7 @@ Hooks.on("createItem", async (item) => {
 });
 
 Hooks.on("deleteItem", async (item) => {
-	if (item.type=="action" && item.system.category=="familiar" && (item._stats.compendiumSource?.startsWith('Compendium.pf2e-specific-familiars.specific-familiars.') || (item.flags.core?.sourceId ?? "").startsWith('Compendium.pf2e-specific-familiars.specific-familiars.')) && item.parent.type=="familiar"){
+	if (item.type=="action" && item.system.category=="familiar" && (item._stats.compendiumSource?.startsWith(compendiumPrefix) || (item.flags.core?.sourceId ?? "").startsWith(compendiumPrefix)) && item.parent.type=="familiar"){
 		const familiar = item.parent;
 		const master = familiar.master;
 		await setFamiliarAbilities(master);
@@ -54,8 +58,8 @@ async function setFamiliarAbilities(master){
 		return;
 	const existing = master.itemTypes.feat.find((e) => e._stats?.compendiumSource === SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID || e.flags.core?.sourceId === SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID);
 	const familiar = master.familiar;
-	const requiredNumberOfAbilities = familiar?.flags.pf2e.specificFamiliars?.requiredNumberOfAbilities ?? 0;
-	const grantedNumberOfAbilities = familiar?.flags.pf2e.specificFamiliars?.grantedNumberOfAbilities ?? 0;	
+	const requiredNumberOfAbilities = system == "pf2e" ? (familiar?.flags.pf2e.specificFamiliars?.requiredNumberOfAbilities ?? 0): (familiar?.flags.sf2e.specificFamiliars?.requiredNumberOfAbilities ?? 0);
+	const grantedNumberOfAbilities = system == "pf2e" ? (familiar?.flags.pf2e.specificFamiliars?.grantedNumberOfAbilities ?? 0): (familiar?.flags.sf2e.specificFamiliars?.grantedNumberOfAbilities ?? 0);	
 	
 	if (requiredNumberOfAbilities > 0 || grantedNumberOfAbilities > 0){
 		await master.setFlag(MODULE_ID, 'familiarAbilities', { requiredNumberOfAbilities: requiredNumberOfAbilities, grantedNumberOfAbilities: grantedNumberOfAbilities }); //set abilities on the master

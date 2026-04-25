@@ -1,0 +1,57 @@
+{
+  "name": "Orc Ferocity (Ferocious Beasts)",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per day</p><p><strong>Trigger</strong> You would be reduced to 0 Hit Points but not immediately killed.</p><hr><p>Fierceness in battle runs through your blood, and you refuse to fall from your injuries no matter how terrible they may be. You avoid being knocked out and remain at 1 Hit Point, and your @UUID[Compendium.sf2e.conditions.Item.Yl48xTdMh3aeQYL2]{Wounded} condition increases by 1.</p><p>If you have the Undying Ferocity feat, your familiar resists death's clutches with supernatural vigor, daring death to claim you while promising that any such attempt will surely fail. When they use @UUID[Compendium.pf2e-anachronism.feats.Item.PlhPpdwIV0rIAJ8K]{Orc Ferocity}, they gain temporary Hit Points equal to their level.</p><p>@UUID[Compendium.pf2e-anachronism.feat-effects.Item.Px4E3Hyx2pmvSWAA]{Effect: Undying Ferocity}</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.917,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Player Core",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "actionType": {
+      "value": "reaction"
+    },
+    "category": "familiar",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "_id": "gx8adQsWf3CUtrWF",
+  "img": "systems/pf2e/icons/actions/Reaction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "FibNWQYOdQwgSPqy": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "sf2e",
+    "systemVersion": "1.0.3",
+    "coreVersion": "14.360",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!gx8adQsWf3CUtrWF"
+}
