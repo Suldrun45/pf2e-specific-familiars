@@ -1,12 +1,15 @@
 const MODULE_ID = 'pf2e-specific-familiars';
-const system = game.system.id;
-const SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID = system == "pf2e" ? "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE" : "Compendium.pf2e-specific-familiars.sf2e-specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE";
-const compendiumPrefix = system == "pf2e" ? "Compendium.pf2e-specific-familiars.specific-familiars." : "Compendium.pf2e-specific-familiars.sf2e-specific-familiars.";
+let system;
+let SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID;
+let  compendiumPrefix;
 
 Hooks.once("init", ()=>{
+	system = game.system.id;
 	game.pf2especificfamiliars = foundry.utils.mergeObject(game.pf2especificfamiliars ?? {}, {
         setFamiliarAbilities: setFamiliarAbilities
     });
+	SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID = system == "pf2e" ? "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE" : "Compendium.pf2e-specific-familiars.sf2e-specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE";
+	compendiumPrefix = system == "pf2e" ? "Compendium.pf2e-specific-familiars.specific-familiars." : "Compendium.pf2e-specific-familiars.sf2e-specific-familiars.";
 });
 
 
@@ -37,7 +40,7 @@ Hooks.once("ready", async () => {
 
 Hooks.on("createItem", async (item) => {
 	if (item.type=="action" && item.system.category=="familiar" && 
-	(item._stats.compendiumSource?.startsWith(compendiumPrefix) || (item.flags.core?.sourceId ?? "").startsWith(compendiumPrefix')) 
+	(item._stats.compendiumSource?.startsWith(compendiumPrefix) || (item.flags.core?.sourceId ?? "").startsWith(compendiumPrefix)) 
 	&& item.parent.type=="familiar"){
 		const familiar = item.parent;
 		const master = familiar.master;
