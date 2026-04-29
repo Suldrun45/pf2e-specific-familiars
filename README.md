@@ -10,11 +10,12 @@
 <!--- Forge Bazaar Install % Badge -->
 <!--- replace <your-module-name> with the `name` in your manifest -->
 
-# PF2e Specific Familiars - module handling specific familiars for Pathfinder 2e
+# PF2e Specific Familiars - module handling specific familiars for Pathfinder 2e and Starfinder 2e
 
 - Adds a compendium with a series of Familiar Abilities defining each Specific Familiar
 - Dragging one of these Abilities to a familiar actor will also add every other Familiar Ability granted to the familiar
 - Candies for the Sweet Beasts familiars
+- For Starfinder 2e, the PF2e Anachronism module is required. (https://raw.githubusercontent.com/foundryvtt/pf2e/v14-dev/module.pf2e-anachronism.json)
 
 ### How to
 When you add a Specific Familiar ability, the number of abilities required to get that specific familiar will be deducted from the Total # of familiar abilities on the familiar's sheet via a feat added to the master's sheet.  
