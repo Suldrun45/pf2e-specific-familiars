@@ -208,14 +208,6 @@
 			"verified": "1.0.3"			
 		}
       }
-    ],
-    "recommends": [
-      {
-        "id": "sf2e-anachronism",
-        "type": "module",
-		"manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/v14-dev/module.pf2e-anachronism.json",
-        "compatibility": {}
-      }
     ]
   },
   "esmodules": [
