@@ -24,6 +24,7 @@
       "sorting": "a",
       "color": "#6f1c17",
       "packs": [
+        "sf2e-specific-familiars",
         "specific-familiars"
       ],
       "folders": [
