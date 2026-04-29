@@ -31,6 +31,11 @@
           "name": "Effects and Abilities",
           "sorting": "a",
           "packs": [
+            "sf2e-specific-familiars-abilities",
+            "sf2e-specific-familiars-actions",
+            "sf2e-specific-familiars-effects",
+            "sf2e-specific-familiars-equipments",
+            "sf2e-specific-familiars-feats",
             "specific-familiars-abilities",
             "specific-familiars-actions",
             "specific-familiars-effects",
