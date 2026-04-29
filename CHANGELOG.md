@@ -1,7 +1,7 @@
 # Changelog
 
 ## Version 14.1.0
-- Add SF2e compendiums
+- Added compendiums for SF2e. The PF2e Anachronism is strongly recommended for SF2e.
 
 ## Version 14.0.0
 - Checked for Foundry v14
