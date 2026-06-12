@@ -1,5 +1,17 @@
 # Changelog
 
+## Version 14.1.4
+- Fix broken links and icons in the SF2e version.
+
+## Version 14.1.3
+- Compendium folders again, this should be the good version.
+
+## Version 14.1.2
+- Fix compendium folders.
+
+## Version 14.1.1
+- Fix wrong version of main.js.
+
 ## Version 14.1.0
 - Added compendiums for SF2e. The PF2e Anachronism module is required for SF2e.
 
