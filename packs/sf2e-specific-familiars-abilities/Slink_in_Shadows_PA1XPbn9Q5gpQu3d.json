@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>The shadow familiar can @UUID[Compendium.pf2e-anachronism.actions.XMcnh4cSI32tljXa]{Hide} or end its @UUID[Compendium.pf2e-anachronism.actions.VMozDqMMuK5kpoX4]{Sneak} in a creature's or object's shadow.</p>"
+      "value": "<p>The shadow familiar can @UUID[Compendium.sf2e.actions.XMcnh4cSI32tljXa]{Hide} or end its @UUID[Compendium.sf2e.actions.VMozDqMMuK5kpoX4]{Sneak} in a creature's or object's shadow.</p>"
     },
     "rules": [],
     "slug": null,
@@ -32,7 +32,7 @@
     },
     "deathNote": false
   },
-  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "img": "systems/sf2e/icons/actions/Passive.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -43,8 +43,8 @@
   },
   "_stats": {
     "systemId": "sf2e",
-    "systemVersion": "1.0.3",
-    "coreVersion": "14.360",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

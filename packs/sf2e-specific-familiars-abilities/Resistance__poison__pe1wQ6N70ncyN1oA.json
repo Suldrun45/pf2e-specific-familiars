@@ -45,7 +45,7 @@
     "deathNote": false
   },
   "_id": "pe1wQ6N70ncyN1oA",
-  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "img": "systems/sf2e/icons/actions/Passive.webp",
   "folder": null,
   "sort": 0,
   "ownership": {
@@ -56,7 +56,7 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "14.360",
+    "coreVersion": "14.364",
     "systemId": "sf2e",
     "systemVersion": "1.0.3",
     "exportSource": null

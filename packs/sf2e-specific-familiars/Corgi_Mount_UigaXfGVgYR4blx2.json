@@ -90,7 +90,7 @@
       "value": ""
     }
   },
-  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "img": "systems/sf2e/icons/default-icons/familiar.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -102,7 +102,7 @@
   "_stats": {
     "systemId": "sf2e",
     "systemVersion": "1.0.3",
-    "coreVersion": "14.360",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

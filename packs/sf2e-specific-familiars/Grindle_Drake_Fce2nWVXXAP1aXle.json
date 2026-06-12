@@ -114,7 +114,7 @@
     "deathNote": false
   },
   "_id": "Fce2nWVXXAP1aXle",
-  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "img": "systems/sf2e/icons/default-icons/familiar.svg",
   "folder": null,
   "sort": 0,
   "ownership": {
@@ -126,7 +126,7 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "14.360",
+    "coreVersion": "14.364",
     "systemId": "sf2e",
     "systemVersion": "1.0.3"
   },

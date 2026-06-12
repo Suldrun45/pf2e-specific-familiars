@@ -37,7 +37,7 @@
     }
   },
   "_id": "R1H7JcGDB9cPVeFh",
-  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "img": "systems/sf2e/icons/actions/Passive.webp",
   "folder": null,
   "sort": 0,
   "ownership": {
@@ -48,7 +48,7 @@
   "_stats": {
     "systemId": "sf2e",
     "systemVersion": "1.0.3",
-    "coreVersion": "14.360",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

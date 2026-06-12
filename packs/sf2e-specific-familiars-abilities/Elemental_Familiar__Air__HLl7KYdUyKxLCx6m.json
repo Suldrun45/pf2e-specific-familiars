@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Archetype</strong> Elementalist</p><hr><p>If your familiar stays completely still for 1 round, it becomes @UUID[Compendium.pf2e-anachronism.conditions.zJxUflt9np0q4yML]{Invisible} until it next takes an action. Any motion, even being moved or carried by another creature, ends this effect.</p>"
+      "value": "<p><strong>Archetype</strong> Elementalist</p><hr><p>If your familiar stays completely still for 1 round, it becomes @UUID[Compendium.sf2e.conditions.zJxUflt9np0q4yML]{Invisible} until it next takes an action. Any motion, even being moved or carried by another creature, ends this effect.</p>"
     },
     "rules": [
       {
@@ -44,7 +44,7 @@
     "deathNote": false
   },
   "_id": "HLl7KYdUyKxLCx6m",
-  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "img": "systems/sf2e/icons/actions/Passive.webp",
   "folder": null,
   "sort": 0,
   "ownership": {
@@ -54,8 +54,8 @@
   "flags": {},
   "_stats": {
     "systemId": "sf2e",
-    "systemVersion": "1.0.3",
-    "coreVersion": "14.360",
+    "systemVersion": "1.1.2",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

@@ -37,7 +37,7 @@
     "deathNote": false
   },
   "_id": "ZofYaPyIFDmsOGWv",
-  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "img": "systems/sf2e/icons/actions/TwoActions.webp",
   "folder": null,
   "sort": 0,
   "ownership": {
@@ -49,7 +49,7 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "14.360",
+    "coreVersion": "14.364",
     "systemId": "sf2e",
     "systemVersion": "1.0.3"
   },
