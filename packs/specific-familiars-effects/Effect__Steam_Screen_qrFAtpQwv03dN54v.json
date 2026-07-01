@@ -57,7 +57,7 @@
   "_id": "qrFAtpQwv03dN54v",
   "img": "icons/magic/air/fog-gas-smoke-dense-white.webp",
   "folder": null,
-  "sort": 200000,
+  "sort": 1400000,
   "ownership": {
     "default": 0,
     "FibNWQYOdQwgSPqy": 3
@@ -66,7 +66,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "6.1.0",
-    "coreVersion": "13.344",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

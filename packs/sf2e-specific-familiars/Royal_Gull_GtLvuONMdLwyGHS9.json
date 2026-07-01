@@ -1,0 +1,112 @@
+{
+  "name": "Royal Gull",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Required Number of Abilities 2</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI]{flier}, @UUID[Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR]{speech}</p><hr><p>The royal gull is a medium-sized bird with multicolored plumage and a golden beak. When it flaps its wings, its feathers release fine iridescent dust, leaving a shiny trail wherever it flies.</p><p>Adult royal gulls inhabit the rocky coastal areas of Hermea where they can easily find a wide variety of fish, which are their primary food source. However, royal gull chicks are unable to eat fish, and for their first year feed only on numchryes, a shrub-like fruit found only in the Rortinos Forest. This unique diet contributes to the vibrant colors of their plumage. During mating season, males fly in flocks over Promise, creating the illusion of moving rainbows as their fluttering wings release iridescent dust over the city. During this time, tailors and other artisans work quickly to collect this iridescent dust, as they can infuse it within dyes to create unique lustrous effects that can be used throughout the year.</p><hr><p><span class=\"action-glyph\">2</span> @UUID[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.SLvAjl0Ou1VtmrfP]{Fascinating Fluttering} (illusion, manipulate, visual)</p><p>@Embed[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.SLvAjl0Ou1VtmrfP inline]{Fascinating Fluttering}</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens High Seas 51",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "beast"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.SLvAjl0Ou1VtmrfP",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Royal Gull",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.requiredNumberOfAbilities",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.system.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": "royal-gull",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "GtLvuONMdLwyGHS9",
+  "img": "systems/sf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "sf2e",
+    "systemVersion": "1.2.0",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 0,
+  "_key": "!items!GtLvuONMdLwyGHS9"
+}

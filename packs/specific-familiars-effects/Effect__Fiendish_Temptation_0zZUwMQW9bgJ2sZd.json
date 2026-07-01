@@ -66,13 +66,13 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "6.1.0",
-    "coreVersion": "13.344",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
   "folder": null,
   "_id": "0zZUwMQW9bgJ2sZd",
-  "sort": 900000,
+  "sort": 2100000,
   "_key": "!items!0zZUwMQW9bgJ2sZd"
 }

@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 14.2
+- Update for Lost Omens High Seas.
+- Added the Golden Ermine, Royal Gull and Wildtwig familiars.
+
 ## Version 14.1.4
 - Fix broken links and icons in the SF2e version.
 

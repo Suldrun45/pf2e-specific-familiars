@@ -69,7 +69,7 @@
   "_id": "iuNIG5nW8mjcvVJb",
   "img": "modules/pf2e-specific-familiars/icons/infernal-temptation-luck.webp",
   "folder": null,
-  "sort": 0,
+  "sort": 800000,
   "ownership": {
     "default": 0,
     "FibNWQYOdQwgSPqy": 3
@@ -78,7 +78,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "6.1.0",
-    "coreVersion": "13.344",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

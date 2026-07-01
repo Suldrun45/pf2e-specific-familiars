@@ -75,13 +75,13 @@
     "usage": {
       "value": "other"
     },
-    "stackGroup": null,
-    "spell": null
+    "spell": null,
+    "stackGroup": null
   },
   "_id": "5qjeaIwmbQE03Fsx",
   "img": "modules/pf2e-specific-familiars/icons/Dunedhel-Kappu-Cup-2-tea-hot.512.png",
   "folder": null,
-  "sort": 0,
+  "sort": 100000,
   "ownership": {
     "default": 0,
     "CmIherh6xtcBaXKO": 3
@@ -90,7 +90,7 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.344",
+    "coreVersion": "14.364",
     "systemId": "pf2e",
     "systemVersion": "6.2.3",
     "exportSource": null

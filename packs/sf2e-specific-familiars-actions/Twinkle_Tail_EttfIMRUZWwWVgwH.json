@@ -1,0 +1,60 @@
+{
+  "name": "Twinkle Tail",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Frequency</strong> once per day;</p><hr><p><strong>Effect</strong> The golden stoat shakes its tail and grants a good fortune boon to a willing target within 30 feet of it. The boon allows the target to roll an attack roll or saving throw twice and use the higher result. The target chooses which roll to use the boon on before rolling. Once the target uses the boon, or after 1 minute, it fades away.</p><p>@UUID[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-effects.Item.hoRLM3NKBv8S3njJ]{Effect: Twinkle Tail}</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens High Seas 51",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [],
+    "slug": "twinkle-tail",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "fortune"
+      ]
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "category": "familiar",
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "_id": "EttfIMRUZWwWVgwH",
+  "img": "systems/sf2e/icons/actions/OneAction.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "sf2e",
+    "systemVersion": "1.2.0",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 2000000,
+  "_key": "!items!EttfIMRUZWwWVgwH"
+}

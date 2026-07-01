@@ -69,7 +69,7 @@
   "_id": "yzfkBxvBczAvGRAW",
   "img": "icons/magic/nature/tree-elm-roots-brown.webp",
   "folder": null,
-  "sort": 700000,
+  "sort": 1900000,
   "ownership": {
     "default": 0,
     "FibNWQYOdQwgSPqy": 3
@@ -78,7 +78,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "6.1.0",
-    "coreVersion": "13.344",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

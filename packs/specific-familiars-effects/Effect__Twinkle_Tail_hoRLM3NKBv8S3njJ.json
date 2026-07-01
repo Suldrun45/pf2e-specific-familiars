@@ -1,0 +1,88 @@
+{
+  "name": "Effect: Twinkle Tail",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>The boon allows the target to roll an attack roll or saving throw twice and use the higher result.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens High Seas 51",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "RollOption",
+        "option": "twinkle-tail",
+        "label": "Twinkle Tail",
+        "toggleable": true
+      },
+      {
+        "key": "RollTwice",
+        "keep": "higher",
+        "selector": "attack-roll",
+        "predicate": [
+          "twinkle-tail"
+        ]
+      },
+      {
+        "key": "RollTwice",
+        "keep": "higher",
+        "selector": "saving-throw",
+        "predicate": [
+          "twinkle-tail"
+        ]
+      }
+    ],
+    "slug": "effect-twinkle-tail",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "_id": "hoRLM3NKBv8S3njJ",
+  "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 1100000,
+  "_key": "!items!hoRLM3NKBv8S3njJ"
+}

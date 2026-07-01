@@ -55,7 +55,7 @@
   "_id": "Gk8bm8kmVrxDcY4m",
   "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
   "folder": null,
-  "sort": 1000000,
+  "sort": 2200000,
   "ownership": {
     "default": 0,
     "FibNWQYOdQwgSPqy": 3
@@ -64,7 +64,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.15.3",
-    "coreVersion": "13.344",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

@@ -1,0 +1,133 @@
+{
+  "name": "Golden Ermine",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Required Number of Abilities 4</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.dWTfO5WbLkD5mw2H]{climber}, @UUID[Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv]{darkvision}, @UUID[Compendium.pf2e.familiar-abilities.Item.XCqYnlVbLGqEGPeX]{touch telepathy}, @UUID[Compendium.pf2e.familiar-abilities.Item.9PsptrEoCC4QdM23]{valet}</p><hr><p>The golden ermine is a small mammal with a slender, elongated body. Their white fur is soft and dense, though their golden tails are what make them stand out the most from other stoats. The ermine’s legs are short, and it has sharp claws. Its head is small, with dark eyes and a pointed nose.</p><p>Stoats inhabit many different regions of Golarion, with their fur colors and markings differing based on location. These colors can range from pure white to dark brown and every color in between. The colors that they are most prized for are the hues on their tails, which appear as silver, bronze, or even gold. Unfortunately, their fur was so highly prized for making clothing that hunters began to kill them until they were almost extinct. Today, those with golden tails remain only in Hermea, where they are protected to ensure their survival.</p><p>Golden ermines are regarded as symbols of good fortune. When a citizen of Promise seeks a blessing of luck to overcome a significant challenge, they visit Rortinos Forest or the Altinar Mountains, where the stoats are known to establish their dens, bringing an offering of fresh rabbit. If an ermine comes out to eat the offering, it is considered the greatest honor, bestowing the good fortune that is being sought.</p><hr><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.JV34ltZf3nwCIOfE]{Gold Scent}</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.JV34ltZf3nwCIOfE inline]{Gold Scent}</p><hr><p><span class=\"action-glyph\">1</span> @UUID[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.EttfIMRUZWwWVgwH]{Twinkle Tail} (concentrate, fortune)</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.EttfIMRUZWwWVgwH inline]{Twinkle Tail}</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens High Seas 50",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "beast"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.dWTfO5WbLkD5mw2H",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.XCqYnlVbLGqEGPeX",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.9PsptrEoCC4QdM23",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.JV34ltZf3nwCIOfE",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-actions.Item.EttfIMRUZWwWVgwH",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Golden Ermine",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.requiredNumberOfAbilities",
+        "value": 4
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.system.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": "golden-ermine",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "4T8N73dFeJCxYI9A",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 0,
+  "_key": "!items!4T8N73dFeJCxYI9A"
+}

@@ -35,7 +35,7 @@
   "_id": "YVylhAbBeo4r1Nr8",
   "img": "systems/pf2e/icons/actions/Passive.webp",
   "folder": null,
-  "sort": 0,
+  "sort": 2400000,
   "ownership": {
     "default": 0,
     "FibNWQYOdQwgSPqy": 3
@@ -44,7 +44,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "6.1.0",
-    "coreVersion": "13.344",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

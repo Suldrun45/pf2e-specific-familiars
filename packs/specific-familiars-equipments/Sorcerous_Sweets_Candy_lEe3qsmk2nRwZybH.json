@@ -41,7 +41,8 @@
     },
     "hardness": 0,
     "price": {
-      "value": {}
+      "value": {},
+      "per": 1
     },
     "equipped": {
       "carryType": "worn"
@@ -75,13 +76,13 @@
     "usage": {
       "value": "other"
     },
-    "stackGroup": null,
-    "spell": null
+    "spell": null,
+    "stackGroup": null
   },
   "_id": "lEe3qsmk2nRwZybH",
   "img": "modules/pf2e-specific-familiars/icons/sorcerous-sweets.png",
   "folder": null,
-  "sort": 0,
+  "sort": 500000,
   "ownership": {
     "default": 0,
     "FibNWQYOdQwgSPqy": 3
@@ -89,8 +90,8 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.2.3",
-    "coreVersion": "13.344",
+    "systemVersion": "8.2.0",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

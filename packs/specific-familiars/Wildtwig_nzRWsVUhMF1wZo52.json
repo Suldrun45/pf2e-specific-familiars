@@ -1,0 +1,140 @@
+{
+  "name": "Wildtwig",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Required Number of Abilities 6</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv]{darkvision}, @UUID[Compendium.pf2e.familiar-abilities.Item.lLWkoGiNLNIEm5Sp]{plant}, @UUID[Compendium.pf2e.familiar-abilities.Item.57b8u8s3fV0UCrgJ]{plant form}, @UUID[Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR]{speech}, @UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.pe1wQ6N70ncyN1oA]{resistance (poison)}, @UUID[Compendium.pf2e.familiar-abilities.Item.Le8UWr5BU8rV3iBf]{tough}</p><hr><p>This canine is unique, as its fur is made of soft leaves, rather than hair. Wildtwigs also have two wooden horns protruding from their head, which curve as they grow with age, similar to those of a ram. The color of their body changes with the seasons; in spring and summer they are vibrant shades of green, with vibrant flowers spotting their fur, whereas in the autumn and winter their fur changes to more muted shades of browns, reds, and oranges. No matter the season, a single, yellow-spotted, red peach grows from one of their horns, fruit that is believed to provide healing powers to those who eat it.</p><p>Wildtwigs are only found within on Hermea. In fact, their existence was unknown until Mengkare visited Two Tree Island. Wildtwigs spend their lives near trees, helping them grow as their shedding leaves provide them with essential nutrients during the seasons when they need them most. Today, it is common to find wildtwigs in the shade of the island’s two main trees, changing their body tones as they do so. Additionally, on days Mengkare was on the island, a pair of wildtwigs could always be found at his side.</p><hr><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.sqye90ppM1bBjq0c]{Fruity Ambrosia} (healing)</p><p>@Embed[Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.sqye90ppM1bBjq0c inline]</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens High Seas 51",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "beast"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.0Xrkk46IM43iI1Fv",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.lLWkoGiNLNIEm5Sp",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.57b8u8s3fV0UCrgJ",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.pe1wQ6N70ncyN1oA",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.Le8UWr5BU8rV3iBf",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.specific-familiars-abilities.Item.sqye90ppM1bBjq0c",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Wildtwig",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.requiredNumberOfAbilities",
+        "value": 6
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.system.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": "wildtwig",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "nzRWsVUhMF1wZo52",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 0,
+  "_key": "!items!nzRWsVUhMF1wZo52"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Fascinating Fluttering",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Frequency</strong> once per hour;</p><hr><p><strong>Effect</strong> The royal gull flaps its wings releasing iridescent dust in a 10-foot cone. Each creature in the area must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{dazzled} for 1 round; on a critical failure, the duration is 1 minute.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens High Seas 51",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [],
+    "slug": "fascinating-fluttering",
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "illusion",
+        "manipulate",
+        "visual"
+      ]
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "category": "familiar",
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "PT1H"
+    }
+  },
+  "_id": "SLvAjl0Ou1VtmrfP",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.2.0",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 0,
+  "_key": "!items!SLvAjl0Ou1VtmrfP"
+}

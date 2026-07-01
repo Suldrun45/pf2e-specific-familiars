@@ -59,12 +59,12 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "6.1.0",
-    "coreVersion": "13.344",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
   "_id": "zRSxbDevVCHUICMR",
-  "sort": 0,
+  "sort": 3500000,
   "_key": "!items!zRSxbDevVCHUICMR"
 }
