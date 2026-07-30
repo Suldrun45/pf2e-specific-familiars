@@ -6,6 +6,11 @@
 - Fixed actions and abilities that were missing a slug.
 
 ## Version 14.2
+- Update for Impossible Magic.
+- Added the Glyph Familiar and the Undead Familiar.
+- Fixed actions and abilities that were missing a slug.
+
+## Version 14.2
 - Update for Lost Omens High Seas.
 - Added the Golden Ermine, Royal Gull and Wildtwig familiars.
 
