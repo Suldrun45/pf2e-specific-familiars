@@ -22,7 +22,7 @@
         "value": "@actor.master.level"
       }
     ],
-    "slug": null,
+    "slug": "ooze-defense",
     "_migration": {
       "version": 0.932,
       "lastMigration": null

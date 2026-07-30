@@ -5,10 +5,10 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Frequency</strong> once per hour</p><hr><p><strong>Effect</strong> The nosoi croons an entrancing song. <br>Each living or undead creature within a 60-foot emanation must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher, or be @UUID[Compendium.sf2e.conditions.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round. <br>A nosoi can use a 2-action activity, which has the auditory, concentrate, divine, enchantment, and mental traits, to force affected creatures to attempt another @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save; on a failure, they are @UUID[Compendium.sf2e.conditions.AdPVz7rbaVSRxHFg]{Fascinated} for an additional round. <br>A creature that succeeds at any save or has its fascination broken is temporarily immune for 24 hours. <br>Despite being a mental effect, this ability affects mindless undead. <br>Psychopomps are immune to this ability.</p>"
+      "value": "<p><strong>Frequency</strong> once per hour</p><hr><p><strong>Effect</strong> The nosoi croons an entrancing song. <br>Each living or undead creature within a @Template[type:emanation|distance:60] must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher, or be @UUID[Compendium.sf2e.conditions.AdPVz7rbaVSRxHFg]{Fascinated} for 1 round. <br>A nosoi can use a 2-action activity, which has the auditory, concentrate, divine, enchantment, and mental traits, to force affected creatures to attempt another @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save; on a failure, they are @UUID[Compendium.sf2e.conditions.AdPVz7rbaVSRxHFg]{Fascinated} for an additional round. <br>A creature that succeeds at any save or has its fascination broken is temporarily immune for 24 hours. <br>Despite being a mental effect, this ability affects mindless undead. <br>Psychopomps are immune to this ability.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "haunting-melody",
     "_migration": {
       "version": 0.917,
       "lastMigration": null
@@ -53,8 +53,8 @@
   "flags": {},
   "_stats": {
     "systemId": "sf2e",
-    "systemVersion": "1.0.3",
-    "coreVersion": "14.364",
+    "systemVersion": "1.3.0",
+    "coreVersion": "14.365",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

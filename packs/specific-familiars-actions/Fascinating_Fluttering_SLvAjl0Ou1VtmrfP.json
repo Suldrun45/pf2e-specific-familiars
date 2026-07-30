@@ -8,7 +8,7 @@
       "previous": null
     },
     "description": {
-      "value": "<p><strong>Frequency</strong> once per hour;</p><hr><p><strong>Effect</strong> The royal gull flaps its wings releasing iridescent dust in a 10-foot cone. Each creature in the area must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{dazzled} for 1 round; on a critical failure, the duration is 1 minute.</p>",
+      "value": "<p><strong>Frequency</strong> once per hour;</p><hr><p><strong>Effect</strong> The royal gull flaps its wings releasing iridescent dust in a @Template[type:cone|distance:10]. Each creature in the area must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{dazzled} for 1 round; on a critical failure, the duration is 1 minute.</p>",
       "gm": ""
     },
     "publication": {
@@ -49,9 +49,9 @@
   },
   "flags": {},
   "_stats": {
-    "coreVersion": "14.364",
+    "coreVersion": "14.365",
     "systemId": "pf2e",
-    "systemVersion": "8.2.0",
+    "systemVersion": "8.3.0",
     "exportSource": null,
     "compendiumSource": null,
     "duplicateSource": null

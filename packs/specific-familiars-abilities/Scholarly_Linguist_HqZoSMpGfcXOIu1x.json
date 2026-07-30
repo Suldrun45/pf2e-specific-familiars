@@ -8,7 +8,7 @@
       "value": "<p>Thanks to its innate erudition, your pipefox speaks and understands all languages you know (instead of just one) as well as one common language you don't know.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "scholarly-linguist",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

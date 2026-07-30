@@ -8,7 +8,7 @@
       "value": "<p>Your calligraphy wyrm has stylus-shaped claws that it can fill with its natural ink, using its claw as a pen without having to purchase ink.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "stylus-claws",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

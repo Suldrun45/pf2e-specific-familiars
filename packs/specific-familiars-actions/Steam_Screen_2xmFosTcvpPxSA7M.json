@@ -8,7 +8,7 @@
       "value": "<p><strong>Frequency</strong> once per minute;</p><hr /><p><strong>Effect</strong> Your clockwork familiar blows a billowing plume of steam into its square around itself. It gains a +1 circumstance bonus to its Intimidation checks, and any creature in the familiar's square has concealment, though creatures in the square can't use this concealment to Hide or Sneak.</p><p>The steam and its effects remain for 1 round.</p><p>To use this ability, your clockwork familiar must spend 1 hour of operational time.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "steam-screen",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

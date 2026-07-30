@@ -8,7 +8,7 @@
       "value": "<p><strong>Frequency</strong> once per day</p><p><strong>Trigger</strong> An attack would reduce your familiar to 0 Hit Points</p><hr><p><strong>Effect</strong> You use your bond to rescue your familiar. The familiar survives the attack with 1 Hit Point remaining and becomes incorporeal until the end of your next turn.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "spiritual-recall",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

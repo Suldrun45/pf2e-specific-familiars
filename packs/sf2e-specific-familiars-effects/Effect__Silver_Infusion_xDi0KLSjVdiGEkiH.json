@@ -35,7 +35,7 @@
         "value": "silver"
       }
     ],
-    "slug": null,
+    "slug": "effect-silver-infusion",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

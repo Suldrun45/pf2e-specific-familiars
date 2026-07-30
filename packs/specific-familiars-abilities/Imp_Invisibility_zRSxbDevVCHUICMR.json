@@ -8,7 +8,7 @@
       "value": "<p>Once per hour, your imp familiar can cast 2nd level @UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility} on itself as a divine innate spell.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "imp-invisibility",
     "_migration": {
       "version": 0.917,
       "lastMigration": null,

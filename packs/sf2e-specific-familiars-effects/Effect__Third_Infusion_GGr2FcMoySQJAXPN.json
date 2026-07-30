@@ -13,7 +13,7 @@
         "value": "@actor.level"
       }
     ],
-    "slug": null,
+    "slug": "effect-third-infusion",
     "_migration": {
       "version": 0.932,
       "lastMigration": null

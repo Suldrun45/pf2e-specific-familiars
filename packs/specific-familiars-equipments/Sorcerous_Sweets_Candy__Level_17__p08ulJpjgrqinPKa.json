@@ -8,7 +8,7 @@
       "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Ingested)</p>\n<p>Anyone who eats the candy as an Interact action gains a +3 item bonus to Deception, Diplomacy, and Performance checks for 1 hour. The candy maintains its enchantment until your next daily preparations.</p>\n<p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.Wfm1mtjJlIju5Kzq]{Effect: Sorcerous Sweets (Level 17)}</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "sorcerous-sweets-candy-level-17",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

@@ -8,7 +8,7 @@
       "value": "<p>Your dweomercat cub can cast 1st-level <a draggable=\"true\" data-uuid=\"Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl\" data-id=\"gpzpAAAJ1Lza2JVl\" data-type=\"Item\" data-pack=\"pf2e.spells-srd\" data-tooltip=\"Spell Item\" data-scope>Detect Magic</a> as an arcane innate spell.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "detect-magic",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

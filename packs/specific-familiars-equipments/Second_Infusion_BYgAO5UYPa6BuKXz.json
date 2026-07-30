@@ -8,7 +8,7 @@
       "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">2 </span>Interact</p><p>The infusion restores a number of Hit Points equal to 1d4 times half your level (minimum 1d4) and grants a +2 circumstance bonus to the next saving throw against disease of poison attempted within 24 hours.</p><p>@Damage[(ceil((@actor.level/2),1))d4[healing]]{Leveled healing}</p><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.a3bOhBcAh8HARlFT]{Effect: Second Infusion}</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "second-infusion",
     "_migration": {
       "version": 0.932,
       "lastMigration": null

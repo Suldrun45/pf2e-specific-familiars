@@ -17,7 +17,7 @@
         "value": "ceil(@actor.master.level/2)"
       }
     ],
-    "slug": null,
+    "slug": "effect-become-shadow",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

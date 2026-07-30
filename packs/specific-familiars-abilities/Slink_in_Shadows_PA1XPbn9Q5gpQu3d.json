@@ -8,7 +8,7 @@
       "value": "<p>The shadow familiar can @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide} or end its @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak} in a creature's or object's shadow.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "slink-in-shadows",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

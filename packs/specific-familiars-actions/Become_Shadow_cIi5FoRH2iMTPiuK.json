@@ -8,7 +8,7 @@
       "value": "<p>The shadow familiar transforms its body into barely tangible shadow. It gains resistance to all damage (except force) equal to half your level but can't use any actions requiring a physical form. The familiar can also slip through gaps at least 2 inches wide, or 1 inch wide if it @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeezes}. It can use this action again to return to its normal form.</p>\n<p>This action has the trait matching your tradition of magic, or occult if you aren't a spellcaster.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "become-shadow",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

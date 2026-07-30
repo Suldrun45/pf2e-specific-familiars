@@ -24,7 +24,7 @@
         "removeAfterRoll": true
       }
     ],
-    "slug": null,
+    "slug": "effect-second-infusion",
     "_migration": {
       "version": 0.932,
       "lastMigration": null

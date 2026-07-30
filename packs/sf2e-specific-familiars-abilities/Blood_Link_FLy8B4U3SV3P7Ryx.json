@@ -8,7 +8,7 @@
       "value": "<p>A homunculus is telepathically linked to its creator using their shared blood as a conduit, allowing it to share information back and forth at a range of 1,500 feet, including its master's knowledge and everything the homunculus hears.If you become unconscious or dying, your homunculus senses the waning power in your blood, allowing it to automatically act on the next turn as if you Commanded it. If the homunculus is destroyed, the master takes @Damage[2d10[mental]] damage.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "blood-link",
     "_migration": {
       "version": 0.932,
       "lastMigration": null

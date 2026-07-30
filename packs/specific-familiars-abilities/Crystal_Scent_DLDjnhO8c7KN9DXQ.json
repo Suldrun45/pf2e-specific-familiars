@@ -8,7 +8,7 @@
       "value": "<p>A cullitox can sense crystals or gems within 60 feet as if using the scent ability.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "crystal-scent",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

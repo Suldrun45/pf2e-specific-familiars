@@ -8,7 +8,7 @@
       "value": "<p><strong>Frequency</strong> once per 10 minutes</p><p><strong>Requirements</strong> The dweomercat cub was targeted by a spell or was within the area of a spell as it was cast since its last turn;</p><hr /><p><strong>Effect </strong>The dweomercat cub gains an effect related to the school of the triggering spell. Other than the damage, the effect lasts for [[/r 1d4]] rounds or until the dweomercat cub Dismisses the effect, whichever comes first.</p><ul><li><strong>Abjuration</strong> The cub gains a +1 status bonus to AC.</li><li><strong>Conjuration</strong> A cloud of fog appears in a 5-foot burst centered on a corner of the cub's space. Anything in the cloud is concealed.</li><li><strong>Divination</strong> The cub gains a +1 status bonus to skill checks.</li><li><strong>Enchantment</strong> The cub gains a +1 status bonus to saves.</li><li><strong>Evocation</strong> Magical feedback deals 1d6 force damage for every 2 levels you have to the triggering spellcaster (basic Reflex save using your class DC or spell DC, whichever is higher).</li><li><strong>Illusion</strong> The cub becomes invisible. This effect ends if the cub uses a hostile action, in addition to the normal end conditions.</li><li><strong>Necromancy</strong> The cub gains temporary HP equal to your level.</li><li><strong>Transmutation</strong> The cub gains a +1 status bonus to attack rolls.</li></ul>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "alter-dweomer",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

@@ -113,7 +113,7 @@
         ]
       }
     ],
-    "slug": null,
+    "slug": "lantern-wisp",
     "_migration": {
       "version": 0.932,
       "lastMigration": null

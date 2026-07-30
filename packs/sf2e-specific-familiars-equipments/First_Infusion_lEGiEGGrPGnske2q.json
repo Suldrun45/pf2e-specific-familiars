@@ -8,7 +8,7 @@
       "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">2 </span>Interact (Ingested)</p><p>The infusion restores a number of Hit Points equal to 1d8 times half your level (minimum 1d8) and grants a +4 circumstance bonus to the next saving throw against disease of poison attempted within 24 hours.</p><p>@Damage[(ceil((@actor.level/2),1))d8[healing]]{Leveled healing}</p><p>@UUID[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-effects.Item.6pI6nDLfhlGBUEiO]{Effect: First Infusion}</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "first-infusion",
     "_migration": {
       "version": 0.932,
       "lastMigration": null

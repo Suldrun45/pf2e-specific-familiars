@@ -8,7 +8,7 @@
       "value": "<p>Your ceru familiar grants you the @UUID[Compendium.sf2e.spells.Item.pwzdSlJgYqN7bs2w]{Telekinetic Hand} and @UUID[Compendium.sf2e.spells.izcxFQFwf3woCnFs]{Guidance} cantrips via the @UUID[Compendium.pf2e-anachronism.familiar-abilities.rs4Awf4k1e0Mj797]{Cantrip Connection} granted ability. <br>If one or more of these cantrips isn't on your spell list, you can replace the cantrip or cantrips not on your spell list with a cantrip or cantrips from your spell list instead.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "created-magic",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

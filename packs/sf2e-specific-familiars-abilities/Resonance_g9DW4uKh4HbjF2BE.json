@@ -41,7 +41,7 @@
         "level": "Resonance"
       }
     ],
-    "slug": null,
+    "slug": "resonance",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

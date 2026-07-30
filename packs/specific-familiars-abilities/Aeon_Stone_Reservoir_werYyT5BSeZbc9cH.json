@@ -8,7 +8,7 @@
       "value": "<p>Your aeon wyrd can hold any aeon stone as a powerfully resonant nucleus that holds it together. You gain the aeon stone's benefits without needing to use one of your investiture slots for the day, and you also gain the aeon stone's resonant power, without interfering with any wayfinder you invest.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "aeon-stone-reservoir",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

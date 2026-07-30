@@ -8,7 +8,7 @@
       "value": "<p>When you Refocus, you generate magical energy that heals your familiar. Your familiar regains 2 Hit Point per level whenever you Refocus.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "slime-rejuvenation",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

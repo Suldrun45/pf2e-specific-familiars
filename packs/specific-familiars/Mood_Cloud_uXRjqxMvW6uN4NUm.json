@@ -61,7 +61,7 @@
         "value": 0
       }
     ],
-    "slug": null,
+    "slug": "mood-cloud",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

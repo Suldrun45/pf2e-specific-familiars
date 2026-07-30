@@ -8,7 +8,7 @@
       "value": "<p>Your spellslime familiar gains an imprecise sense with a range of 30 feet that enables it to smell magic of the same tradition as your own.</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "magic-scent",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

@@ -8,7 +8,7 @@
       "value": "<p>Your house drake breathes on one of your weapons. Until the start of your next turn, that weapon counts as silver instead of its normal material for any physical damage it deals. The house drake can't use Breath Weapon or Silver Infusion for [[/r 1d4]] rounds.</p>\n<p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.xDi0KLSjVdiGEkiH]{Effect: Silver Infusion}</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "silver-infusion",
     "_migration": {
       "version": 0.917,
       "lastMigration": null

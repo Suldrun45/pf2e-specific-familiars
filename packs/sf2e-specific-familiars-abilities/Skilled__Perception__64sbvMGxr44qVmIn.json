@@ -24,7 +24,7 @@
         "value": "@actor.masterAttributeModifier"
       }
     ],
-    "slug": null,
+    "slug": "skilled-perception",
     "traits": {
       "otherTags": [],
       "value": []

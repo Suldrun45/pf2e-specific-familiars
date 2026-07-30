@@ -8,7 +8,7 @@
       "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">2 </span>Interact</p><p>This infusion grants temporary Hit Points equal to your level for 1 hour.</p><p>@UUID[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-effects.Item.GGr2FcMoySQJAXPN]{Effect: Third Infusion}</p>"
     },
     "rules": [],
-    "slug": null,
+    "slug": "third-infusion",
     "_migration": {
       "version": 0.932,
       "lastMigration": null

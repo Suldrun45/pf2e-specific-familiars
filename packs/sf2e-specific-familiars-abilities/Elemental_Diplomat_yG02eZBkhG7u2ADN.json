@@ -24,7 +24,7 @@
         "value": "@actor.masterAttributeModifier"
       }
     ],
-    "slug": null,
+    "slug": "elemental-diplomat",
     "_migration": {
       "version": 0.917,
       "lastMigration": null
