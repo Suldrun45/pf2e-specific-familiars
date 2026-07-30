@@ -1,7 +1,7 @@
 # Changelog
 
 ## Version 14.3
-- Update for Impossible Magic.
+- Update for Impossible Magic. 
 - Added the Glyph Familiar and the Undead Familiar.
 - Fixed actions and abilities that were missing a slug.
 
