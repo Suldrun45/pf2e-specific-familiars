@@ -203,7 +203,7 @@
         "manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/v14-dev/system.pf2e.json",
         "compatibility": {
           "minimum": "6.3.0",
-          "verified": "8.2.0"
+          "verified": "8.3.0"
         }
       },
       {
@@ -211,8 +211,8 @@
         "type": "system",
         "manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/v14-dev/system.sf2e.json",
         "compatibility": {
-			"verified": "1.2.0"			
-		}
+          "verified": "1.3.0"
+        }
       }
     ]
   },
