@@ -1,4 +1,7 @@
-const MODULE_ID = 'pf2e-specific-familiars';
+import { setupSettings } from "./settings.js";
+import { doMigrations } from "./migrations.js";
+import { MODULE_ID } from "./consts.js";
+
 let system;
 let SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID;
 let  compendiumPrefix;
@@ -10,6 +13,7 @@ Hooks.once("init", ()=>{
     });
 	SPECIFIC_FAMILIAR_REQUIRED_ABILITIES_UUID = system == "pf2e" ? "Compendium.pf2e-specific-familiars.specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE" : "Compendium.pf2e-specific-familiars.sf2e-specific-familiars-feats.Item.PN7kY8Ukw2O1WKKE";
 	compendiumPrefix = system == "pf2e" ? "Compendium.pf2e-specific-familiars.specific-familiars." : "Compendium.pf2e-specific-familiars.sf2e-specific-familiars.";
+  	setupSettings();
 });
 
 
@@ -36,6 +40,7 @@ Hooks.once("ready", async () => {
 			await setFamiliarAbilities(act); //In case the feat was deleted;
 		}
 	});
+	await doMigrations();
 });
 
 Hooks.on("createItem", async (item) => {
