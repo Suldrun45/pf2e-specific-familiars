@@ -1,0 +1,123 @@
+{
+  "name": "Glyph Familiar",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You have taken a living rune as a familiar to aid you in your adventures. You gain a familiar. You choose one familiar or master ability per day instead of two, but your familiar also always has three additional familiar abilities: @UUID[Compendium.pf2e-anachronism.familiar-abilities.Item.5eqcXtPsYunphMOZ]{construct}, @UUID[Compendium.pf2e-anachronism.familiar-abilities.Item.ZHSzNt3NxkXbj1mI]{flier}, and @UUID[Compendium.pf2e-anachronism.familiar-abilities.Item.Le8UWr5BU8rV3iBf]{tough}</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Impossible Magic 48",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-anachronism.familiar-abilities.Item.5eqcXtPsYunphMOZ",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-anachronism.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-anachronism.familiar-abilities.Item.Le8UWr5BU8rV3iBf",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "bleed",
+          "death-effects",
+          "disease",
+          "doomed",
+          "drained",
+          "fatigued",
+          "healing",
+          "nonlethal-attacks",
+          "paralyzed",
+          "poison",
+          "sickened",
+          "spirit",
+          "unconscious",
+          "vitality",
+          "void"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Glyph Familiar",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": "glyph-familiar",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "mXyn6IcViq2rZB8q",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "sf2e",
+    "systemVersion": "1.3.0",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 0,
+  "_key": "!items!mXyn6IcViq2rZB8q"
+}

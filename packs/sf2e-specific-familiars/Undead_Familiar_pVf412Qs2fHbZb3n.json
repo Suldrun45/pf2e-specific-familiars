@@ -1,0 +1,101 @@
+{
+  "name": "Undead Familiar",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You gain the ability to raise an undead familiar who will serve you as your loyal and sometimes expendable partner as you explore your necromantic magic. You gain a familiar. It has the undead trait instead of the animal trait and is immune to bleed, death effects, disease, mental, and poison. You can choose only one familiar ability per day for this familiar instead of two, and you can’t choose an ability that changes the creature’s trait (such as construct or dragon). Additionally, this familiar can be targeted by spells and abilities that target your thralls. If you destroy your familiar, you can raise them back to undeath during your next daily preparations.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Pathfinder Impossible Magic 32",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "undead"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "bleed",
+          "death-effects",
+          "disease",
+          "mental",
+          "poison"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Undead Familiar",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.requiredNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.system.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": "undead-familiar",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "pVf412Qs2fHbZb3n",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "pf2e",
+    "systemVersion": "8.3.0",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 0,
+  "_key": "!items!pVf412Qs2fHbZb3n"
+}
