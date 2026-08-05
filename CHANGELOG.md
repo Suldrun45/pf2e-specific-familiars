@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 14.3.1
+- Add Object Familiar. 
+- Fix some Rule Elements on Star Orb and Glyph Familiar.
+
 ## Version 14.3
 - Update for Impossible Magic. 
 - Added the Glyph Familiar and the Undead Familiar.
