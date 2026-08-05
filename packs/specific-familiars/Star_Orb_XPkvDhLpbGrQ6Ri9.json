@@ -23,23 +23,9 @@
       },
       {
         "key": "ActiveEffectLike",
-        "mode": "add",
-        "path": "flags.pf2e.specificFamiliars.starOrb.landSpeed",
-        "value": -25
-      },
-      {
-        "key": "ActiveEffectLike",
-        "mode": "add",
-        "path": "flags.pf2e.specificFamiliars.starOrb.landSpeed",
-        "value": -15,
-        "predicate": [
-          "self:ability:fast-movement-land"
-        ]
-      },
-      {
-        "key": "FlatModifier",
-        "selector": "land-speed",
-        "value": "@actor.flags.pf2e.specificFamiliars.starOrb.landSpeed"
+        "mode": "downgrade",
+        "value": 0,
+        "path": "system.movement.speeds.land.base"
       },
       {
         "key": "ActiveEffectLike",
@@ -99,8 +85,8 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.7.2",
-    "coreVersion": "13.344",
+    "systemVersion": "8.4.0",
+    "coreVersion": "14.365",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

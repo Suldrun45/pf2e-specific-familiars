@@ -1,0 +1,115 @@
+{
+  "name": "Object Familiar",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>Some patrons (especially ones like Baba Yaga) send an inanimate object as a familiar to their witch. An object familiar functions the same as a regular familiar, with a few exceptions. First, it has a Speed of 0 feet, and you can’t select pet abilities, familiar abilities, or master abilities for it that require movement until it has a Speed. You can grant your object familiar a Speed with the @UUID[Compendium.pf2e.familiar-abilities.Item.wcFeaZ0TmoaLtpIQ]{animated} familiar ability listed below. You must choose the @UUID[Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ]{construct} familiar ability for it each day, but the familiar need not have the tough pet ability first. Object familiars are available to all witches.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "bleed",
+          "death-effects",
+          "disease",
+          "doomed",
+          "drained",
+          "fatigued",
+          "healing",
+          "nonlethal-attacks",
+          "paralyzed",
+          "poison",
+          "sickened",
+          "spirit",
+          "unconscious",
+          "vitality",
+          "void"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Object Familiar",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "downgrade",
+        "value": 0,
+        "path": "system.movement.speeds.land.base"
+      }
+    ],
+    "slug": "object-familiar",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "Fay5e6JafjunRqQK",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "pf2e",
+    "systemVersion": "8.4.0",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 0,
+  "_key": "!items!Fay5e6JafjunRqQK"
+}

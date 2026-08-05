@@ -1,5 +1,5 @@
 {
-  "name": "Glyph Familiar",
+  "name": "Object Familiar",
   "type": "action",
   "effects": [],
   "system": {
@@ -8,33 +8,19 @@
       "previous": null
     },
     "description": {
-      "value": "<p>You have taken a living rune as a familiar to aid you in your adventures. You gain a familiar. You choose one familiar or master ability per day instead of two, but your familiar also always has three additional familiar abilities: @UUID[Compendium.pf2e-anachronism.familiar-abilities.Item.5eqcXtPsYunphMOZ]{construct}, @UUID[Compendium.pf2e-anachronism.familiar-abilities.Item.ZHSzNt3NxkXbj1mI]{flier}, and @UUID[Compendium.pf2e-anachronism.familiar-abilities.Item.Le8UWr5BU8rV3iBf]{tough}</p>",
+      "value": "<p>Some patrons (especially ones like Baba Yaga) send an inanimate object as a familiar to their witch. An object familiar functions the same as a regular familiar, with a few exceptions. First, it has a Speed of 0 feet, and you can’t select pet abilities, familiar abilities, or master abilities for it that require movement until it has a Speed. You can grant your object familiar a Speed with the @UUID[Compendium.pf2e.familiar-abilities.Item.wcFeaZ0TmoaLtpIQ]{animated} familiar ability listed below. You must choose the @UUID[Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ]{construct} familiar ability for it each day, but the familiar need not have the tough pet ability first. Object familiars are available to all witches.</p>",
       "gm": ""
     },
     "publication": {
-      "title": "Pathfinder Impossible Magic 48",
+      "title": "",
       "authors": "",
-      "license": "ORC",
-      "remaster": true
+      "license": "OGL",
+      "remaster": false
     },
     "rules": [
       {
         "key": "GrantItem",
-        "uuid": "Compendium.pf2e-anachronism.familiar-abilities.Item.5eqcXtPsYunphMOZ",
-        "onDeleteActions": {
-          "grantee": "restrict"
-        }
-      },
-      {
-        "key": "GrantItem",
-        "uuid": "Compendium.pf2e-anachronism.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
-        "onDeleteActions": {
-          "grantee": "restrict"
-        }
-      },
-      {
-        "key": "GrantItem",
-        "uuid": "Compendium.pf2e-anachronism.familiar-abilities.Item.Le8UWr5BU8rV3iBf",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.5eqcXtPsYunphMOZ",
         "onDeleteActions": {
           "grantee": "restrict"
         }
@@ -62,19 +48,13 @@
       {
         "key": "ActiveEffectLike",
         "path": "system.details.creature.value",
-        "value": "Glyph Familiar",
+        "value": "Object Familiar",
         "mode": "override"
       },
       {
         "key": "ActiveEffectLike",
-        "mode": "add",
-        "path": "flags.sf2e.specificFamiliars.requiredNumberOfAbilities",
-        "value": 0
-      },
-      {
-        "key": "ActiveEffectLike",
         "mode": "override",
-        "path": "flags.sf2e.specificFamiliars.specificFamiliarAbilityId",
+        "path": "flags.system.specificFamiliars.specificFamiliarAbilityId",
         "value": {
           "sourceId": "{item|_stats.compendiumSource}",
           "id": "{item|_id}"
@@ -84,25 +64,37 @@
       {
         "key": "ActiveEffectLike",
         "mode": "add",
-        "path": "flags.sf2e.specificFamiliars.grantedNumberOfAbilities",
+        "path": "flags.system.specificFamiliars.requiredNumberOfAbilities",
         "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.grantedNumberOfAbilities",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "downgrade",
+        "value": 0,
+        "path": "system.movement.speeds.land.base"
       }
     ],
-    "slug": "glyph-familiar",
+    "slug": "object-familiar",
     "traits": {
       "otherTags": [],
       "value": []
     },
     "actionType": {
-      "value": "passive"
+      "value": "action"
     },
     "actions": {
-      "value": null
+      "value": 1
     },
     "category": "familiar",
     "deathNote": false
   },
-  "_id": "mXyn6IcViq2rZB8q",
+  "_id": "Fay5e6JafjunRqQK",
   "img": "systems/pf2e/icons/default-icons/familiar.svg",
   "folder": null,
   "ownership": {
@@ -119,5 +111,5 @@
     "exportSource": null
   },
   "sort": 0,
-  "_key": "!items!mXyn6IcViq2rZB8q"
+  "_key": "!items!Fay5e6JafjunRqQK"
 }
