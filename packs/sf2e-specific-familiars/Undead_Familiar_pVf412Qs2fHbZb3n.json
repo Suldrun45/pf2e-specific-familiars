@@ -28,6 +28,12 @@
         ]
       },
       {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.attributes.hp.negativeHealing",
+        "value": true
+      },
+      {
         "key": "Immunity",
         "type": [
           "bleed",
@@ -90,8 +96,8 @@
   "flags": {},
   "_stats": {
     "coreVersion": "14.365",
-    "systemId": "pf2e",
-    "systemVersion": "8.3.0",
+    "systemId": "sf2e",
+    "systemVersion": "1.4.0",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 14.3.2
+- Being an Undead, the Undead Familiar now has Negative Healing
+
 ## Version 14.3.1
 - Add Object Familiar. 
 - Fix some Rule Elements on Star Orb and Glyph Familiar.
