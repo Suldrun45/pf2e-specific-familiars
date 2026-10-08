@@ -3,14 +3,18 @@
   "version": "2.2.0",
   "description": "",
   "scripts": {
-    "build": "node build.mjs",
-    "extractPacks": "node extract-packs.mjs",
-    "link": "node link.mjs"
+    "build": "node scripts/build.mjs",
+    "extractPacks": "node scripts/extract-packs.mjs",
+    "link": "node scripts/link.mjs"
   },
   "author": "Sasane",
   "license": "Apache-2.0",
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.3",
     "@types/prompts": "^2.4.9"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.7.0",
+    "prompts": "^2.4.2"
   }
 }
