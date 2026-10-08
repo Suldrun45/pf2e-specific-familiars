@@ -1,3 +1,4 @@
+import { askToAddNewAnimationsDialog, registerSequencerPresets } from "./animations.js";
 import { setupSettings } from "./settings.js";
 import { doMigrations } from "./migrations.js";
 import { MODULE_ID } from "./consts.js";
@@ -41,6 +42,8 @@ Hooks.once("ready", async () => {
 		}
 	});
 	await doMigrations();
+	registerSequencerPresets();
+	await askToAddNewAnimationsDialog();
 });
 
 Hooks.on("createItem", async (item) => {

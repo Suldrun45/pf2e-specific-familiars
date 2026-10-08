@@ -219,6 +219,13 @@
   "esmodules": [
     "js/main.js"
   ],
+  "styles": [
+    "styles/module.css"
+  ],
   "description": "<p>Abilities for the Specific familiars of PF2e and SF2e</p>",
-  "flags": {}
+  "flags": {
+    "trigger-animations":{
+      "triggers": "modules/pf2e-specific-familiars/animations.json"
+    }
+  }
 }

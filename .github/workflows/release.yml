@@ -39,6 +39,7 @@ jobs:
       - name: Build
         run: |
           npm ci
+          node ./scripts/bundleTriggers.mjs
           npm run build
 
       # Create a folder containing all the module stuff and zip it for the release
