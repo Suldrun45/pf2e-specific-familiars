@@ -1,0 +1,59 @@
+{
+  "name": "Tooth Tug",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Frequency</strong> once per 10 minutes</p><hr><p><strong>Effect</strong> The tooth fairy attempts to pull out a tooth from a creature sharing a space with it. The target attempts a Fortitude save against the spell DC or class DC of the familiar’s master (whichever is higher).</p><p><strong>Success</strong> The creature is unaffected.</p><p><strong>Failure</strong> The creature takes @Damage[1d4[bleed]] persistent bleed damage. The damage increases to @Damage[2d4[bleed]] at 12th level and @Damage[3d4[bleed]] at 18th level.</p><p><strong>Critical Failure</strong> As failure, plus the tooth fairy pulls out one of the target’s teeth. If the creature loses a tooth, it takes a –1 status penalty to Charisma-based skill checks and must succeed at a @Check[flat|dc:5] to Cast a Spell or the spell is disrupted. Spells with the subtle trait automatically succeed at this flat check. These effects last for 1 day, or until the stolen tooth is returned and the target regains at least 1 Hit Point.</p><p>@UUID[Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.Mn37IMiXLRMrb6Hp]{Effect: Tooth Tug}</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "manipulate"
+      ]
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "category": "familiar",
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "PT10M"
+    }
+  },
+  "_id": "lspuIMmlsKB5rdQ1",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.370",
+    "systemId": "pf2e",
+    "systemVersion": "8.6.1",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!lspuIMmlsKB5rdQ1"
+}

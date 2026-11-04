@@ -1,0 +1,119 @@
+{
+  "name": "Sprite",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Required Number of Abilities 4</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI]{flier}, @UUID[Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP]{manual dexterity}, @UUID[Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR]{speech}</p><hr><p>Though most sprites are free-spirited and loath to give others authority over themselves, some find mortals quite alluring. These individuals are willing to bond with a mortal as familiars, though only if the mortal can take a joke and travels frequently.</p><hr><p>@UUID[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-abilities.Item.wgSOinsEhmhYS3Q8]{Luminous Fire}</p><p>@Embed[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-abilities.Item.wgSOinsEhmhYS3Q8 inline]</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Feybound 13",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "fey"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.sf2e-specific-familiars-abilities.Item.wgSOinsEhmhYS3Q8",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Sprite",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.requiredNumberOfAbilities",
+        "value": 4
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.system.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "zpm4BMyIJ4VLBPfy",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.370",
+    "systemId": "sf2e",
+    "systemVersion": "1.6.1",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!zpm4BMyIJ4VLBPfy"
+}

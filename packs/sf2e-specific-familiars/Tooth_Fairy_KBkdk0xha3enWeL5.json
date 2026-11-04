@@ -1,0 +1,126 @@
+{
+  "name": "Tooth Fairy",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Required Number of Abilities 5</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI]{flier}, @UUID[Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP]{manual dexterity}, @UUID[Compendium.pf2e.familiar-abilities.Item.v7zE3tKQb9G6PaYU]{partner in crime}, @UUID[Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR]{speech}</p><hr><p>Tooth fairies are difficult to work with, as they love mischief more than most fey, and the mischief they love usually involves taking teeth. A tooth fairy familiar expects plenty of opportunities to take teeth, so a life of frequent conflict and combat is perfect for these temperamental fey.</p><hr><p>@UUID[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.lspuIMmlsKB5rdQ1]{Tooth Tug}</p><p>@Embed[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.lspuIMmlsKB5rdQ1 inline]</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Feybound 13",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "fey"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.ZHSzNt3NxkXbj1mI",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.v7zE3tKQb9G6PaYU",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.lspuIMmlsKB5rdQ1",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "Tooth Fairy",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.requiredNumberOfAbilities",
+        "value": 5
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.system.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "KBkdk0xha3enWeL5",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.370",
+    "systemId": "sf2e",
+    "systemVersion": "1.6.1",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!KBkdk0xha3enWeL5"
+}

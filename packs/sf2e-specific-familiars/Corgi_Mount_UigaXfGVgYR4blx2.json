@@ -5,13 +5,13 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>The smallest of fey have ridden corgis as mounts since time immemorial, leading to a pattern on corgis' backs called a “faerie saddle.” You have formed a magical connection with a corgi that can serve as your mount. <br>Your corgi familiar is Small rather than Tiny, and it's appropriate for use as your mount, unlike most familiars. <br>It has the @UUID[Compendium.pf2e-anachronism.familiar-abilities.FlRUb8U13Crj3NaA]{Scent} ability, which counts against your limit for familiar and master abilities as normal. <br>Furthermore, it can never gain a familiar ability that grants it any Speeds other than a land Speed.<br>If you're a pixie, you can't ride a corgi due to your Size, but you can take this feat to gain a corgi familiar.</p>"
+      "value": "<p>The smallest of fey have ridden corgis as mounts since time immemorial, leading to a pattern on corgis' backs called a “faerie saddle.” You have formed a magical connection with a corgi that can serve as your mount. <br>Your corgi familiar is Small rather than Tiny, and it's appropriate for use as your mount, unlike most familiars. <br>It has the @UUID[Compendium.pf2e.familiar-abilities.FlRUb8U13Crj3NaA]{Scent} ability, which counts against your limit for familiar and master abilities as normal. <br>Furthermore, it can never gain a familiar ability that grants it any Speeds other than a land Speed.<br>If you're a pixie, you can't ride a corgi due to your Size, but you can take this feat to gain a corgi familiar.</p>"
     },
     "rules": [
       {
         "key": "GrantItem",
         "allowDuplicate": false,
-        "uuid": "Compendium.pf2e-anachronism.familiar-abilities.Item.FlRUb8U13Crj3NaA",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.FlRUb8U13Crj3NaA",
         "onDeleteActions": {
           "grantee": "restrict"
         }
@@ -35,13 +35,13 @@
       {
         "key": "ActiveEffectLike",
         "mode": "add",
-        "path": "flags.sf2e.specificFamiliars.requiredNumberOfAbilities",
+        "path": "flags.pf2e.specificFamiliars.requiredNumberOfAbilities",
         "value": 0
       },
       {
         "key": "ActiveEffectLike",
         "mode": "override",
-        "path": "flags.sf2e.specificFamiliars.specificFamiliarAbilityId",
+        "path": "flags.pf2e.specificFamiliars.specificFamiliarAbilityId",
         "value": {
           "sourceId": "{item|_stats.compendiumSource}",
           "id": "{item|_id}"
@@ -51,7 +51,7 @@
       {
         "key": "ActiveEffectLike",
         "mode": "add",
-        "path": "flags.sf2e.specificFamiliars.grantedNumberOfAbilities",
+        "path": "flags.pf2e.specificFamiliars.grantedNumberOfAbilities",
         "value": 1
       }
     ],
@@ -70,10 +70,10 @@
       "value": []
     },
     "publication": {
-      "title": "Pathfinder Lost Omens: Ancestry Guide 129",
+      "title": "Feybound 83",
       "authors": "",
-      "license": "OGL",
-      "remaster": false
+      "license": "ORC",
+      "remaster": true
     },
     "actionType": {
       "value": "passive"
@@ -90,7 +90,7 @@
       "value": ""
     }
   },
-  "img": "systems/sf2e/icons/default-icons/familiar.svg",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -101,8 +101,8 @@
   },
   "_stats": {
     "systemId": "sf2e",
-    "systemVersion": "1.0.3",
-    "coreVersion": "14.364",
+    "systemVersion": "1.6.1",
+    "coreVersion": "14.370",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

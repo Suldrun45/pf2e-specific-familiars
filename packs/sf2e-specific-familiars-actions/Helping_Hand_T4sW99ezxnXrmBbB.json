@@ -1,0 +1,57 @@
+{
+  "name": "Helping Hand",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Frequency</strong> once per round</p><hr><p><strong>Effect</strong> The house spirit prepares to Aid you on a Crafting, Medicine, or Society skill check. They gain a reaction this round, which they can use only to Aid you in this way. They automatically succeed at their check to Aid you with the skill, or automatically critically succeed if you’re a master of the skill in question.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Feybound 13",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "category": "familiar",
+    "deathNote": false,
+    "frequency": {
+      "max": 1,
+      "per": "round"
+    }
+  },
+  "_id": "T4sW99ezxnXrmBbB",
+  "img": "systems/sf2e/icons/actions/OneAction.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.370",
+    "systemId": "pf2e",
+    "systemVersion": "8.6.1",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!T4sW99ezxnXrmBbB"
+}

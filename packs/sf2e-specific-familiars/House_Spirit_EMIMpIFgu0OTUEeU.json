@@ -1,0 +1,112 @@
+{
+  "name": "House Spirit",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p><strong>Required Number of Abilities 3</strong></p><p><strong>Granted Abilities</strong> @UUID[Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP]{manual dexterity,} @UUID[Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR]{speech}</p><hr><p>Though most house spirits are homebodies by nature, they might be enticed to travel if an adventurer convinces them there are enough opportunities to be helpful out in the wider world. House spirit familiars enjoy helping make camp and cooking breakfast.</p><hr><p>@UUID[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.T4sW99ezxnXrmBbB]{Helping Hand}</p><p>@Embed[Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.T4sW99ezxnXrmBbB inline]</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Feybound 13",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "ActorTraits",
+        "add": [
+          "fey"
+        ],
+        "remove": [
+          "animal"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-specific-familiars.sf2e-specific-familiars-actions.Item.T4sW99ezxnXrmBbB",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.details.creature.value",
+        "value": "House Spirit",
+        "mode": "override"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.requiredNumberOfAbilities",
+        "value": 3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.system.specificFamiliars.specificFamiliarAbilityId",
+        "value": {
+          "sourceId": "{item|_stats.compendiumSource}",
+          "id": "{item|_id}"
+        },
+        "priority": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.system.specificFamiliars.grantedNumberOfAbilities",
+        "value": 0
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "EMIMpIFgu0OTUEeU",
+  "img": "systems/pf2e/icons/default-icons/familiar.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.370",
+    "systemId": "sf2e",
+    "systemVersion": "1.6.1",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 0,
+  "_key": "!items!EMIMpIFgu0OTUEeU"
+}

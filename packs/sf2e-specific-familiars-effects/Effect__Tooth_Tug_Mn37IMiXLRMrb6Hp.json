@@ -1,0 +1,75 @@
+{
+  "name": "Effect: Tooth Tug",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You take a –1 status penalty to Charisma-based skill checks and must succeed at a @Check[flat|dc:5] to Cast a Spell or the spell is disrupted</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Feybound 13",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "value": -1,
+        "type": "status",
+        "selector": [
+          "cha-based"
+        ],
+        "label": "Tooth Tug"
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "days",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "_id": "Mn37IMiXLRMrb6Hp",
+  "img": "icons/commodities/bones/tooth-molar-white-red.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.370",
+    "systemId": "pf2e",
+    "systemVersion": "8.6.1",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Mn37IMiXLRMrb6Hp"
+}

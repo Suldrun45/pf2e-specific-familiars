@@ -1,0 +1,82 @@
+{
+  "name": "Luminous Fire",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>A sprite naturally sheds light like a torch. The sprite can extinguish, rekindle, or change the color of this light as a single action, which has the concentrate trait.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Feybound 13",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "RollOption",
+        "toggleable": true,
+        "option": "luminous-fire",
+        "label": "Luminous Fire"
+      },
+      {
+        "key": "TokenLight",
+        "value": {
+          "dim": 40,
+          "bright": 20,
+          "color": "#ffae3d",
+          "alpha": 0.3,
+          "animation": {
+            "type": "flame",
+            "speed": 2,
+            "intensity": 1
+          },
+          "attenuation": 0.4,
+          "shadows": 0.2
+        },
+        "predicate": [
+          "luminous-fire"
+        ]
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "light",
+        "primal"
+      ]
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "familiar",
+    "deathNote": false
+  },
+  "_id": "wgSOinsEhmhYS3Q8",
+  "img": "systems/pf2e/icons/actions/Passive.webp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "grLCLQof0awpIKJn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.370",
+    "systemId": "pf2e",
+    "systemVersion": "8.6.1",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!wgSOinsEhmhYS3Q8"
+}
